@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<!--
+    Copyright (c) 2012-2014 Adobe Systems Incorporated. All rights reserved.
+
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="msapplication-tap-highlight" content="no" />
+        <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+        <link rel="stylesheet" type="text/css" href="css/index.css" />
+        <title>Hello World</title>
+        <script src="js/velocidadscroll.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+        <script src="js/menu.js"></script>
+        <link rel="stylesheet" href="css/menu.css">
+        <link rel="stylesheet" href="css/font-awesome.css">
+        <script type="text/javascript">
+      document.addEventListener("deviceready", onDeviceReady, false);
+      // PhoneGap esta listo
+      function onDeviceReady() {
+        
+        
+        //DIV DEL MENU
+        menuDiv = document.querySelector("#menu"); 
+        //BOTON MENU ANDROID
+        document.addEventListener("menubutton", onMenuKeyDown, false);  
+        //BOTON ATRAS ANDROID
+        document.addEventListener("backbutton", onBackKeyDown, false);
+        
+      }  
+      
+      //BOTON MENU
+      var menuOpen = true;
+      var menuDiv = "";
+      
+      function onMenuKeyDown() {
+        if(menuOpen) {
+                    console.log("close the menu");
+                    menuDiv.style.display="block";
+                    menuOpen = false;
+                } else {
+                        console.log("open the menu");
+                        menuDiv.style.display="none";
+                        menuOpen = true;
+                }
+      }
+      //FIN BOTON MENU
+      
+      //BOTON ATRAS ANDROID
+      function onBackKeyDown(){
+        //if($.mobile.activePage.attr('id') == 'home'){ // PARA AÑADIR MAS USAR SEPARADORES "||"
+         // navigator.notification.confirm(
+         // '¿Salir de la aplicación?', 
+         // function(button) {
+         //   if (button == 2) {
+         //     navigator.app.exitApp();
+        //    }
+        //  }, 
+        //  'Salir', 'No,Si');return false;
+      //  }
+      //  else {                            //else if ($.mobile.activePage.attr('id') == 'charlas'){
+                                        //$.mobile.changePage('#home');
+                                          //}else
+                            location.href="perfil.html";
+       // }
+      }
+      //FIN BOTON ATRAS ANDROID
+        </script>
+        <script type="text/javascript">
+           
+          $(document).ready(function(){
+            
+            $('#page_effect').fadeIn(800);
+            id = window.localStorage.getItem("id");
+            usuario = window.localStorage.getItem("usuario");
+            $("#id").append(id);
+            $("#cargando").removeClass("escondido"); 
+            $("#cargando").addClass("visible"); 
+          var dato = $('#formulario').serialize();
+                    $.ajax({ 
+                            url:'http://desarrollotricolor.com.ve/ffasil/cargaperfil.php', 
+                            type:'POST', 
+                            data:dato, 
+                            dataType:'json', 
+                            error:function(jqXHR,text_status,strError){
+                            }, 
+                            success:function(data){
+                            var nombre=data[0];
+                            var apellido=data[1];
+                            var carnet=data[2];
+                            var nit=data[3];
+                            var telefono=data[4];
+                            var pagina=data[5];
+                            var postal=data[6];
+                            var pais=data[7];
+                            var depart=data[8];
+                            var direccion=data[9];
+                            $("#nombre").val(nombre);
+                            $("#apellido").val(apellido);
+                            $("#carnet").val(carnet);
+                            $("#nit").val(nit);
+                            $("#telefono").val(telefono);
+                            $("#pagina").val(pagina);
+                            $("#postal").val(postal);
+                            $("#pais").val(pais);
+                            $("#depart").val(depart);
+                            
+                            $("#cargando").removeClass("visible"); 
+                            $("#cargando").addClass("escondido"); 
+                            }
+                        });
+
+          });
+
+        </script>
+        <script type="text/javascript">
+        function modificar() {
+            $("#cargando").removeClass("escondido"); 
+            $("#cargando").addClass("visible"); 
+          var dato = $('#formulario').serialize();
+                    $.ajax({ 
+                            url:'http://desarrollotricolor.com.ve/ffasil/modificarperfil.php', 
+                            type:'POST', 
+                            data:dato, 
+                            dataType:'json', 
+                            error:function(jqXHR,text_status,strError){
+                            }, 
+                            success:function(data){                            
+                            $("#cargando").removeClass("visible"); 
+                            $("#cargando").addClass("escondido"); 
+                            location.href="perfil.html";
+                            }
+                        });
+        }
+        function cancelar() {
+                            location.href="perfil.html";
+        }
+        </script>
+    </head>
+    <body >
+          <section class="cerrador"></section>
+        <header>
+          <div class="menu_bar">
+              <a href="#" class="bt-menu"><span class="icon-list2"></span> <i class="fa fa-bars fa-2x "></i></a><center class="titulo" id="user">Perfil</center>
+          </div>
+   
+          <nav class="menu2">
+              <ul>
+                  <li><h1><span class="icon-house"></span>Categor&iacute;as</h1></li>
+                  <li><a href="dos.html"><span class="icon-house"></span>Accesorios para veh&iacute;culos</a></li>
+                  <li><a href="#"><span class="icon-suitcase"></span>Aeron&aacute;utica</a></li>
+                  <li><a href="#"><span class="icon-suitcase"></span>Agropecuaria y Campo</a></li>
+                  <li><a href="#"><span class="icon-suitcase"></span>Alimentos y Bebidas</a></li>
+                  <li><a href="#"><span class="icon-suitcase"></span>Animales y Mascotas</a></li>
+                  <li><a href="#"><span class="icon-suitcase"></span>Arte y Antigüedades</a></li>
+                  <li><a href="#"><span class="icon-suitcase"></span>Art&iacute;culos militares y de seguridad</a></li>
+                  <li><a href="#"><span class="icon-suitcase"></span>C&aacute;maras y accesorios</a></li>
+                  <li><a href="#"><span class="icon-suitcase"></span>Celulares y Accesorios</a></li>
+                  <li><a href="#"><span class="icon-suitcase"></span>Computaci&oacute;n</a></li>
+                  <li><a href="#"><span class="icon-suitcase"></span>Consolas y videojuegos</a></li>
+                  <li><a href="#"><span class="icon-suitcase"></span>Deportes y Fitness</a></li>
+                  <li><a href="#"><span class="icon-suitcase"></span>Electrodom&eacute;sticos</a></li>
+                  <li><a href="#"><span class="icon-suitcase"></span>Electr&oacute;nicos, audio y video</a></li>
+                  <li><a href="#"><span class="icon-suitcase"></span>Entretenimiento y Ocio</a></li>
+                  <li><a href="#"><span class="icon-suitcase"></span>Equipamiento Industrial</a></li>
+                  <li><a href="#"><span class="icon-suitcase"></span>Inmuebles, bienes ra&iacute;ces</a></li>
+                  <li><a href="#"><span class="icon-suitcase"></span>Instrumentos Musicales</a></li>
+                  <li><a href="#"><span class="icon-suitcase"></span>Inversiones y Negocios</a></li>
+                  <li><a href="#"><span class="icon-suitcase"></span>Joyas y Relojes</a></li>
+                  <li><a href="#"><span class="icon-suitcase"></span>Juegos y juguetes</a></li>
+                  <li><a href="#"><span class="icon-suitcase"></span>Materiales de Construcci&oacute;n</a></li>
+                  <li><a href="#"><span class="icon-suitcase"></span>Motocicletas</a></li>
+                  <li><a href="#"><span class="icon-suitcase"></span>Música y Videos</a></li>
+                  <li><a href="#"><span class="icon-suitcase"></span>Niños</a></li>
+                  <li><a href="#"><span class="icon-suitcase"></span>Restaurantes y Locales</a></li>
+                  <li><a href="#"><span class="icon-suitcase"></span>Salud y Belleza</a></li>
+                  <li><a href="#"><span class="icon-suitcase"></span>Veh&iacute;culos</a></li>
+                  <li><a href="#"><span class="icon-suitcase"></span>Vestimenta y Moda</a></li>
+                  <li><a href="#"><span class="icon-suitcase"></span>Viajes y Turismo</a></li>
+                  <li><a href="#"><span class="icon-suitcase"></span>Otros</a></li>
+                  <li><h1><span class="icon-house"></span>Servicios</h1></li>
+                  <li><a href="#"><span class="icon-suitcase"></span>Belleza y Cuidado Personal</a></li>
+                  <li><a href="#"><span class="icon-suitcase"></span>Clases y Capacitaciones</a></li>
+                  <li><a href="#"><span class="icon-suitcase"></span>Fiestas y Eventos</a></li>
+                  <li><a href="#"><span class="icon-suitcase"></span>Importaciones</a></li>
+                  <li><a href="#"><span class="icon-suitcase"></span>Imprenta y Letreros</a></li>
+                  <li><a href="#"><span class="icon-suitcase"></span>Mantenimiento del Hogar</a></li>
+                  <li><a href="#"><span class="icon-suitcase"></span>Mantenimiento Veh&iacute;culos</a></li>
+                  <li><a href="#"><span class="icon-suitcase"></span>Servicio T&eacute;cnico</a></li>
+                  <li><a href="#"><span class="icon-suitcase"></span>Transporte y Mudanzas</a></li>
+                  <li><a href="#"><span class="icon-suitcase"></span>Viajes</a></li>
+                  <li><a href="#"><span class="icon-suitcase"></span>Otros</a></li>
+                  <li><a href="#"><span class="icon-suitcase"></span></a></li>
+              </ul>
+          </nav>
+        </header>
+        <div style="clear:booth"></div>
+        <div id="cargando" class="escondido">
+            <img src="load.gif">
+        </div>
+          <form method="POST" id="formulario" name="formulario">
+            <textarea id="id" name="id" class="escondido"></textarea>
+          <section class="cajaperfil" id="page_effect" style="display:none; overflow-y:scroll;">
+            <article class="datoperfil"> 
+              <article class="tituloperfil">Nombre</article>
+              <input type="text" class="datoxx"  id="nombre"  name="nombre">
+            </article>
+            <article class="datoperfil"> 
+              <article class="tituloperfil">Apellido</article>
+              <input type="text" class="datoxx"  id="apellido"  name="apellido"> 
+            </article>
+            <article class="datoperfil"> 
+              <article class="tituloperfil">Carnet de Identidad</article>
+              <input type="text" class="datoxx"  id="carnet" name="carnet"> 
+            </article>
+            <article class="datoperfil"> 
+              <article class="tituloperfil">NIT</article>
+              <input type="text" class="datoxx"  id="nit" name="nit"> 
+            </article>
+            <article class="datoperfil"> 
+              <article class="tituloperfil">Tel&eacute;fono</article>
+              <input type="text" class="datoxx"  id="telefono" name="telefono"> 
+            </article>
+            <article class="datoperfil"> 
+              <article class="tituloperfil">P&aacute;gina web</article>
+              <input type="text" class="datoxx"  id="pagina" name="pagina"> 
+            </article>
+            <article class="datoperfil"> 
+              <article class="tituloperfil">C&oacute;digo Postal</article>
+              <input type="text" class="datoxx"  id="postal"  name="postal"> 
+            </article>
+            <article class="datoperfil"> 
+              <article class="tituloperfil">Pais</article>
+              <input type="text" class="datoxx"  id="pais" name="pais"> 
+            </article>
+            </article>
+            <article class="datoperfil"> 
+              <article class="tituloperfil">Departamento Actual</article>
+              <input type="text" class="datoxx"  id="depart" name="depart" readonly="readonly">
+            </article>
+            <article class="datoperfil"> 
+              <article class="tituloperfil">Cambiar Departamento</article>
+                <select class="form-control datoxx" requied="required" name="department"><option value="" selected="selected">Seleccione su departamento</option><option value="1">la paz</option><option value="2">santa cruz</option><option value="3">cochabamba</option><option value="4">beni</option><option value="5">potosi</option><option value="6">tarija</option><option value="7">chuquisaca</option><option value="8">oruro</option><option value="9">pando</option></select>
+            </article>
+            <input type="button" value="Listo" onclick="modificar();" id="botonmod"> 
+            <input type="button" value="Cancelar" onclick="cancelar();" id="botoncan"> 
+          </section>
+          </form>
+            <div id="deviceready" class="blink">
+                <p class="event listening">Connecting to Device</p>
+                <p class="event received">Device is Ready</p>
+            </div>
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript">
+            app.initialize();
+        </script>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+    </body>
+</html>

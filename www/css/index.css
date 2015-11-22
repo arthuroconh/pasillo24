@@ -1,0 +1,8647 @@
+/*
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ROJO e20612
+VERDE 3caa37
+azul 0f70b7
+naranja 163F1F
+gris dadada
+ */
+* {
+    -webkit-tap-highlight-color: rgba(0,0,0,0); /* make transparent link selection, adjust last value opacity 0 to 1.0 */
+    text-transform: none;
+}
+@font-face {
+    font-family: 'sousesregular';
+    src: url('fonts/souses-webfont.eot');
+    src: url('fonts/souses-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/souses-webfont.woff2') format('woff2'),
+         url('fonts/souses-webfont.woff') format('woff'),
+         url('fonts/souses-webfont.ttf') format('truetype'),
+         url('fonts/souses-webfont.svg#sousesregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+.abajo{
+    margin-top:20%;
+}
+#enviarrr {
+  color: rgb(255, 255, 255);
+}
+.bajado{
+  top: 5%;
+}
+body {
+
+    -webkit-touch-callout: none;                /* prevent callout to copy image, etc when tap to hold */
+    -webkit-text-size-adjust: none;             /* prevent webkit from resizing text to fit */
+    -webkit-user-select: none;
+    background-attachment:fixed;
+    font-family:'HelveticaNeue-Light', 'HelveticaNeue', Helvetica, Arial, sans-serif;
+    font-size:12px;
+    height:100%;
+    margin:0px;
+    padding:0px;
+    text-transform:uppercase;
+    width:100%;
+    overflow-x:hidden;
+}
+.subir{
+  margin-top:30px !important;
+}
+#contienecomprador{
+    height: 100%;
+    width: 100%;
+}
+.brows{
+  z-index: 90000000 !important;
+}
+.botngrande{
+    background: #163F1F;
+    width: 90%;
+    height: 50px;
+    text-align: center;
+    font-size: 150%;
+    margin-top: 30px;
+    padding-top: 10px;
+}
+.botngrande:hover{
+    background: #000;
+    color: #fff;
+}
+  #botoncomentar{
+    width: 100%;
+    border: none;
+    background: #0f70b7;
+    margin-bottom: 2%;
+    color: #fff;
+  }
+#contienecomprador .btn{
+  border: none !important;
+  margin-top: 0px !important;
+  height: 40% !important;
+  width: 40% !important;
+  margin-right: 5% !important;
+  font-size: 20px;
+  color: #fff;
+}
+#contienecomprador section{
+    height: 19%;
+    width: 100%;
+}
+#contienecomprador label{
+    font-size: 30px !important;
+    margin-bottom: 20px;
+}
+
+#contienecomprador #titulo,#comprador,#telefono,#correo{
+    font-size: 20px;
+}
+.escondido{
+    display: none;
+}
+.visible{
+    display: block;
+}
+#sesionon1{
+    position: relative !important;
+    margin-bottom: 50px;
+}
+#sesionon1 article{
+    height: 65px;
+    display: box;
+    box-orient:horizontal;
+    box-sizing: border-box;
+}
+#sesionon1 i {
+  float: right;
+  margin-right: 5%;
+}
+#sesionoff i {
+  float: right;
+  margin-right: 5%;
+}
+.cajaresultado{
+    height: 60%;
+    padding-top:15%;
+    width: 100%;
+    overflow: scroll;
+    float: left;
+    z-index: 1 !important;
+}
+.dentrode{
+    width: 90%;
+    height: 20%;
+    background: #dadada;
+    color: #000;
+    margin-bottom: 14%;
+    padding:5%;
+}
+.dentrode:hover{
+    width: 90%;
+    height: 20%;
+    background: #869791;
+    color: #000;
+    margin-bottom: 14%;
+    padding:5%;
+}
+.dentrode img{
+    float: left;
+    width: 40%;
+    height: 100%;
+}
+.partedos{
+    position: relative;
+    width: 50%;
+    height: 70%;
+    margin-left: 11%;
+    padding-left: 35%;
+    font-size: 20px;
+}
+.contienepublicacion{
+    height: 100%;
+    width: 100%;
+}
+.datoxx{
+    width: 90%;
+    height: 50%;
+    font-size: 20px;
+}
+.botonera input{
+    width: 100% !important;
+    height: 50px !important;
+    border:none;
+    background: #0f70b7;
+    margin-bottom: 2%;
+    color: #fff;
+    font-size: 50px !important;
+}
+.botonera input:hover{
+    background: #000;
+    color: #fff;
+}
+.tiempo{
+    padding-top: 5%;
+    width: 100%;
+    margin-bottom: 2%;
+}
+.comentariox{
+    width: 100%;
+    padding: 30px 10px;
+    display: box;
+    box-orient:horizontal;
+    box-sizing: border-box;
+    border: 1px solid black;
+}
+#comentario{
+    width: 100%;
+    height: 350px;
+    font-size: 25px;
+    margin-bottom: 30px;
+    padding: 10px 10px;
+    display: box;
+    box-orient:horizontal;
+    box-sizing: border-box;
+    border: 1px solid black;
+}
+.contienerespuestax{
+    margin-bottom: 40px;
+    width: 100%;
+}
+.respuestax{
+    width:100%;
+    padding: 20px 10px;
+    display: box;
+    box-orient:horizontal;
+    box-sizing: border-box;
+    float: right;
+    background: #dadada;
+    position: relative;
+    margin-bottom: 5%;
+}
+.botoneradespues{
+    height: 60%;
+}
+.botoneradespues input{
+    width: 100%;
+    height: 15% !important;
+    border:none;
+    background: #0f70b7;
+    margin-bottom: 2%;
+    color: #fff;
+    font-size: 50px !important;
+}
+.botoneradespues input:hover{
+    background: #000;
+    color: #fff;
+}
+.titulopub{
+    width: 90%;
+    font-size: 200%;
+    padding: 5px;
+    background: #dadada;
+    display: box;
+    box-orient:horizontal;
+    box-sizing: border-box;
+}
+.contienedesc{
+    height: 100%;
+    width: 100%;
+}
+.descrip{
+    box-sizing:border-box;
+    position: relative;
+    font-size: 20px;
+    margin-bottom: 10px;
+    word-wrap: break-word;
+}
+.descrip p{
+    word-wrap: break-word;
+}
+.contieneimagenpublicacion{
+    width: 80%;
+    height: 30%;
+    padding: 5%;
+}
+.contieneimagenpublicacion img{
+    width: 100%;
+    height: 100%;
+}
+.cajabusqueda #busqueda{
+    width: 80% !important;
+    height: 80px;
+}
+.cajabusqueda #busqueda:hover,.cajabusqueda #busqueda:active,.cajabusqueda #busqueda:focus{
+    width: 80% !important;
+    height: 80px;
+}
+.cajabusqueda{
+    width: 100% !important;
+    display: box;
+
+    box-orient:horizontal;
+}
+.cajabusqueda #busq{
+    width: 15% !important;
+    height: 80px;
+    margin-left: 3%;
+}
+.cajabusqueda #departamento{
+    width: 100% !important;
+    height: 80px;
+}
+.cajabusqueda #busq:hover,.cajabusqueda #busq:active,.cajabusqueda #busq:focus{
+    width: 15% !important;
+    height: 80px;
+}
+#formularionuevoproducto textarea{
+    width: 100%;
+    height: 200px;
+}
+.titulo{
+    font-family: 'sousesregular';
+    padding: 0px !important;
+    margin-top: -50px;
+    font-weight: 100;
+    margin-right: 15%;
+    font-size: 180%;
+    color: #fff;
+}
+/* Portrait layout (default) */
+.app {
+
+}
+.infromacion{
+    font-size: 150%;
+}
+.contienecomentario{
+    width: 90%;
+    margin-bottom: 20%;
+    background: #dadada;
+    font-size: 150%;
+    display: box;
+    box-orient:horizontal;
+    padding-bottom: 60px;
+    padding-left: 10px;
+}
+.contienecomentario textarea{
+    width: 90%;
+    background: #fafafa;
+    font-size: 150%;
+    display: box;
+    box-orient:horizontal;
+    padding-bottom: 60px;
+    padding-left: 10px;
+}
+.contienecomentario b{
+    font-size: 190%;
+}
+.blink {
+    animation:fade 3000ms infinite;
+    -webkit-animation:fade 3000ms infinite;
+    display: none;
+}
+    #cargando{
+        width: 100%;
+        height: 100%;
+        background-color: black;
+        opacity: 0.6;
+        z-index: 100;
+        position: absolute;
+    }
+    #cargando img{
+        margin-top: 35%;
+        margin-left: 40%;
+        width:20%;
+    }
+
+    #cargando2{
+        width: 100%;
+        height: 100% !important;
+        background-color: black;
+        opacity: 0.6;
+        z-index: 100;
+        position: absolute;
+    }
+    #cargando2 img{
+        margin-top: 15%;
+        margin-left: 29%;
+        width:35%;
+        height:50%;
+    }
+
+    #cargando22{
+        width: 100%;
+        height: 100% !important;
+        background-color: black;
+        opacity: 0.6;
+        z-index: 100;
+        position: absolute;
+    }
+    #cargando22 img{
+        margin-top: 15%;
+        margin-left: 29%;
+        width:35%;
+        height:50%;
+    }
+    #cargando3{
+        width: 100%;
+        height: 100% !important;
+        background-color: black;
+        opacity: 0.6;
+        z-index: 100;
+        position: absolute;
+    }
+    #cargando3 img{
+        margin-top: 15%;
+        margin-left: 29%;
+        width:35%;
+        height:50%;
+    }
+    #cargando4{
+        width: 100%;
+        height: 100% !important;
+        background-color: black;
+        opacity: 0.6;
+        z-index: 100;
+        position: absolute;
+    }
+    #cargando4 img{
+        margin-top: 15%;
+        margin-left: 29%;
+        width:35%;
+        height:50%;
+    }
+    #cargando5{
+        width: 100%;
+        height: 100% !important;
+        background-color: black;
+        opacity: 0.6;
+        z-index: 100;
+        position: absolute;
+    }
+    #cargando5 img{
+        margin-top: 15%;
+        margin-left: 29%;
+        width:35%;
+        height:50%;
+    }
+    #cargando6{
+        width: 100%;
+        height: 100% !important;
+        background-color: black;
+        opacity: 0.6;
+        z-index: 100;
+        position: absolute;
+    }
+    #cargando6 img{
+        margin-top: 15%;
+        margin-left: 29%;
+        width:35%;
+        height:50%;
+    }
+    #cargando7{
+        width: 100%;
+        height: 100% !important;
+        background-color: black;
+        opacity: 0.6;
+        z-index: 100;
+        position: absolute;
+    }
+    #cargando7 img{
+        margin-top: 15%;
+        margin-left: 29%;
+        width:35%;
+        height:50%;
+    }
+    #cargando8{
+        width: 100%;
+        height: 100% !important;
+        background-color: black;
+        opacity: 0.6;
+        z-index: 100;
+        position: absolute;
+    }
+    #cargando8 img{
+        margin-top: 15%;
+        margin-left: 29%;
+        width:35%;
+        height:50%;
+    }
+    #cargando9{
+        width: 100%;
+        height: 100% !important;
+        background-color: black;
+        opacity: 0.6;
+        z-index: 100;
+        position: absolute;
+    }
+    #cargando9 img{
+        margin-top: 15%;
+        margin-left: 29%;
+        width:35%;
+        height:50%;
+    }
+    #cargando10{
+        width: 100%;
+        height: 100% !important;
+        background-color: black;
+        opacity: 0.6;
+        z-index: 100;
+        position: absolute;
+    }
+    #cargando10 img{
+        margin-top: 15%;
+        margin-left: 29%;
+        width:35%;
+        height:50%;
+    }
+.amplio{
+    width: 90% !important;
+    margin-left: 1% !important;
+    height: 95% !important;
+    padding-bottom: 190px;
+}
+.cajaccion{
+    width: 85%;
+    height: 95%;
+    margin-top:100px;
+    float: left;
+    margin-left: 7.5%;
+    position: fixed;
+}
+.cajaperfil{
+    position: fixed;
+    width: 95%;
+    height: 85%;
+    border-radius: 5px;
+    margin-top:100px;
+    float: left;
+    border: 2px solid grey;
+    margin-left: 7.5%;
+}
+
+.cajaperfil #botonmod{
+    width: 100%;
+    height: 15% !important;
+    border:none;
+    background: #0f70b7;
+    margin-bottom: 2%;
+    color: #fff;
+    font-size: 30px !important;
+}
+.cajaperfil #botonmod:hover{
+    background: #000;
+    color: #fff;
+}
+.cajaformulario #botoncan{
+    width: 100%;
+    height: 80px !important;
+    border:none;
+    background: #e20612;
+    margin-bottom: 10%;
+    color: #fff;
+    font-size: 30px !important;
+}
+.cajaformulario #botoncan:hover{
+    background: #000;
+    color: #fff;
+}
+.cajaformulario #botonmod{
+    width: 100%;
+    height: 80px !important;
+    border:none;
+    background: #0f70b7;
+    margin-bottom: 5%;
+    margin-top: 5%;
+    color: #fff;
+    font-size: 30px !important;
+}
+.cajaformulario #botonmod:hover{
+    background: #000;
+    color: #fff;
+}
+.datoperfil{
+    width: 100%;
+    height: 10.11%;
+    box-sizing: border-box;
+    padding-left: 2%;
+    border-bottom: 1px solid grey;
+}
+.botonrep{
+    width:100%;
+    height:15%;
+    font-size: 200%;
+    background: #dadada;
+    margin-top: 20%;
+    padding-top: 20%;
+}
+.botonrep:hover{
+    background: #000;
+    color: #fff;
+}
+.botonrepp{
+    width:100%;
+    height:15%;
+    font-size: 40px;
+    margin-top: 20%;
+    padding-top: 20%;
+    background: #fff;
+}
+.botonrepp:hover{
+    color: #000;
+}
+.tituloperfil{
+    margin-top: 5px;
+    font-size: 18px;
+    font-weight: 600;
+}
+.datop{
+    margin-top: 2px;
+    font-size: 16px;
+    color: grey;
+}
+.imagenpublicacion{
+    width: 45%;
+    height: 160px;
+    display: inline-block;
+    position: relative;
+}
+.imagenpublicacion img{
+    width: 100%;
+
+    height: 100%;
+}
+.imagenpublicacion2{
+    width: 100%;
+    height: 160px;
+    position: relative;
+    display: inline-block;
+}
+.imagenpublicacion2 img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.botonimagen{
+    width: 100% !important;
+    height: 100px !important;
+
+}
+.cajapublica{
+    position: fixed;
+    width: 95%;
+    height: 80%;
+    border-radius: 5px;
+    margin-top:100px;
+    float: left;
+    overflow: scroll;
+    margin-left: 2%;
+}
+.cajaformulario{
+    position: fixed;
+    width: 95%;
+    height: 95%;
+    border-radius: 5px;
+    margin-top:16%;
+    float: left;
+    overflow: scroll;
+    margin-left: 2%;
+}
+.cajaformulario label{
+    width: 100%;
+    height: 40px;
+    font-size: 22px !important;
+    margin-top: 10px;
+}
+.cajaformulario input{
+    width: 95%;
+    height: 40px;
+    font-size: 20px !important;
+    margin-bottom: 20px;
+}
+.cajaformulario input[type="FILE"]{
+    width: 65%;
+    height: 100px;
+    margin-bottom: 20px;
+    border: none !important;
+    background: none;
+    font-size: 40px !important;
+    box-sizing: border-box;
+}
+
+.cajaccion label{
+    width: 90%;
+    height: 40px;
+    font-size: 22px !important;
+    margin-top: 10px;
+}
+.cajaccion input{
+    width: 90%;
+    height: 40px;
+    font-size: 20px !important;
+    margin-bottom: 20px;
+}
+.cajaccion input[type="FILE"]{
+    width: 65%;
+    height: 100px;
+    margin-bottom: 20px;
+    border: none !important;
+    background: none;
+    font-size: 40px !important;
+    box-sizing: border-box;
+}
+.cajaformulario select{
+    width: 100%;
+    height: 40px;
+    font-size: 20px !important;
+    margin-bottom: 20px;
+}
+.cajaccion select{
+    width: 90%;
+    height: 40px;
+    font-size: 20px !important;
+    margin-bottom: 20px;
+}
+.btn{
+    border: none;
+    margin-top: 50px;
+    width: 40% !important;
+    margin-right: 5%;
+}
+.btn-success{
+    background:#3caa37;
+}
+.btn-warning{
+    background:#163F1F;
+}
+.btn-danger{
+    background:#e20612;
+    margin-bottom: 60px !important;
+}
+.publicacion{
+    margin-bottom: 70%;
+    width: 100%;
+    height: 50%;
+    box-sizing: border-box;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+.publicacion .imagenpub{
+    width: 50%;
+    height: 50%;
+    display: block;
+    margin-bottom: 20px;
+}
+.imagenpub img{
+    width: 100%;
+    height: 100%;
+    float: left;
+    margin-left: 50.55%;
+}
+.tutulopublicar{
+    margin-top: 2px;
+    font-size: 25px !important;
+    font-weight: 600;
+}
+.publicont{
+    text-align: justify;
+    margin-top: 6px;
+    font-size: 22px !important;
+    margin-bottom:40px;
+
+}
+#botonpub{
+    margin-top: 10px;
+    width: 100%;
+    height: 50px;
+    border: none;
+    font-size: 200%;
+    background: #0f70b7;
+    color: #fff;
+}
+#botonpub:hover{
+    background: #0f0f0f;
+    color: #fff;
+}
+#botongo{
+    margin-top: -10px;
+    width: 45%;
+    height: 50px;
+    border: none;
+    font-size: 100%;
+    background: #163F1F;
+    color: #fff;
+}
+#botongo:hover{
+    background: #0f0f0f;
+    color: #fff;
+}
+#procesarpagoboton{
+    margin-top: -10px !important;
+    width: 100% !important;
+    height: 50px !important;
+    border: none !important;
+    font-size: 200% !important;
+    background: #163F1F !important;
+    color: #fff !important;
+}
+#procesarpagoboton:hover{
+    background: #0f0f0f !important;
+    color: #fff !important;
+}
+#procesarpagobotonn{
+    width: 100% !important;
+    border: none !important;
+    font-size: 200% !important;
+    background: #163F1F !important;
+    color: #fff !important;
+}
+#procesarpagobotonn:hover{
+    background: #0f0f0f !important;
+    color: #fff !important;
+}
+.cajaccion article{
+    height: 15%;
+    margin-bottom: 2%;
+    width: 100%;
+    background: #D9D9D9;
+    font-size: 280%;
+    padding-top: 25px;
+    padding-left: 10%;
+    box-sizing: border-box;
+}
+.cajaccion article:hover{
+    height: 15%;
+    margin-bottom: 2%;
+    width: 100%;
+    background: #869791;
+    font-size: 280%;
+    padding-top: 25px;
+    padding-left: 10%;
+    box-sizing: border-box;
+}
+.cajaccion article:active{
+    height: 15%;
+    margin-bottom: 2%;
+    width: 100%;
+    background: #869791;
+    font-size: 280%;
+    padding-top: 25px;
+    padding-left: 10%;
+    box-sizing: border-box;
+}
+.cajaccion a{
+    text-decoration: none;
+    color: #000;
+}
+.cajaccion a:active{
+    text-decoration: none;
+    color: #fff;
+}
+.cajaccion a:hover{
+    text-decoration: none;
+    color: #fff;
+}
+#busqueda{
+    height: 15%;
+    margin-bottom: 2%;
+    width: 80%;
+    background: #D9D9D9;
+    font-size: 280%;
+    padding-top: 5px;
+    padding-left: 5%;
+    box-sizing: border-box;
+    border:none;
+}
+#busqueda:focus{
+    height: 15%;
+    margin-bottom: 2%;
+    width: 80%;
+    background: #869791;
+    font-size: 280%;
+    padding-top: 5px;
+    padding-left: 5%;
+    box-sizing: border-box;
+}
+#busq{
+    height: 20%;
+    margin-bottom: 2%;
+    width: 10%;
+    background: #D9D9D9;
+    font-size: 200%;
+    padding-top: 5px;
+    padding-left: 2%;
+    box-sizing: border-box;
+    border:none;
+    border-radius: 5%
+}
+#busq:hover{
+    height: 20%;
+    margin-bottom: 2%;
+    width: 10%;
+    background: #869791;
+    font-size: 200%;
+    padding-top: 5px;
+    padding-left: 2%;
+    box-sizing: border-box;
+    border:none;
+    border-radius: 5%
+}
+.texto{
+    background: none !important;
+    padding-left: 1% !important;
+    font-size: 150% !important;
+    margin-bottom: 10% !important;
+}
+.terminos{
+    background: none !important;
+    padding-left: 10% !important;
+    font-size: 150% !important;
+    margin-bottom: 10% !important;
+    overflow: scroll;
+    height: 100% !important;
+    overflow-x:hidden;
+    padding-bottom: 190px;
+    text-align: justify;
+}
+label{
+    float: left;
+    width: 100% !important;
+    font-size: 150% !important;
+}
+#nombre1, #asunto1, #email1, #contra1, #carnet1{
+    margin-bottom: 3%;
+    width: 90%;
+    float: left;
+}
+#mensaje{
+    margin-bottom: 3%;
+    width: 100%;
+    height: 60px !important;
+    font-size: 150% !important;
+}
+#reset{
+    font-size: 150% !important;
+    margin-top: 5%;
+    width: 40%;
+    height: 40px !important;
+    border: none;
+    background: #163F1F;
+    margin-right: 10px !important;
+    margin-top: 30px;
+    margin-bottom: 150px;
+}
+#reset:hover{
+    color: #fff;
+    background: #898989;
+}
+#enviarr{
+    font-size: 150% !important;
+    margin-top: 5%;
+    width: 40%;
+    height: 40px !important;
+    border: none;
+    background: #3caa37;
+    margin-right: 10px !important;
+}
+#enviarr:hover{
+    color: #fff;
+    background: #898989;
+}
+#enviarrr{
+    font-size: 150% !important;
+    margin-top: 5%;
+    width: 40%;
+    height: 40px !important;
+    border: none;
+    background: #0f70b7;
+}
+#enviarrr:hover{
+    color: #fff;
+    background: #898989;
+}
+/* Landscape layout (with min-width) */
+@media screen and (min-aspect-ratio: 1/1) and (min-width:400px) {
+.terminos{
+    background: none !important;
+    padding-left: 10% !important;
+    font-size: 150% !important;
+    margin-bottom: 10% !important;
+    overflow: scroll;
+    height: 100% !important;
+    padding-bottom: 190px;
+}
+    .app {
+    }
+}
+
+h1 {
+    font-size:24px;
+    font-weight:normal;
+    margin:0px;
+    overflow:visible;
+    padding:0px;
+    text-align:center;
+}
+
+.event {
+    border-radius:4px;
+    -webkit-border-radius:4px;
+    color:#FFFFFF;
+    font-size:12px;
+    margin:0px 30px;
+    padding:2px 0px;
+}
+
+.event.listening {
+    background-color:#333333;
+    display:block;
+}
+
+.event.received {
+    background-color:#4B946A;
+    display:none;
+}
+
+@keyframes fade {
+    from { opacity: 1.0; }
+    50% { opacity: 0.4; }
+    to { opacity: 1.0; }
+}
+
+@-webkit-keyframes fade {
+    from { opacity: 1.0; }
+    50% { opacity: 0.4; }
+    to { opacity: 1.0; }
+}
+
+.blink {
+    animation:fade 3000ms infinite;
+    -webkit-animation:fade 3000ms infinite;
+    display: none;
+}
+
+@media only screen and (max-width: 768px) and (max-width: 959px) {
+
+}
+
+/* Note: Design for a width of 320px */
+
+@media only screen and (max-width: 767px) {
+
+}
+
+/* Note: Design for a width of 480px */
+
+@media only screen and (max-width: 300px) and (max-width: 767px) {
+.terminos{
+    background: none !important;
+    padding-left: 10% !important;
+    font-size: 150% !important;
+    margin-bottom: 10% !important;
+    overflow: scroll;
+    height: 100% !important;
+    padding-bottom: 190px;
+}
+
+.cajaccion article{
+    height: 15%;
+    margin-bottom: 2%;
+    width: 100%;
+    background: #D9D9D9;
+    font-size: 200%;
+    padding-top: 25px;
+    padding-left: 10%;
+    box-sizing: border-box;
+}
+.cajaccion article:hover{
+    height: 15%;
+    margin-bottom: 2%;
+    width: 100%;
+    background: #869791;
+    font-size: 200%;
+    padding-top: 25px;
+    padding-left: 10%;
+    box-sizing: border-box;
+}
+.cajaccion article:active{
+    height: 15%;
+    margin-bottom: 2%;
+    width: 100%;
+    background: #869791;
+    font-size: 200%;
+    padding-top: 25px;
+    padding-left: 10%;
+    box-sizing: border-box;
+}
+.cajaperfil{
+    position: fixed;
+    width: 85%;
+    height: 85%;
+    border-radius: 5px;
+    margin-top:100px;
+    float: left;
+    border: 2px solid grey;
+    margin-left: 7.5%;
+}
+.datoperfil{
+    width: 100%;
+    height: 10.11%;
+    box-sizing: border-box;
+    padding-left: 2%;
+}
+
+.tituloperfil{
+    margin-top: 5px;
+    font-size: 16px !important;
+    font-weight: 600;
+}
+.datop{
+    margin-top: 2px;
+    font-size: 14px !important;
+    color: grey;
+}
+}
+@media only screen and (max-height: 550px) and (max-width: 1500px) {
+.infromacion{
+    font-size: 300%;
+}
+
+.botonrep{
+    width:100%;
+    height:15%;
+    font-size: 500%;
+    background: #dadada;
+    margin-top: 20%;
+    padding-top: 20%;
+}
+.botonrep:hover{
+    background: #000;
+    color: #fff;
+}
+
+
+.imagenpublicacion img{
+    width: 100%;
+
+    height: 100%;
+}
+.botonimagen{
+    width: 100% !important;
+    height: 250px !important;
+
+}
+.terminos{
+    background: none !important;
+    padding-left: 10% !important;
+    font-size: 150% !important;
+    margin-bottom: 10% !important;
+    overflow: scroll;
+    height: 100% !important;
+    padding-bottom: 190px;
+}
+.cajaccion{
+    width: 90%;
+    height: 95%;
+    margin-top:80px;
+    float: left;
+    margin-left: 5%;
+    overflow: scroll !important;
+    position: fixed;
+}
+.cajaperfil{
+    position: fixed;
+    width: 85%;
+    height: 70%;
+    border-radius: 5px;
+    margin-top:100px;
+    float: left;
+    border: 2px solid grey;
+    margin-left: 7.5%;
+}
+.datoperfil{
+    width: 100%;
+    height: 10.4%;
+    box-sizing: border-box;
+    padding-left: 2%;
+}
+
+.tituloperfil{
+    margin-top: 2px;
+    font-size: 14px !important;
+    font-weight: 600;
+}
+.datop{
+    margin-top: 2px;
+    font-size: 10px !important;
+    color: grey;
+}
+.cajaccion article{
+    height: 17%;
+    margin-bottom: 2%;
+    width: 100%;
+    background: #D9D9D9;
+    font-size: 200%;
+    padding-top: 20px;
+    padding-left: 10%;
+    box-sizing: border-box;
+}
+.cajaccion article:hover{
+    height: 17%;
+    margin-bottom: 2%;
+    width: 100%;
+    background: #869791;
+    font-size: 200%;
+    padding-top: 20px;
+    padding-left: 10%;
+    box-sizing: border-box;
+}
+.cajaccion article:active{
+    height: 17%;
+    margin-bottom: 2%;
+    width: 100%;
+    background: #869791;
+    font-size: 200%;
+    padding-top: 20px;
+    padding-left: 10%;
+    box-sizing: border-box;
+}
+
+.texto{
+    background: none !important;
+    padding-left: 1% !important;
+    font-size: 150% !important;
+    margin-bottom: 2% !important;
+}
+label{
+    float: left;
+    width: 100% !important;
+    font-size: 150% !important;
+}
+#nombre1, #asunto1, #email1, #contra1, #carnet1{
+    margin-bottom: 2%;
+    width: 90%;
+    float: left;
+}
+#mensaje{
+    margin-bottom: 1%;
+    width: 100%;
+    height: 30px !important;
+    font-size: 150% !important;
+}
+#enviarr{
+    font-size: 150% !important;
+    margin-top: 1%;
+    width: 30%;
+    height: 30px !important;
+    border: none;
+    margin-right: 10px !important;
+    background: #3caa37;
+}
+#enviarr:hover{
+    color: #fff;
+    background: #898989;
+}
+#reset{
+
+    font-size: 150% !important;
+    margin-top: 1%;
+    width: 40%;
+    height: 30px !important;
+    border: none;
+    margin-right: 10px !important;
+    background: #163F1F;
+    margin-top: 30px;
+    margin-bottom: 150px;
+}
+#reset:hover{
+    color: #fff;
+    background: #898989;
+}
+#enviarrr{
+    font-size: 150% !important;
+    margin-top: 1%;
+    width: 30%;
+    height: 30px !important;
+    border: none;
+    background: #0f70b7;
+}
+#enviarrr:hover{
+    color: #fff;
+    background: #898989;
+}
+}
+
+@media only screen and (min-height: 1800px) and (max-width: 1000px) {
+.infromacion{
+    font-size: 300%;
+}
+.botonrep{
+    width:100%;
+    height:15%;
+    font-size: 500%;
+    background: #dadada;
+    margin-top: 20%;
+    padding-top: 20%;
+}
+.botonrep:hover{
+    background: #000;
+    color: #fff;
+}
+
+.cajapublica{
+    position: fixed;
+    width: 95%;
+    height: 80%;
+    border-radius: 5px;
+    margin-top:180px;
+    float: left;
+    overflow: scroll;
+    margin-left: 2%;
+}
+.cajaformulario{
+    position: fixed;
+    width: 95%;
+    height: 95%;
+    border-radius: 5px;
+    margin-top:16%;
+    float: left;
+    overflow: scroll;
+    margin-left: 2%;
+}
+.cajaformulario label{
+    width: 100%;
+    height: 100px;
+    font-size: 70px !important;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.cajaformulario input{
+    width: 95%;
+    height: 90px;
+    font-size: 60px !important;
+    margin-bottom: 100px;
+    border: 1px solid black;
+    background: #fafafa;
+}
+.cajaformulario select{
+    width: 100%;
+    height: 90px;
+    border: 1px solid black;
+    background: #fafafa;
+    font-size: 60px !important;
+    margin-bottom:100px;
+}
+.cajaccion select{
+    width: 90%;
+    height: 90px;
+    border: 1px solid black;
+    background: #fafafa;
+    font-size: 60px !important;
+    margin-bottom:100px;
+}
+.cajaccion label{
+    width: 90%;
+    height: 100px;
+    font-size: 70px !important;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.cajaccion input{
+    width: 90%;
+    height: 90px;
+    font-size: 60px !important;
+    margin-bottom: 100px;
+    border: 1px solid black;
+    background: #fafafa;
+}
+.btn{
+    margin-top: 50px;
+    border: none !important;
+    width: 40% !important;
+    margin-right: 5%;
+    height: 200px !important;
+    font-size: 80px !important;
+}
+.btn-success{
+    border: none !important;
+    background:#3caa37 !important;
+}
+.btn-warning{
+    border: none !important;
+    background:#163F1F !important;
+}
+.btn-danger{
+    border: none !important;
+    background:#e20612 !important;
+    margin-bottom: 60px !important;
+}
+.cajaformulario input[type="FILE"]{
+    width: 55%;
+    height: 100px;
+    margin-bottom: 20px;
+    border: none !important;
+    background: none;
+    font-size: 100px !important;
+    box-sizing: border-box;
+}
+.cajaccion input[type="FILE"]{
+    width: 55%;
+    height: 100px;
+    margin-bottom: 20px;
+    border: none !important;
+    background: none;
+    font-size: 100px !important;
+    box-sizing: border-box;
+}
+.publicacion{
+    margin-bottom: 43%;
+    width: 100%;
+    height: 50%;
+    box-sizing: border-box;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+.publicacion .imagenpub{
+    width: 50%;
+    height: 50%;
+    display: block;
+    margin-bottom: 20px;
+}
+.imagenpub img{
+    width: 100%;
+    height: 100%;
+    float: left;
+    margin-left: 50.55%;
+}
+.tutulopublicar{
+    margin-top: 2px;
+    font-size: 50px !important;
+    font-weight: 600;
+}
+.publicont{
+    text-align: justify;
+    margin-top: 6px;
+    font-size: 50px !important;
+    margin-bottom:40px;
+
+}
+#botonpub{
+    margin-top: 10px;
+    width: 100%;
+    height: 100px;
+    border: none;
+    font-size: 500%;
+    background: #0f70b7;
+    color: #fff;
+}
+#botonpub:hover{
+    background: #0f0f0f;
+    color: #fff;
+}
+#botongo{
+    margin-top: -10px;
+    width: 45%;
+    height: 150px;
+    border: none;
+    font-size: 100%;
+    background: #163F1F;
+    color: #fff;
+}
+#botongo:hover{
+    background: #0f0f0f;
+    color: #fff;
+}
+#sesionon1 article{
+    height: 160px;
+}
+
+#busq{
+      font-size: 350%;
+}
+#busq:hover{
+      font-size: 350%;
+}
+
+.terminos{
+    background: none !important;
+    padding-left: 10% !important;
+    font-size: 150% !important;
+    margin-bottom: 10% !important;
+    overflow: scroll;
+    height: 100% !important;
+    padding-bottom: 190px;
+}
+.cajaccion{
+    width: 90%;
+    height: 95%;
+    margin-top:80px;
+    float: left;
+    margin-left: 5%;
+    position: fixed;
+}
+.cajaccion article{
+    height: 17%;
+    margin-bottom: 2%;
+    width: 100%;
+    background: #D9D9D9;
+    font-size: 200%;
+    padding-top: 20px;
+    padding-left: 10%;
+    box-sizing: border-box;
+}
+.cajaccion article:hover{
+    height: 17%;
+    margin-bottom: 2%;
+    width: 100%;
+    background: #869791;
+    font-size: 200%;
+    padding-top: 20px;
+    padding-left: 10%;
+    box-sizing: border-box;
+}
+.cajaccion article:active{
+    height: 17%;
+    margin-bottom: 2%;
+    width: 100%;
+    background: #869791;
+    font-size: 200%;
+    padding-top: 20px;
+    padding-left: 10%;
+    box-sizing: border-box;
+}
+
+.texto{
+    background: none !important;
+    padding-left: 1% !important;
+    font-size: 180% !important;
+    margin-bottom: 2% !important;
+}
+label{
+    float: left;
+    width: 100% !important;
+    font-size: 180% !important;
+}
+#nombre1, #asunto1, #email1, #contra1, #carnet1{
+    margin-bottom: 2%;
+    width: 90%;
+    float: left;
+}
+#mensaje{
+    margin-bottom: 1%;
+    width: 100%;
+    height: 130px !important;
+    font-size: 150% !important;
+}
+#enviarr{
+    font-size: 180% !important;
+    margin-top: 1%;
+    width: 30%;
+    height: 90px !important;
+    border: none;
+    margin-right: 10px !important;
+    background: #3caa37;
+}
+#enviarr:hover{
+    color: #fff;
+    background: #898989;
+}
+#reset{
+
+    font-size: 180% !important;
+    margin-top: 1%;
+    width: 40%;
+    height: 90px !important;
+    border: none;
+    margin-right: 10px !important;
+    background: #163F1F;
+    margin-top: 30px !important;
+    margin-bottom: 150px;
+}
+#reset:hover{
+    color: #fff;
+    background: #898989;
+}
+#enviarrr{
+    font-size: 180% !important;
+    margin-top: 1%;
+    width: 30%;
+    height: 30px !important;
+    border: none;
+    background: #0f70b7;
+}
+#enviarrr:hover{
+    color: #fff;
+    background: #898989;
+}
+
+#enviarrr{
+    font-size: 190% !important;
+    margin-top: 7%;
+    width: 30%;
+    height: 80px !important;
+    border: none;
+    background: #0f70b7;
+}
+#enviarrr:hover{
+    color: #fff;
+    background: #898989;
+}
+#busqueda{
+    margin-bottom: 2%;
+    width: 80%;
+    background: #D9D9D9;
+    font-size: 370%;
+    padding-top: 5px;
+    padding-left: 5%;
+    box-sizing: border-box;
+    border:none;
+}
+#busqueda:focus{
+    margin-bottom: 2%;
+    width: 80%;
+    background: #869791;
+    font-size: 370%;
+    padding-top: 5px;
+    padding-left: 5%;
+    box-sizing: border-box;
+}
+.cajaperfil{
+    position: fixed;
+    width: 85%;
+    height: 80%;
+    border-radius: 5px;
+    margin-top:200px;
+    float: left;
+    border: 2px solid grey;
+    margin-left: 7.5%;
+}
+.datoperfil{
+    width: 100%;
+    height: 11%;
+    box-sizing: border-box;
+    padding-left: 2%;
+}
+
+.tituloperfil{
+    margin-top: 2px;
+    font-size: 45px !important;
+    font-weight: 600;
+}
+.datop{
+    margin-top: 2px;
+    font-size: 38px !important;
+    color: grey;
+}
+}
+@media only screen and (max-height: 1000px) and (min-width: 1800px) {
+
+.datoperfil{
+    width: 100%;
+    height: 10.5%;
+    box-sizing: border-box;
+    padding-left: 2%;
+}
+
+.tituloperfil{
+    margin-top: 2px;
+    font-size: 45px !important;
+    font-weight: 600;
+}
+.datop{
+    margin-top: 2px;
+    font-size: 38px !important;
+    color: grey;
+}
+.cajapublica{
+    position: fixed;
+    width: 95%;
+    height: 80%;
+    border-radius: 5px;
+    margin-top:180px;
+    float: left;
+    overflow: scroll;
+    margin-left: 2%;
+}
+.cajaformulario{
+    position: fixed;
+    width: 95%;
+    height: 80%;
+    border-radius: 5px;
+    margin-top:16%;
+    float: left;
+    overflow: scroll;
+    margin-left: 2%;
+}
+
+.publicacion{
+    margin-bottom: 20%;
+    width: 100%;
+    height: 50%;
+    box-sizing: border-box;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+.publicacion .imagenpub{
+    width: 50%;
+    height: 50%;
+    display: block;
+    margin-bottom: 20px;
+}
+.imagenpub img{
+    width: 100%;
+    height: 100%;
+    float: left;
+    margin-left: 50.55%;
+}
+.tutulopublicar{
+    margin-top: 2px;
+    font-size: 50px !important;
+    font-weight: 600;
+}
+.publicont{
+    text-align: justify;
+    margin-top: 6px;
+    font-size: 40px !important;
+    margin-bottom:40px;
+
+}
+#botonpub{
+    margin-top: 10px;
+    width: 100%;
+    height: 100px;
+    border: none;
+    font-size: 500%;
+    background: #0f70b7;
+    color: #fff;
+}
+#botonpub:hover{
+    background: #0f0f0f;
+    color: #fff;
+}
+#botongo{
+    margin-top: -10px;
+    width: 45%;
+    height: 150px;
+    border: none;
+    font-size: 100%;
+    background: #163F1F;
+    color: #fff;
+}
+#botongo:hover{
+    background: #0f0f0f;
+    color: #fff;
+}
+
+}
+@media only screen and (min-height: 1200px) and (max-width: 800px) {
+.cajapublica{
+    position: fixed;
+    width: 95%;
+    height: 80%;
+    border-radius: 5px;
+    margin-top:180px;
+    float: left;
+    overflow: scroll;
+    margin-left: 2%;
+}
+.cajaformulario{
+    position: fixed;
+    width: 95%;
+    height: 95%;
+    border-radius: 5px;
+    margin-top:16%;
+    float: left;
+    overflow: scroll;
+    margin-left: 2%;
+}
+
+.cajaformulario label{
+    width: 100%;
+    height: 100px;
+    font-size: 50px !important;
+    margin-top: 10px;
+}
+.cajaformulario input{
+    width: 95%;
+    height: 90px;
+    font-size: 40px !important;
+    margin-bottom: 20px;
+    border: 1px solid black;
+    background: #fafafa;
+}
+.cajaformulario select{
+    width: 100%;
+    height: 90px;
+    border: 1px solid black;
+    background: #fafafa;
+    font-size: 40px !important;
+    margin-bottom: 20px;
+}
+.cajaccion select{
+    width: 90%;
+    height: 90px;
+    border: 1px solid black;
+    background: #fafafa;
+    font-size: 40px !important;
+    margin-bottom: 20px;
+}
+.cajaccion label{
+    width: 90%;
+    height: 100px;
+    font-size: 50px !important;
+    margin-top: 10px;
+}
+.cajaccion input{
+    width: 90%;
+    height: 90px;
+    font-size: 40px !important;
+    margin-bottom: 20px;
+    border: 1px solid black;
+    background: #fafafa;
+}
+.btn{
+    margin-top: 50px;
+    border: none !important;
+    width: 40% !important;
+    margin-right: 5%;
+    height: 200px !important;
+    font-size: 80px !important;
+}
+.btn-success{
+    border: none !important;
+    background:#3caa37 !important;
+}
+.btn-warning{
+    border: none !important;
+    background:#163F1F !important;
+}
+.btn-danger{
+    border: none !important;
+    background:#e20612 !important;
+    margin-bottom: 60px !important;
+}
+.cajaformulario input[type="FILE"]{
+    width: 50%;
+    height: 100px;
+    margin-bottom: 20px;
+    border: none !important;
+    background: none;
+    font-size: 60px !important;
+    box-sizing: border-box;
+}
+.cajaccion input[type="FILE"]{
+    width: 50%;
+    height: 100px;
+    margin-bottom: 20px;
+    border: none !important;
+    background: none;
+    font-size: 60px !important;
+    box-sizing: border-box;
+}
+.publicacion{
+    margin-bottom: 90%;
+    width: 100%;
+    height: 50%;
+    box-sizing: border-box;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+.publicacion .imagenpub{
+    width: 50%;
+    height: 50%;
+    display: block;
+    margin-bottom: 20px;
+}
+.imagenpub img{
+    width: 100%;
+    height: 100%;
+    float: left;
+    margin-left: 50.55%;
+}
+.tutulopublicar{
+    margin-top: 2px;
+    font-size: 50px !important;
+    font-weight: 600;
+}
+.publicont{
+    text-align: justify;
+    margin-top: 6px;
+    font-size: 40px !important;
+    margin-bottom:70px;
+
+}
+#botonpub{
+    margin-top: 10px;
+    width: 100%;
+    height: 100px;
+    border: none;
+    font-size: 500%;
+    background: #0f70b7;
+    color: #fff;
+}
+#botonpub:hover{
+    background: #0f0f0f;
+    color: #fff;
+}
+#botongo{
+    margin-top: -10px;
+    width: 45%;
+    height: 150px;
+    border: none;
+    font-size: 100%;
+    background: #163F1F;
+    color: #fff;
+}
+#botongo:hover{
+    background: #0f0f0f;
+    color: #fff;
+}
+#sesionon1 article{
+    height: 100px;
+}
+
+#busq{
+      font-size: 350%;
+}
+#busq:hover{
+      font-size: 350%;
+}
+
+.terminos{
+    background: none !important;
+    padding-left: 10% !important;
+    font-size: 150% !important;
+    margin-bottom: 10% !important;
+    overflow: scroll;
+    height: 100% !important;
+    padding-bottom: 190px;
+}
+.cajaccion{
+    width: 90%;
+    height: 95%;
+    margin-top:80px;
+    float: left;
+    margin-left: 5%;
+    position: fixed;
+}
+.cajaccion article{
+    height: 17%;
+    margin-bottom: 2%;
+    width: 100%;
+    background: #D9D9D9;
+    font-size: 200%;
+    padding-top: 20px;
+    padding-left: 10%;
+    box-sizing: border-box;
+}
+.cajaccion article:hover{
+    height: 17%;
+    margin-bottom: 2%;
+    width: 100%;
+    background: #869791;
+    font-size: 200%;
+    padding-top: 20px;
+    padding-left: 10%;
+    box-sizing: border-box;
+}
+.cajaccion article:active{
+    height: 17%;
+    margin-bottom: 2%;
+    width: 100%;
+    background: #869791;
+    font-size: 200%;
+    padding-top: 20px;
+    padding-left: 10%;
+    box-sizing: border-box;
+}
+
+.texto{
+    background: none !important;
+    padding-left: 1% !important;
+    font-size: 180% !important;
+    margin-bottom: 2% !important;
+}
+label{
+    float: left;
+    width: 100% !important;
+    font-size: 180% !important;
+}
+#nombre1, #asunto1, #email1, #contra1, #carnet1{
+    margin-bottom: 2%;
+    width: 90%;
+    float: left;
+}
+#mensaje{
+    margin-bottom: 1%;
+    width: 100%;
+    height: 130px !important;
+    font-size: 150% !important;
+}
+#enviarr{
+    font-size: 180% !important;
+    margin-top: 1%;
+    width: 30%;
+    height: 90px !important;
+    border: none;
+    margin-right: 10px !important;
+    background: #3caa37;
+}
+#enviarr:hover{
+    color: #fff;
+    background: #898989;
+}
+#reset{
+
+    font-size: 180% !important;
+    margin-top: 1%;
+    width: 40%;
+    height: 90px !important;
+    border: none;
+    margin-right: 10px !important;
+    background: #163F1F;
+    margin-top: 30px;
+    margin-bottom: 150px;
+}
+#reset:hover{
+    color: #fff;
+    background: #898989;
+}
+#enviarrr{
+    font-size: 180% !important;
+    margin-top: 1%;
+    width: 30%;
+    height: 30px !important;
+    border: none;
+    background: #0f70b7;
+}
+#enviarrr:hover{
+    color: #fff;
+    background: #898989;
+}
+
+#enviarrr{
+    font-size: 190% !important;
+    margin-top: 7%;
+    width: 30%;
+    height: 80px !important;
+    border: none;
+    background: #0f70b7;
+}
+#enviarrr:hover{
+    color: #fff;
+    background: #898989;
+}
+#busqueda{
+    margin-bottom: 2%;
+    width: 80%;
+    background: #D9D9D9;
+    font-size: 370%;
+    padding-top: 5px;
+    padding-left: 5%;
+    box-sizing: border-box;
+    border:none;
+}
+#busqueda:focus{
+    margin-bottom: 2%;
+    width: 80%;
+    background: #869791;
+    font-size: 370%;
+    padding-top: 5px;
+    padding-left: 5%;
+    box-sizing: border-box;
+}
+.cajaperfil{
+    position: fixed;
+    width: 85%;
+    height: 80%;
+    border-radius: 5px;
+    margin-top:200px;
+    float: left;
+    border: 2px solid grey;
+    margin-left: 7.5%;
+}
+.datoperfil{
+    width: 100%;
+    height: 11%;
+    box-sizing: border-box;
+    padding-left: 2%;
+}
+
+.tituloperfil{
+    margin-top: 2px;
+    font-size: 45px !important;
+    font-weight: 600;
+}
+.datop{
+    margin-top: 2px;
+    font-size: 38px !important;
+    color: grey;
+}
+}
+@media only screen and (max-height: 750px) and (max-width: 1300px) {
+.cajaccion{
+    overflow: scroll;
+    margin-bottom: 50px;
+}
+}
+@media only screen and (min-height: 320px) and (max-height: 480px) and (min-width: 240px) and (max-width: 320px) {
+.menu_bar {
+  position: fixed;
+  display: block;
+  float: left;
+  background-color: #f59c34;
+  width: 120%;
+  z-index: 1;
+  left: -5px;
+  height: 2%;
+  z-index: 90000;
+}
+#sesionon1{
+  font-size: 15px !important;
+}
+.menu_bar .bt-menu {
+  display: block;
+  padding: 5px;
+  background: #f59c34;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size:20px !important;
+}
+.cajaccion {
+  width: 90% !important;
+  height: 95% !important;
+  margin-top: 0 !important;
+  float: left;
+  margin-left: 5% !important;
+  overflow: scroll !important;
+  position: fixed !important;
+}
+.cajaccion article{
+  font-size: 120% !important;
+}
+
+.titulo {
+  margin-top: -25px;
+  font-size: 100%;
+}
+.cajaccion article:hover {
+  font-size: 120% !important;
+}
+header nav ul li h1 {
+  margin: 20px -10px !important;
+  font-size: 140% !important;
+}
+header .menu2 {
+  margin: 40px auto !important;
+}
+header nav ul li a {
+  font-size: 100% !important;
+  margin-left: -5px;
+}
+/*Buscar*/
+.cajabusqueda #busqueda:hover, .cajabusqueda #busqueda:active, .cajabusqueda #busqueda:focus {
+  width: 80% !important;
+  height: 40px;
+}
+.cajabusqueda #busq {
+  width: 15% !important;
+  height: 40px;
+  margin-left: 3%;
+}
+.cajabusqueda #busq:hover, #busq:active,  #busq:focus,  #busq:visited {
+  width: 15% !important;
+  height: 40px !important;
+  margin-left: 3%;
+}
+.cajabusqueda #departamento {
+  width: 100% !important;
+  height: 40px;
+}
+input #busqueda {
+  width: 80% !important;
+  height: 50px;
+}
+.cajabusqueda #busqueda {
+  width: 80% !important;
+  height: 40px;
+}
+.dentrode {
+  height: 33%;
+}
+.dentrode:hover {
+  height: 33%;
+}
+.partedos {
+  position: relative;
+  width: 50%;
+  height: 70%;
+  margin-left: 11%;
+  padding-left: 35%;
+}
+.precio{
+font-size:12px !important;
+}
+.cajaccion label {
+  font-size: 16px !important;
+}
+
+    /*mostrarpublicacion*/
+    .titulopub {
+      width: 100%;
+      font-size:110% !important;
+      padding: 7px;
+    }
+    .botoneradespues input {
+      width: 100%;
+      height: 16% !important;
+      border: none;
+      background: #0f70b7;
+      margin-bottom: 2%;
+      color: #fff;
+      font-size: 17px !important;
+    }
+    .contienepublicacion {
+        overflow-y: scroll;
+    }
+
+.contieneimagenpublicacion img {
+      margin-left: 5%;
+    }
+/*descripcion*/
+    .descrip {
+      box-sizing: border-box;
+      position: relative;
+      font-size: 14px;
+      margin-bottom: 10px;
+      word-wrap: break-word;
+    }
+    .contienedesc {
+      height: 200%;
+      width: 100%;
+    }
+    .depart{
+      padding-bottom: 70%;
+    }
+    /*contactarvendedor*/
+
+    .botonera{
+    }
+    /*comentarios publicacion*/
+    .paddingcomentario{
+      padding-bottom: 200px !important;
+      height: 70% !important;
+    }
+    /*Comentar*/
+    #comentario {
+  width: 100%;
+  height: 40% !important;
+  font-size: 25px;
+  margin-bottom: 30px;
+  padding: 10px 10px;
+  display: box;
+  box-orient: horizontal;
+  box-sizing: border-box;
+  border: 1px solid black;
+}
+  #botoncomentar{
+    width: 100%;
+    height:40px!important;
+    border: none;
+    background: #0f70b7;
+    margin-bottom: 2%;
+    color: #fff;
+    font-size: 17px !important;
+  }
+  /*Perfil*/
+  .cajaperfil {
+    position: fixed;
+    width: 85%;
+    height: 80%;
+    border-radius: 5px;
+    margin-top: 55px;
+    float: left;
+    border: 2px solid grey;
+    margin-left: 7.5%;
+  }
+  .datoperfil {
+    width: 100%;
+    height: 19%;
+    box-sizing: border-box;
+    padding-left: 2%;
+  }
+  .tituloperfil {
+    margin-top: 2px;
+    font-size: 17px !important;
+    font-weight: 600;
+  }
+  .datop {
+    margin-top: 2px;
+    font-size: 15px !important;
+    color: grey;
+  }
+  .cajaperfil #botonmod {
+    width: 100%;
+    height: 15% !important;
+    border: none;
+    background: #0f70b7;
+    margin-bottom: 2%;
+    color: #fff;
+    font-size: 18px !important;
+  }
+  .cajaformulario #botoncan {
+    width: 100%;
+    height: 60px !important;
+    border: none;
+    background: #e20612;
+    margin-bottom: 2%;
+    color: #fff;
+    font-size: 18px !important;
+}
+  .cajaformulario #botonmod {
+    width: 100%;
+    height: 60px !important;
+    border: none;
+    background: #0f70b7;
+    margin-bottom: 2%;
+    color: #fff;
+    font-size: 18px !important;
+}
+  .fomulaperfil {
+  position: fixed;
+  width: 95%;
+  height: 95%;
+  border-radius: 5px;
+  margin-top: 20%;
+  float: left;
+  overflow: scroll;
+  margin-left: 2%;
+}
+  .fomulaperfil .datoxx {
+  width: 90%;
+  height: 50%;
+  font-size: 17px !important;
+}
+/*publicacion*/
+
+.cajapublica{
+    position: fixed;
+    width: 95%;
+    height: 80%;
+    border-radius: 5px;
+    margin-top:60px;
+    float: left;
+    overflow: scroll;
+    margin-left: 2%;
+}
+
+.publicacion{
+    margin-bottom: 90%;
+    width: 100%;
+    height: 50%;
+    box-sizing: border-box;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+.publicacion .imagenpub{
+    width: 50%;
+    height: 50%;
+    display: block;
+    margin-bottom: 20px;
+}
+.imagenpub img{
+    width: 100%;
+    height: 100%;
+    float: left;
+    margin-left: 50.55%;
+}
+.tutulopublicar{
+    margin-top: 10px;
+    font-size: 17px !important;
+    font-weight: 600;
+}
+.publicont{
+    text-align: justify;
+    margin-top: 6px;
+    font-size: 12px !important;
+    margin-bottom:60px;
+
+}
+#botonpub{
+    margin-top: 10px;
+    width: 100%;
+    height: 50px;
+    border: none;
+    font-size: 200%;
+    background: #0f70b7;
+    color: #fff;
+}
+#botonpub:hover{
+    background: #0f0f0f;
+    color: #fff;
+}
+#botongo{
+    margin-top: -10px;
+    width: 45%;
+    height: 50px;
+    border: none;
+    font-size: 200%;
+    background: #163F1F;
+    color: #fff;
+}
+#botongo:hover{
+    background: #0f0f0f;
+    color: #fff;
+}
+/*Publicaciones*/
+  #formularionuevoproducto label{
+    font-size: 15px !important;
+  }
+    #formularionuevoproducto input{
+      font-size: 15px !important;
+    }
+    .imagenpublicacion {
+      width: 43%;
+      height: 75px;
+      display: inline-block;
+      position: relative;
+    }
+    .imagenpublicacion2 {
+      width: 60%;
+      height: 110px;
+      display: inline-block;
+      position: relative;
+      left: 20%;
+    }
+    .botonimagen {
+      width: 100% !important;
+      height: 70px !important;
+    }
+    .btn-success {
+      background: #3caa37;
+    }
+    .btn {
+      border: none;
+      margin-top: 50px;
+      width: 40% !important;
+      margin-right: 5%;
+    }
+    .pagina {
+      margin-top:10px;
+    }
+    /* Mis publicaciones */
+    .contenedorpublicacion{
+      position:relative;
+      width:95%!important;
+      height:30% !important;
+      background:#dadada;
+      box-sizing:border-box;
+      margin-bottom:50px;
+    }
+    .contenedorpublicacion img{
+      width:37%!important;
+      height:100% !important;
+      float:left;
+      box-sizing:border-box;
+    }
+    #formulario{
+      width:100%;
+      height: 100%;
+      overflow:scroll;
+    }
+    .infromacion {
+      font-size: 100%;
+    }
+    #procesarpagobotonn {
+      padding-top: 5%;
+      padding-bottom: 5%;
+      width: 70% !important;
+      border: none !important;
+      font-size: 100% !important;
+      background: #163F1F !important;
+      color: #fff !important;
+      overflow: hidden;
+    }
+
+    /*Calificar Vendedor*/
+    #contienecomprador .btn{
+    border: none !important;
+    margin-top: 0px !important;
+    height: 40% !important;
+    width: 40% !important;
+    margin-right: 5% !important;
+    font-size: 15px;
+    color: #fff;
+    }
+    #contienecomprador section{
+      height: 19%;
+      width: 100%;
+    }
+    #contienecomprador label{
+      font-size: 20px !important;
+      margin-bottom: 20px;
+    }
+
+    #contienecomprador #titulo,#comprador,#telefono,#correo{
+      font-size: 15px;
+    }
+
+    /*Reputacion*/
+
+    .botonrep{
+        width:100%;
+        height:15%;
+        font-size: 15px;
+        background: #dadada;
+        margin-top: 20%;
+        padding-top: 5%;
+        padding-bottom: 5%;
+    }
+    #posi, #nega{
+      font-size: 17px !important;
+    }
+    /*terminos*/
+
+    .cajaccion .terminos{
+      padding-top: 60px;
+        background: none !important;
+        padding-left: 5% !important;
+        font-size: 15px !important;
+        margin-bottom: 10% !important;
+        overflow: scroll;
+        height: 110% !important;
+        overflow-x:hidden;
+        padding-bottom: 290px;
+        text-align: justify;
+    }
+    /*Iniciar Sesion*/
+    .formularioiniciar{
+      overflow: hidden !important;
+      margin-top: 35px;
+      height: 80%;
+    }
+    .formularioiniciar input{
+      height: 30px;
+      width: 90%;
+    }
+    /*Registro*/
+    .formularioreg{
+      margin-top: 65px;
+      height: 100%;
+    }
+    /*Contacto*/
+
+    .formulariocontact{
+      overflow: hidden !important;
+      margin-top:65px !important;
+      height: 100%;
+      padding-bottom: 250px;
+    }
+    .formulariocontact input{
+      height: 30px;
+      width: 90%;
+    }
+    .formulariocontact #mensaje{
+      height: 80px !important;
+      width: 90%;
+    }
+}
+
+@media only screen and (min-height: 480px) and (max-height: 800px) and (min-width: 320px) and (max-width: 640px) {
+.menu_bar {
+  position: fixed;
+  display: block;
+  float: left;
+  background-color: #f59c34;
+  width: 120%;
+  z-index: 1;
+  left: -5px;
+  height: 2%;
+  z-index: 90000;
+}
+.titulo {
+  font-size: 18px;
+  margin-top: -40px;
+}
+.menu_bar .bt-menu {
+  display: block;
+  padding: 10px !important;
+  background: #f59c34;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size:30px !important;
+}
+.cajaccion article{
+  font-size: 140% !important;
+}
+
+.cajaccion article:hover {
+  font-size: 140% !important;
+}
+header nav ul li h1 {
+  margin: 20px -10px !important;
+  font-size: 150% !important;
+}
+header .menu2 {
+  margin: 50px auto !important;
+}
+header nav ul li a {
+  font-size: 150% !important;
+  margin-left: -5px;
+}
+/*Buscar*/
+.dentrode {
+  height: 33%;
+}
+.dentrode:hover {
+  height: 33%;
+}
+    /*mostrarpublicacion*/
+    .titulopub {
+      width: 100%;
+      font-size:130% !important;
+      padding: 7px;
+    }
+    .botoneradespues input {
+      width: 100%;
+      height: 16% !important;
+      border: none;
+      background: #0f70b7;
+      margin-bottom: 2%;
+      color: #fff;
+      font-size: 17px !important;
+    }
+    .contienepublicacion {
+        overflow-y: scroll;
+    }
+    .contieneimagenpublicacion img {
+      margin-left: 5%;
+    }
+/*descripcion*/
+    .descrip {
+      box-sizing: border-box;
+      position: relative;
+      font-size: 14px;
+      margin-bottom: 10px;
+      word-wrap: break-word;
+    }
+    .contienedesc {
+      height: 200%;
+      width: 100%;
+    }
+    .depart{
+      padding-bottom: 70%;
+    }
+    /*contactarvendedor*/
+
+    .botonera label {
+      margin-bottom: 100px;
+    }
+    /*comentarios publicacion*/
+    .botonera{
+    }
+    .paddingcomentario{
+      padding-bottom: 200px !important;
+    }
+    /*Comentar*/
+    #comentario {
+  width: 100%;
+  height: 150px !important;
+  font-size: 25px;
+  margin-bottom: 30px;
+  padding: 10px 10px;
+  display: box;
+  box-orient: horizontal;
+  box-sizing: border-box;
+  border: 1px solid black;
+}
+  #botoncomentar{
+    width: 100%;
+    height:40px!important;
+    border: none;
+    background: #0f70b7;
+    margin-bottom: 2%;
+    color: #fff;
+    font-size: 17px !important;
+  }
+  /*Perfil*/
+  .cajaperfil {
+    position: fixed;
+    width: 85%;
+    height: 80%;
+    border-radius: 5px;
+    margin-top: 85px;
+    float: left;
+    border: 2px solid grey;
+    margin-left: 7.5%;
+  }
+  .datoperfil {
+    width: 100%;
+    height: 19%;
+    box-sizing: border-box;
+    padding-left: 2%;
+  }
+  .tituloperfil {
+    margin-top: 2px;
+    font-size: 17px !important;
+    font-weight: 600;
+  }
+  .datop {
+    margin-top: 2px;
+    font-size: 15px !important;
+    color: grey;
+  }
+  .cajaperfil #botonmod {
+    width: 100%;
+    height: 15% !important;
+    border: none;
+    background: #0f70b7;
+    margin-bottom: 2%;
+    color: #fff;
+    font-size: 18px !important;
+  }
+  .cajaformulario #botoncan {
+    width: 100%;
+    height: 60px !important;
+    border: none;
+    background: #e20612;
+    margin-bottom: 2%;
+    color: #fff;
+    font-size: 18px !important;
+}
+  .cajaformulario .textoPromedio{
+    padding-top: 5px;
+  }
+  .cajaformulario #botonmod {
+    width: 100%;
+    height: 60px !important;
+    border: none;
+    background: #0f70b7;
+    margin-bottom: 2%;
+    color: #fff;
+    font-size: 18px !important;
+}
+  .fomulaperfil {
+  position: fixed;
+  width: 95%;
+  height: 95%;
+  border-radius: 5px;
+  margin-top: 25%;
+  float: left;
+  overflow: scroll;
+  margin-left: 2%;
+}
+  .fomulaperfil .datoxx {
+  width: 90%;
+  height: 50%;
+  font-size: 17px !important;
+}
+/*publicacion*/
+
+.cajapublica{
+    position: fixed;
+    width: 95%;
+    height: 85%;
+    border-radius: 5px;
+    margin-top:80px;
+    float: left;
+    overflow: scroll;
+    margin-left: 2%;
+}
+
+.publicacion{
+    margin-bottom: 90%;
+    width: 100%;
+    height: 50%;
+    box-sizing: border-box;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+.publicacion .imagenpub{
+    width: 50%;
+    height: 50%;
+    display: block;
+    margin-bottom: 20px;
+}
+.imagenpub img{
+    width: 100%;
+    height: 100%;
+    float: left;
+    margin-left: 50.55%;
+}
+.tutulopublicar{
+    margin-top: 10px;
+    font-size: 20px !important;
+    font-weight: 600;
+}
+.publicont{
+    text-align: justify;
+    margin-top: 6px;
+    font-size: 18px !important;
+    margin-bottom:60px;
+
+}
+#botonpub{
+    margin-top: 10px;
+    width: 100%;
+    height: 50px;
+    border: none;
+    font-size: 18px;
+    background: #0f70b7;
+    color: #fff;
+}
+#botonpub:hover{
+    background: #0f0f0f;
+    color: #fff;
+}
+#botongo{
+    margin-top: -10px;
+    width: 45%;
+    height: 50px;
+    border: none;
+    font-size: 18px;
+    background: #163F1F;
+    color: #fff;
+}
+#botongo:hover{
+    background: #0f0f0f;
+    color: #fff;
+}
+/*Publicaciones*/
+  #formularionuevoproducto label{
+    font-size: 15px !important;
+  }
+    #formularionuevoproducto input{
+      font-size: 15px !important;
+    }
+    .imagenpublicacion {
+      width: 43%;
+      height: 75px;
+      display: inline-block;
+      position: relative;
+    }
+    .imagenpublicacion2 {
+      width: 60%;
+      height: 120px;
+      display: inline-block;
+      position: relative;
+      left: 20%;
+    }
+    .botonimagen {
+      width: 100% !important;
+      height: 70px !important;
+    }
+    .btn-success {
+      background: #3caa37;
+    }
+    .btn {
+      border: none;
+      margin-top: 50px;
+      width: 40% !important;
+      margin-right: 5%;
+    }
+    .pagina {
+      margin-top:10px;
+    }
+    /* Mis publicaciones */
+    .contenedorpublicacion{
+      position:relative;
+      width:95%!important;
+      height:20% !important;
+      background:#dadada;
+      box-sizing:border-box;
+      margin-bottom:50px;
+    }
+    .contenedorpublicacion img{
+      width:37%!important;
+      height:100% !important;
+      float:left;
+      box-sizing:border-box;
+    }
+    #formulario{
+      width:100%;
+      height: 100%;
+      overflow:scroll;
+    }
+    .infromacion {
+      font-size: 100%;
+    }
+    #procesarpagobotonn {
+      padding-top: 5%;
+      padding-bottom: 5%;
+      width: 70% !important;
+      border: none !important;
+      font-size: 100% !important;
+      float: right;
+      margin-right: 5%;
+      background: #163F1F !important;
+      color: #fff !important;
+      overflow: hidden;
+    }
+        /*Reputacion*/
+
+        .botonrep{
+            width:100%;
+            height:15%;
+            font-size: 25px;
+            background: #dadada;
+            margin-top: 20%;
+            padding-top: 5%;
+            padding-bottom: 5%;
+        }
+        #posi, #nega{
+          font-size: 17px !important;
+        }
+        /*terminos*/
+
+        .cajaccion .terminos{
+            margin-top: -40px;
+            background: none !important;
+            padding-left: 5% !important;
+            font-size: 25px !important;
+            margin-bottom: 10% !important;
+            overflow: scroll;
+            height: 110% !important;
+            overflow-x:hidden;
+            padding-bottom: 110px;
+            text-align: justify;
+        }
+        /*Iniciar Sesion*/
+        .formularioiniciar{
+          overflow: hidden !important;
+          height: 80%;
+        }
+        .formularioiniciar input{
+          height: 40px;
+          font-size: 25px !important;
+          width: 90%;
+        }
+        #enviarrr {
+            font-size: 25px !important;
+            margin-top: 5%;
+            width: 40%;
+            height: 40px !important;
+            border: none;
+            background: #0f70b7;
+        }
+        /*Registro*/
+        .formularioreg{
+          margin-top: 65px;
+          height: 100%;
+          font-size: 20px;
+        }
+        /*Contacto*/
+
+        .formulariocontact{
+          overflow: hidden !important;
+          margin-top:45px;
+          height: 100%;
+          padding-bottom: 150px;
+        }
+        .formulariocontact input{
+          height: 30px;
+          width: 90%;
+        }
+
+        .formulariocontact .texto{
+          margin-bottom: 10px !important;
+        }
+        .formulariocontact #mensaje{
+          height: 80px !important;
+          width: 90%;
+        }
+}
+@media only screen and (min-height: 960px) and (min-width: 640px) and (max-width: 768px) {
+.menu_bar {
+  position: fixed;
+  display: block;
+  float: left;
+  background-color: #f59c34;
+  width: 120%;
+  z-index: 1;
+  left: -5px;
+  height: 2%;
+  z-index: 90000;
+}
+.titulo {
+  margin-top: -50px;
+  font-size: 250%;
+}
+.menu_bar .bt-menu {
+  display: block;
+  padding: 5px;
+  background: #f59c34;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size:50px !important;
+}
+.cajaccion {
+  margin-top: 130px;
+}
+.cajaccion article{
+  padding-top: 26px;
+  font-size: 280% !important;
+}
+#sesionon1 article {
+  height: 105px;
+}
+.cajaccion article:hover {
+  padding-top: 26px;
+  font-size: 260% !important;
+}
+header nav ul li h1 {
+  margin: 20px -10px !important;
+  font-size: 300% !important;
+}
+header .menu2 {
+  margin: 100px auto !important;
+}
+header nav ul li a {
+  font-size: 250% !important;
+  margin-left: -5px;
+}
+/*Buscar*/
+.cajabusqueda #busqueda {
+  width: 80% !important;
+  height: 75px;
+  font-size: 35px  !important;
+}
+.cajabusqueda #busqueda:hover, .cajabusqueda #busqueda:active, .cajabusqueda #busqueda:focus {
+  width: 80% !important;
+  height: 75px;
+  font-size: 35px  !important;
+}
+.cajabusqueda #busq {
+  width: 15% !important;
+  height: 75px;
+  margin-left: 3%;
+  font-size: 35px  !important;
+}
+.cajabusqueda #busq:hover, #busq:active,  #busq:focus,  #busq:visited {
+  width: 15% !important;
+  height: 75px !important;
+  margin-left: 3%;
+  font-size: 35px  !important;
+}
+.cajabusqueda #departamento {
+  width: 100% !important;
+  height: 75px;
+  font-size: 35px  !important;
+}
+input #busqueda {
+  width: 80% !important;
+  height: 75px;
+}
+.dentrode {
+  height: 27%;
+}
+.dentrode:hover {
+  height: 27%;
+}
+.partedos {
+  position: relative;
+  width: 50%;
+  height: 70%;
+  margin-left: 11%;
+  padding-left: 35%;
+}
+.precio{
+font-size:27px !important;
+}
+.cajaccion label {
+  font-size: 28px !important;
+}
+    /*mostrarpublicacion*/
+    .titulopub {
+      width: 100%;
+      font-size:280% !important;
+      padding: 7px;
+    }
+    .botoneradespues input {
+      width: 100%;
+      height: 16% !important;
+      border: none;
+      background: #0f70b7;
+      margin-bottom: 7%;
+      color: #fff;
+      font-size:37px !important;
+    }
+    .contienepublicacion {
+        overflow-y: scroll;
+    }
+    .contieneimagenpublicacion img {
+      margin-left: 5%;
+    }
+/*descripcion*/
+    .descrip {
+      box-sizing: border-box;
+      position: relative;
+      font-size: 28px;
+      margin-bottom: 10px;
+      word-wrap: break-word;
+    }
+    .contienedesc {
+      height: 200%;
+      width: 100%;
+    }
+    .depart{
+      padding-bottom: 70%;
+    }
+    /*contactarvendedor*/
+
+    .botonera label {
+      margin-bottom: 100px;
+      font-size: 30px !important;
+    }
+    .botonera input {
+      width: 100% !important;
+      height: 90px !important;
+      border: none;
+      background: #0f70b7;
+      margin-bottom: 5%;
+      color: #fff;
+      font-size: 40px !important;
+    }
+    /*comentarios publicacion*/
+    .botonera{
+    }
+    .paddingcomentario{
+      padding-bottom: 400px !important;
+    }
+    .contienerespuestax {
+      margin-bottom: 5%;
+      width: 100%;
+      font-size: 30px;
+    }
+    #todascomentarios{
+      padding-bottom: 80%;
+    }
+    .respuestax {
+      padding: 20px 10px;
+    }
+    /*Comentar*/
+    #comentario {
+  width: 100%;
+  height: 250px !important;
+  font-size: 29px;
+  margin-bottom: 30px;
+  padding: 10px 10px;
+  display: box;
+  box-orient: horizontal;
+  box-sizing: border-box;
+  border: 1px solid black;
+}
+  #botoncomentar{
+    width: 100%;
+    height:90px!important;
+    border: none;
+    background: #0f70b7;
+    margin-bottom: 2%;
+    color: #fff;
+    font-size: 32px !important;
+  }
+  /*Perfil*/
+  .cajaperfil {
+    position: fixed;
+    width: 85%;
+    height: 80%;
+    border-radius: 5px;
+    margin-top: 125px;
+    float: left;
+    border: 2px solid grey;
+    margin-left: 7.5%;
+  }
+  .datoperfil {
+    width: 100%;
+    height: 14%;
+    box-sizing: border-box;
+    padding-left: 2%;
+  }
+  .tituloperfil {
+    margin-top: 2px;
+    font-size: 27px !important;
+    font-weight: 600;
+  }
+  .datop {
+    margin-top: 2px;
+    font-size: 25px !important;
+    color: grey;
+  }
+  .cajaperfil #botonmod {
+    width: 100%;
+    height: 15% !important;
+    border: none;
+    background: #0f70b7;
+    margin-bottom: 2%;
+    color: #fff;
+    font-size: 38px !important;
+  }
+  .cajaformulario #botoncan {
+    width: 100%;
+    height: 80px !important;
+    border: none;
+    background: #e20612;
+    margin-bottom: 2%;
+    color: #fff;
+    font-size: 38px !important;
+}
+  .cajaformulario #botonmod {
+    width: 100%;
+    height: 80px !important;
+    border: none;
+    background: #0f70b7;
+    margin-bottom: 2%;
+    color: #fff;
+    font-size: 38px !important;
+}
+  .fomulaperfil {
+  position: fixed;
+  width: 95%;
+  height: 95%;
+  border-radius: 5px;
+  margin-top: 25%;
+  float: left;
+  overflow: scroll;
+  margin-left: 2%;
+}
+  .fomulaperfil .datoxx {
+  width: 90%;
+  height: 65px!important;
+  font-size: 25px !important;
+}
+/*publicacion*/
+
+.cajapublica{
+    position: fixed;
+    width: 95%;
+    height: 85%;
+    border-radius: 5px;
+    margin-top:120px;
+    float: left;
+    overflow: scroll;
+    margin-left: 2%;
+}
+
+.publicacion{
+    margin-bottom: 40%;
+    width: 100%;
+    height: 50%;
+    box-sizing: border-box;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+.publicacion .imagenpub{
+    width: 50%;
+    height: 50%;
+    display: block;
+    margin-bottom: 20px;
+}
+.imagenpub img{
+    width: 100%;
+    height: 100%;
+    float: left;
+    margin-left: 50.55%;
+}
+.tutulopublicar{
+    margin-top: 10px;
+    font-size: 30px !important;
+    font-weight: 600;
+}
+.publicont{
+    text-align: justify;
+    margin-top: 6px;
+    font-size: 28px !important;
+    margin-bottom:60px;
+
+}
+#botonpub{
+    margin-top: 10px;
+    width: 100%;
+    height: 80px;
+    border: none;
+    font-size: 35px;
+    background: #0f70b7;
+    color: #fff;
+}
+#botonpub:hover{
+    background: #0f0f0f;
+    color: #fff;
+}
+#botongo{
+    margin-top: -10px;
+    width: 45%;
+    height: 80px;
+    border: none;
+    font-size: 35px;
+    background: #163F1F;
+    color: #fff;
+}
+#botongo:hover{
+    background: #0f0f0f;
+    color: #fff;
+}
+/*Publicaciones*/
+#formularionuevoproducto label {
+  font-size: 35px !important;
+  height: 90px;
+}
+    #formularionuevoproducto input, #formularionuevoproducto select{
+      font-size: 30px !important;
+      height: 75px !important;
+    }
+    .imagenpublicacion {
+      width: 43%;
+      height: 185px;
+      display: inline-block;
+      position: relative;
+    }
+    .imagenpublicacion2 {
+      width: 60%;
+      height: 240px;
+      display: inline-block;
+      position: relative;
+      left: 20%;
+    }
+    .botonimagen {
+      width: 100% !important;
+      height: 140px !important;
+    }
+    .btn-success {
+      background: #3caa37;
+    }
+    .btn {
+      border: none;
+      margin-top: 50px;
+      width: 40% !important;
+      margin-right: 5%;
+    }
+    .pagina {
+      margin-top:10px;
+    }
+    /*Pago*/
+      .cajaformulario .textoPromedio{
+        font-size: 30px !important;
+        padding-top: 5px;
+      }
+        .cajaformulario #bancos, .cajaformulario #tipocuenta{
+          font-size: 35px !important;
+          padding-top: 5px;
+          height: 60px
+        }
+        .cajaformulario #procesarpagoboton{
+          font-size: 35px !important;
+          padding-top: 5px;
+          height: 90px !important;
+        }
+        #datos{
+          font-size: 30px !important;
+          height:200px !important;
+          width:90%;
+          box-sizing:border-box;
+        }
+        #datos h1{
+          font-size: 35px !important;
+        }
+          .cajaformulario label{
+            font-size: 30px !important;
+            height: 60px;
+          }
+          .cajaformulario input{
+           font-size: 30px !important;
+           height: 60px;
+         }
+         /* Mis publicaciones */
+         .contenedorpublicacion{
+           position:relative;
+           width:95%!important;
+           height:20% !important;
+           background:#dadada;
+           box-sizing:border-box;
+           margin-bottom:50px;
+         }
+         .contenedorpublicacion img{
+           width:37%!important;
+           height:100% !important;
+           float:left;
+           box-sizing:border-box;
+         }
+         #formulario{
+           width:100%;
+           height: 100%;
+           overflow:scroll;
+         }
+         .infromacion {
+           font-size:28px;
+         }
+         #procesarpagobotonn {
+           padding-top: 5%;
+           padding-bottom: 5%;
+           width: 70% !important;
+           border: none !important;
+           font-size: 32px !important;
+           float: right;
+           margin-right: 5%;
+           background: #163F1F !important;
+           color: #fff !important;
+           overflow: hidden;
+         }
+         /*Calificar Vendedor*/
+       #contienecomprador .btn{
+         border: none !important;
+         margin-top: 0px !important;
+         height: 40% !important;
+         width: 40% !important;
+         margin-right: 5% !important;
+         font-size: 40px;
+         color: #fff;
+       }
+       #contienecomprador section{
+           height: 19%;
+           width: 100%;
+       }
+       #contienecomprador label{
+           font-size: 40px !important;
+           margin-bottom: 20px;
+       }
+
+       #contienecomprador #titulo,#comprador,#telefono,#correo{
+           font-size: 35px;
+       }
+           /*Reputacion*/
+
+           .botonrep{
+               width:100%;
+               height:15%;
+               font-size: 35px;
+               background: #dadada;
+               margin-top: 20%;
+               padding-top: 5%;
+               padding-bottom: 5%;
+           }
+           #posi, #nega{
+             font-size: 27px !important;
+           }
+    /*Comentarios*/
+    .contienecomentario{
+      font-size: 25px;
+    }
+    /*Iniciar Sesion*/
+    .formularioiniciar{
+      overflow: hidden !important;
+      height: 80%;
+      font-size: 40px !important;
+    }
+    .formularioiniciar input{
+      height: 80px;
+      font-size: 35px !important;
+      width: 90%;
+    }
+    #enviarrr {
+        font-size: 35px !important;
+        margin-top: 5%;
+        width: 40%;
+        height: 80px !important;
+        border: none;
+        background: #0f70b7;
+    }
+    /*Registro*/
+    .formularioreg{
+      margin-top: 95px;
+      height: 100%;
+      font-size: 40px;
+    }
+    .formularioreg input, .formularioreg select{
+      height: 60px;
+      font-size: 35px !important;
+    }
+    #enviarr {
+        font-size: 35px !important;
+        margin-top: 5%;
+        width: 40%;
+        height: 60px !important;
+        border: none;
+        background: #3caa37;
+        margin-right: 10px !important;
+    }
+    #reset {
+        font-size: 35px !important;
+        margin-top: 5%;
+        width: 40%;
+        height: 60px !important;
+        border: none;
+        background: #163F1F;
+        margin-right: 10px !important;
+        margin-top: 30px;
+        margin-bottom: 150px;
+    }
+    /*Contacto*/
+
+    .formulariocontact{
+      overflow: hidden !important;
+      margin-top:85px;
+      height: 100%;
+      padding-bottom: 150px;
+    }
+    .formulariocontact input{
+      height: 50px;
+      width: 90%;
+      font-size: 30px !important;
+    }
+
+    .formulariocontact .texto{
+      margin-bottom: 50px !important;
+    }
+    .formulariocontact #mensaje{
+      height:120px !important;
+      width: 90%;
+      font-size: 30px !important;
+    }
+}
+
+@media only screen and (min-height: 800px) and (max-height: 960px)  and (max-width: 480px) {
+.menu_bar {
+  position: fixed;
+  display: block;
+  float: left;
+  background-color: #f59c34;
+  width: 120%;
+  z-index: 1;
+  left: -5px;
+  height: 2%;
+  z-index: 90000;
+}
+.titulo {
+  margin-top: -55px;
+  font-size: 160% !important;
+}
+.menu_bar .bt-menu {
+  display: block;
+  padding: 20px  !important;
+  background: #f59c34;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size:30px !important;
+}
+.cajaccion {
+  margin-top: 130px;
+}
+.cajaccion article{
+  padding-top: 26px;
+  font-size: 280% !important;
+}
+#sesionon1 article {
+  height: 105px;
+}
+.cajaccion article:hover {
+  padding-top: 26px;
+  font-size: 280% !important;
+}
+header nav ul li h1 {
+  margin: 20px -10px !important;
+  font-size: 300% !important;
+}
+header .menu2 {
+  margin: 67px auto !important;
+}
+header nav ul li a {
+  font-size: 250% !important;
+  margin-left: -5px;
+}
+/*Buscar*/
+.cajabusqueda #busqueda {
+  width: 80% !important;
+  height: 65px;
+  font-size: 30px  !important;
+}
+.cajabusqueda #busqueda:hover, .cajabusqueda #busqueda:active, .cajabusqueda #busqueda:focus {
+  width: 80% !important;
+  height: 65px;
+  font-size: 30px  !important;
+}
+.cajabusqueda #busq {
+  width: 15% !important;
+  height: 65px;
+  margin-left: 3%;
+  font-size: 30px  !important;
+}
+.cajabusqueda #busq:hover, #busq:active,  #busq:focus,  #busq:visited {
+  width: 15% !important;
+  height: 65px !important;
+  margin-left: 3%;
+  font-size: 30px  !important;
+}
+.cajabusqueda #departamento {
+  width: 100% !important;
+  height: 65px;
+  font-size: 30px  !important;
+}
+input #busqueda {
+  width: 80% !important;
+  height: 65px;
+}
+.dentrode {
+  height: 30%;
+}
+.dentrode:hover {
+  height: 30%;
+}
+.partedos {
+  position: relative;
+  width: 50%;
+  height: 70%;
+  margin-left: 11%;
+  padding-left: 35%;
+}
+.precio{
+font-size:23px !important;
+}
+.cajaccion label {
+  font-size: 28px !important;
+}
+    /*mostrarpublicacion*/
+    .titulopub {
+      width: 100%;
+      font-size:280% !important;
+      padding: 7px;
+    }
+    .botoneradespues input {
+      width: 100%;
+      height: 16% !important;
+      border: none;
+      background: #0f70b7;
+      margin-bottom: 7%;
+      color: #fff;
+      font-size:37px !important;
+    }
+    .contienepublicacion {
+        overflow-y: scroll;
+    }
+    .contieneimagenpublicacion img {
+      margin-left: 5%;
+    }
+/*descripcion*/
+    .descrip {
+      box-sizing: border-box;
+      position: relative;
+      font-size: 28px;
+      margin-bottom: 10px;
+      word-wrap: break-word;
+    }
+    .contienedesc {
+      height: 200%;
+      width: 100%;
+      overflow-y: scroll;
+    }
+    .depart{
+      padding-bottom: 300%;
+    }
+
+    /*contactarvendedor*/
+
+    .botonera label {
+      margin-bottom: 100px;
+      font-size: 30px !important;
+    }
+    .botonera input {
+      width: 100% !important;
+      height: 90px !important;
+      border: none;
+      background: #0f70b7;
+      margin-bottom: 5%;
+      color: #fff;
+      font-size: 40px !important;
+    }
+    /*comentarios publicacion*/
+    .botonera{
+    }
+    .paddingcomentario{
+      padding-bottom: 400px !important;
+    }
+    .contienerespuestax {
+      margin-bottom: 5%;
+      width: 100%;
+      font-size: 25px;
+    }
+    #todascomentarios{
+      padding-bottom: 80%;
+    }
+    .respuestax {
+      padding: 20px 10px;
+    }
+    /*Comentar*/
+    #comentario {
+  width: 100%;
+  height: 200px !important;
+  font-size: 29px;
+  margin-bottom: 30px;
+  padding: 10px 10px;
+  display: box;
+  box-orient: horizontal;
+  box-sizing: border-box;
+  border: 1px solid black;
+}
+  #botoncomentar{
+    width: 100%;
+    height:90px!important;
+    border: none;
+    background: #0f70b7;
+    margin-bottom: 2%;
+    color: #fff;
+    font-size: 32px !important;
+  }
+  /*Perfil*/
+  .cajaperfil {
+    position: fixed;
+    width: 85%;
+    height: 80%;
+    border-radius: 5px;
+    margin-top: 125px;
+    float: left;
+    border: 2px solid grey;
+    margin-left: 7.5%;
+  }
+  .datoperfil {
+    width: 100%;
+    height: 14%;
+    box-sizing: border-box;
+    padding-left: 2%;
+  }
+  .tituloperfil {
+    margin-top: 2px;
+    font-size: 27px !important;
+    font-weight: 600;
+  }
+  .datop {
+    margin-top: 2px;
+    font-size: 25px !important;
+    color: grey;
+  }
+  .cajaperfil #botonmod {
+    width: 100%;
+    height: 15% !important;
+    border: none;
+    background: #0f70b7;
+    margin-bottom: 2%;
+    color: #fff;
+    font-size: 38px !important;
+  }
+  .cajaformulario #botoncan {
+    width: 100%;
+    height: 80px !important;
+    border: none;
+    background: #e20612;
+    margin-bottom: 2%;
+    color: #fff;
+    font-size: 38px !important;
+}
+  .cajaformulario #botonmod {
+    width: 100%;
+    height: 80px !important;
+    border: none;
+    background: #0f70b7;
+    margin-bottom: 2%;
+    color: #fff;
+    font-size: 38px !important;
+}
+  .fomulaperfil {
+  position: fixed;
+  width: 95%;
+  height: 95%;
+  border-radius: 5px;
+  margin-top: 25%;
+  float: left;
+  overflow: scroll;
+  margin-left: 2%;
+}
+  .fomulaperfil .datoxx {
+  width: 90%;
+  height: 65px!important;
+  font-size: 25px !important;
+}
+/*publicacion*/
+
+.cajapublica{
+    position: fixed;
+    width: 95%;
+    height: 85%;
+    border-radius: 5px;
+    margin-top:120px;
+    float: left;
+    overflow: scroll;
+    margin-left: 2%;
+}
+
+.publicacion{
+    margin-bottom: 80%;
+    width: 100%;
+    height: 50%;
+    box-sizing: border-box;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+.publicacion .imagenpub{
+    width: 50%;
+    height: 50%;
+    display: block;
+    margin-bottom: 20px;
+}
+.imagenpub img{
+    width: 100%;
+    height: 100%;
+    float: left;
+    margin-left: 50.55%;
+}
+.tutulopublicar{
+    margin-top: 10px;
+    font-size: 30px !important;
+    font-weight: 600;
+}
+.publicont{
+    text-align: justify;
+    margin-top: 6px;
+    font-size: 28px !important;
+    margin-bottom:60px;
+
+}
+#botonpub{
+    margin-top: 10px;
+    width: 100%;
+    height: 80px;
+    border: none;
+    font-size: 35px;
+    background: #0f70b7;
+    color: #fff;
+}
+#botonpub:hover{
+    background: #0f0f0f;
+    color: #fff;
+}
+#botongo{
+    margin-top: -10px;
+    width: 45%;
+    height: 80px;
+    border: none;
+    font-size: 35px;
+    background: #163F1F;
+    color: #fff;
+}
+#botongo:hover{
+    background: #0f0f0f;
+    color: #fff;
+}
+/*Publicaciones*/
+#formularionuevoproducto label {
+  font-size: 35px !important;
+  height: 90px;
+}
+    #formularionuevoproducto input, #formularionuevoproducto select{
+      font-size: 30px !important;
+      height: 75px !important;
+    }
+    .imagenpublicacion {
+      width: 43%;
+      height: 185px;
+      display: inline-block;
+      position: relative;
+    }
+    .imagenpublicacion2 {
+      width: 60%;
+      height: 200px;
+      display: inline-block;
+      position: relative;
+      left: 20%;
+    }
+    .botonimagen {
+      width: 100% !important;
+      height: 140px !important;
+    }
+    .btn-success {
+      background: #3caa37;
+    }
+    .btn {
+      border: none;
+      margin-top: 50px;
+      width: 40% !important;
+      margin-right: 5%;
+    }
+    .pagina {
+      margin-top:10px;
+    }
+    /* Mis publicaciones */
+    .contenedorpublicacion{
+      position:relative;
+      width:95%!important;
+      height:20% !important;
+      background:#dadada;
+      box-sizing:border-box;
+      margin-bottom:50px;
+    }
+    .contenedorpublicacion img{
+      width:37%!important;
+      height:100% !important;
+      float:left;
+      box-sizing:border-box;
+    }
+    #formulario{
+      width:100%;
+      height: 100%;
+      overflow:scroll;
+    }
+    .infromacion {
+      font-size:20px;
+    }
+    #procesarpagobotonn {
+      padding-top: 5%;
+      padding-bottom: 5%;
+      width: 70% !important;
+      border: none !important;
+      font-size: 20px !important;
+      float: right;
+      margin-right: 5%;
+      background: #163F1F !important;
+      color: #fff !important;
+      overflow: hidden;
+    }
+        /*Reputacion*/
+
+        .botonrep{
+            width:100%;
+            height:15%;
+            font-size: 35px;
+            background: #dadada;
+            margin-top: 20%;
+            padding-top: 5%;
+            padding-bottom: 5%;
+        }
+        #posi, #nega{
+          font-size: 29px !important;
+        }
+}
+
+@media only screen and (min-height: 960px) and (max-height: 1024px)  and (min-width: 540px) and (max-width: 641px) {
+.menu_bar {
+  position: fixed;
+  display: block;
+  float: left;
+  background-color: #f59c34;
+  width: 120%;
+  z-index: 1;
+  left: -5px;
+  height: 2%;
+  z-index: 90000;
+}
+.titulo {
+  margin-top: -60px;
+  font-size: 200% !important;
+}
+.menu_bar .bt-menu {
+  display: block;
+  padding: 20px !important;
+  background: #f59c34;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size:50px !important;
+}
+.cajaccion {
+  margin-top: 130px;
+}
+.cajaccion article{
+  padding-top: 26px;
+  font-size: 300% !important;
+}
+#sesionon1 article {
+  height: 105px;
+}
+.cajaccion article:hover {
+  padding-top: 26px;
+  font-size: 300% !important;
+}
+header nav ul li h1 {
+  margin: 20px -10px !important;
+  font-size: 300% !important;
+}
+header .menu2 {
+  margin: 78px auto !important;
+}
+header nav ul li a {
+  font-size: 250% !important;
+  margin-left: -5px;
+}
+/*Buscar*/
+.cajabusqueda #busqueda {
+  width: 80% !important;
+  height: 65px;
+  font-size: 30px  !important;
+}
+.cajabusqueda #busqueda:hover, .cajabusqueda #busqueda:active, .cajabusqueda #busqueda:focus {
+  width: 80% !important;
+  height: 65px;
+  font-size: 30px  !important;
+}
+.cajabusqueda #busq {
+  width: 15% !important;
+  height: 65px;
+  margin-left: 3%;
+  font-size: 30px  !important;
+}
+.cajabusqueda #busq:hover, #busq:active,  #busq:focus,  #busq:visited {
+  width: 15% !important;
+  height: 65px !important;
+  margin-left: 3%;
+  font-size: 30px  !important;
+}
+.cajabusqueda #departamento {
+  width: 100% !important;
+  height: 65px;
+  font-size: 30px  !important;
+}
+input #busqueda {
+  width: 80% !important;
+  height: 65px;
+}
+.dentrode {
+  height: 35%;
+}
+.dentrode:hover {
+  height: 35%;
+}
+.partedos {
+  position: relative;
+  width: 50%;
+  height: 70%;
+  margin-left: 11%;
+  padding-left: 35%;
+}
+.precio{
+font-size:28px !important;
+}
+.cajaccion label {
+  font-size: 33px !important;
+  margin-bottom: 5px;
+}
+.cajaresultado {
+  height: 68%;
+}
+    /*mostrarpublicacion*/
+    .titulopub {
+      width: 100%;
+      font-size:280% !important;
+      padding: 7px;
+    }
+    .botoneradespues input {
+      width: 100%;
+      height: 16% !important;
+      border: none;
+      background: #0f70b7;
+      margin-bottom: 7%;
+      color: #fff;
+      font-size:37px !important;
+    }
+    .contienepublicacion {
+        overflow-y: scroll;
+    }
+    .contieneimagenpublicacion img {
+      margin-left: 5%;
+    }
+/*descripcion*/
+    .descrip {
+      box-sizing: border-box;
+      position: relative;
+      font-size: 28px;
+      margin-bottom: 10px;
+      word-wrap: break-word;
+    }
+    .contienedesc {
+      width: 100%;
+      overflow-y: scroll;
+    }
+    .depart{
+      padding-bottom: 300%;
+    }
+    /*contactarvendedor*/
+
+    .botonera label {
+      margin-bottom: 100px;
+      font-size: 30px !important;
+    }
+    .botonera input {
+      width: 100% !important;
+      height: 90px !important;
+      border: none;
+      background: #0f70b7;
+      margin-bottom: 5%;
+      color: #fff;
+      font-size: 40px !important;
+    }
+    /*comentarios publicacion*/
+    .botonera{
+    }
+    .paddingcomentario{
+      padding-bottom: 400px !important;
+    }
+    .contienerespuestax {
+      margin-bottom: 5%;
+      width: 100%;
+      font-size: 25px;
+    }
+    #todascomentarios{
+      padding-bottom: 80%;
+    }
+    .respuestax {
+      padding: 20px 10px;
+    }
+    /*Comentar*/
+    #comentario {
+  width: 100%;
+  height: 240px !important;
+  font-size: 29px;
+  margin-bottom: 30px;
+  padding: 10px 10px;
+  display: box;
+  box-orient: horizontal;
+  box-sizing: border-box;
+  border: 1px solid black;
+}
+  #botoncomentar{
+    width: 100%;
+    height:90px!important;
+    border: none;
+    background: #0f70b7;
+    margin-bottom: 2%;
+    color: #fff;
+    font-size: 32px !important;
+  }
+  /*Perfil*/
+  .cajaperfil {
+    position: fixed;
+    width: 85%;
+    height: 80%;
+    border-radius: 5px;
+    margin-top: 125px;
+    float: left;
+    border: 2px solid grey;
+    margin-left: 7.5%;
+  }
+  .datoperfil {
+    width: 100%;
+    height: 14%;
+    box-sizing: border-box;
+    padding-left: 2%;
+  }
+  .tituloperfil {
+    margin-top: 2px;
+    font-size: 27px !important;
+    font-weight: 600;
+  }
+  .datop {
+    margin-top: 2px;
+    font-size: 25px !important;
+    color: grey;
+  }
+  .cajaperfil #botonmod {
+    width: 100%;
+    height: 15% !important;
+    border: none;
+    background: #0f70b7;
+    margin-bottom: 2%;
+    color: #fff;
+    font-size: 38px !important;
+  }
+  .cajaformulario #botoncan {
+    width: 100%;
+    height: 80px !important;
+    border: none;
+    background: #e20612;
+    margin-bottom: 2%;
+    color: #fff;
+    font-size: 38px !important;
+}
+  .cajaformulario #botonmod {
+    width: 100%;
+    height: 80px !important;
+    border: none;
+    background: #0f70b7;
+    margin-bottom: 2%;
+    color: #fff;
+    font-size: 38px !important;
+}
+  .fomulaperfil {
+  position: fixed;
+  width: 95%;
+  height: 95%;
+  border-radius: 5px;
+  margin-top: 25%;
+  float: left;
+  overflow: scroll;
+  margin-left: 2%;
+}
+  .fomulaperfil .datoxx {
+  width: 90%;
+  height: 65px!important;
+  font-size: 25px !important;
+}
+/*publicacion*/
+
+.cajapublica{
+    position: fixed;
+    width: 95%;
+    height: 85%;
+    border-radius: 5px;
+    margin-top:120px;
+    float: left;
+    overflow: scroll;
+    margin-left: 2%;
+}
+
+.publicacion{
+    margin-bottom: 80%;
+    width: 100%;
+    height: 50%;
+    box-sizing: border-box;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+.publicacion .imagenpub{
+    width: 50%;
+    height: 50%;
+    display: block;
+    margin-bottom: 20px;
+}
+.imagenpub img{
+    width: 100%;
+    height: 100%;
+    float: left;
+    margin-left: 50.55%;
+}
+.tutulopublicar{
+    margin-top: 10px;
+    font-size: 30px !important;
+    font-weight: 600;
+}
+.publicont{
+    text-align: justify;
+    margin-top: 6px;
+    font-size: 28px !important;
+    margin-bottom:60px;
+
+}
+#botonpub{
+    margin-top: 10px;
+    width: 100%;
+    height: 80px;
+    border: none;
+    font-size: 35px;
+    background: #0f70b7;
+    color: #fff;
+}
+#botonpub:hover{
+    background: #0f0f0f;
+    color: #fff;
+}
+#botonpub:hover{
+    background: #0f0f0f;
+    color: #fff;
+}
+#botongo{
+    margin-top: -10px;
+    width: 45%;
+    height: 80px;
+    border: none;
+    font-size: 35px;
+    background: #163F1F;
+    color: #fff;
+}
+#botongo:hover{
+    background: #0f0f0f;
+    color: #fff;
+}
+/*Publicaciones*/
+#formularionuevoproducto label {
+  font-size: 35px !important;
+  height: 90px;
+  margin-top: 30px;
+}
+    #formularionuevoproducto input, #formularionuevoproducto select{
+      font-size: 30px !important;
+      height: 75px !important;
+    }
+    .imagenpublicacion {
+      width: 43%;
+      height: 185px;
+      display: inline-block;
+      position: relative;
+    }
+    .imagenpublicacion2 {
+      width: 60%;
+      height: 200px;
+      display: inline-block;
+      position: relative;
+      left: 20%;
+    }
+    .botonimagen {
+      width: 100% !important;
+      height: 140px !important;
+    }
+    .btn-success {
+      background: #3caa37;
+    }
+    .btn {
+      border: none;
+      margin-top: 50px;
+      width: 40% !important;
+      margin-right: 5%;
+    }
+    .pagina {
+      margin-top:10px;
+    }
+    /* Mis publicaciones */
+    .contenedorpublicacion{
+      position:relative;
+      width:95%!important;
+      height:20% !important;
+      background:#dadada;
+      box-sizing:border-box;
+      margin-bottom:50px;
+    }
+    .contenedorpublicacion img{
+      width:37%!important;
+      height:100% !important;
+      float:left;
+      box-sizing:border-box;
+    }
+    #formulario{
+      width:100%;
+      height: 100%;
+      overflow:scroll;
+    }
+    .infromacion {
+      font-size:25px;
+    }
+    #procesarpagobotonn {
+      padding-top: 5%;
+      padding-bottom: 5%;
+      width: 70% !important;
+      border: none !important;
+      font-size: 27px !important;
+      float: right;
+      margin-right: 5%;
+      background: #163F1F !important;
+      color: #fff !important;
+      overflow: hidden;
+    }
+    /*Calificar Vendedor*/
+  #contienecomprador .btn{
+    border: none !important;
+    margin-top: 0px !important;
+    height: 40% !important;
+    width: 40% !important;
+    margin-right: 5% !important;
+    font-size: 40px;
+    color: #fff;
+  }
+  #contienecomprador section{
+      height: 19%;
+      width: 100%;
+  }
+  #contienecomprador label{
+      font-size: 40px !important;
+      margin-bottom: 20px;
+  }
+
+  #contienecomprador #titulo,#comprador,#telefono,#correo{
+      font-size: 35px;
+  }
+      /*Reputacion*/
+
+      .botonrep{
+          width:100%;
+          height:15%;
+          font-size: 35px;
+          background: #dadada;
+          margin-top: 20%;
+          padding-top: 5%;
+          padding-bottom: 5%;
+      }
+      #posi, #nega{
+        font-size: 29px !important;
+      }
+    /*Comentarios*/
+    .contienecomentario{
+     font-size: 25px;
+    }
+    /*terminos*/
+
+    .cajaccion .terminos{
+        margin-top: -40px;
+        background: none !important;
+        padding-left: 5% !important;
+        font-size: 27px !important;
+        margin-bottom: 10% !important;
+        overflow: scroll;
+        height: 110% !important;
+        overflow-x:hidden;
+        padding-bottom: 150px;
+        text-align: justify;
+    }
+    /*Iniciar Sesion*/
+    .formularioiniciar{
+      overflow: hidden !important;
+      height: 80%;
+      font-size: 40px !important;
+    }
+    .formularioiniciar input{
+      height: 80px;
+      font-size: 35px !important;
+      width: 90%;
+    }
+    #enviarrr {
+        font-size: 35px !important;
+        margin-top: 5%;
+        width: 40%;
+        height: 80px !important;
+        border: none;
+        background: #0f70b7;
+    }
+    /*Registro*/
+    .formularioreg{
+      margin-top: 95px;
+      height: 100%;
+      font-size: 40px;
+    }
+    .formularioreg input, .formularioreg select{
+      height: 60px;
+      font-size: 35px !important;
+    }
+    #enviarr {
+        font-size: 35px !important;
+        margin-top: 5%;
+        width: 40%;
+        height: 60px !important;
+        border: none;
+        background: #3caa37;
+        margin-right: 10px !important;
+    }
+    #reset {
+        font-size: 35px !important;
+        margin-top: 5%;
+        width: 40%;
+        height: 60px !important;
+        border: none;
+        background: #163F1F;
+        margin-right: 10px !important;
+        margin-top: 30px;
+        margin-bottom: 150px;
+    }
+    /*Contacto*/
+
+    .formulariocontact{
+      overflow: hidden !important;
+      margin-top:85px;
+      height: 100%;
+      padding-bottom: 150px;
+    }
+    .formulariocontact input{
+      height: 50px;
+      width: 90%;
+      font-size: 30px !important;
+    }
+
+    .formulariocontact .texto{
+      margin-bottom: 50px !important;
+    }
+    .formulariocontact #mensaje{
+      height:120px !important;
+      width: 90%;
+      font-size: 30px !important;
+    }
+}
+@media only screen and (min-height: 1024px) and (max-height: 1136px) and (min-width: 600px) and (max-width: 768px) {
+.menu_bar {
+  position: fixed;
+  display: block;
+  float: left;
+  background-color: #f59c34;
+  width: 120%;
+  z-index: 1;
+  left: -5px;
+  height: 2%;
+  z-index: 90000;
+}
+.titulo {
+  margin-top: -80px;
+  font-size: 300% !important;
+}
+.menu_bar .bt-menu {
+  display: block;
+  padding: 5px;
+  background: #f59c34;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size:50px !important;
+}
+.cajaccion {
+  margin-top: 130px;
+}
+.cajaccion article{
+  padding-top: 26px;
+  font-size: 300% !important;
+}
+#sesionon1 article {
+  height: 90px;
+}
+.cajaccion article:hover {
+  padding-top: 26px;
+  font-size: 300% !important;
+}
+header nav ul li h1 {
+  margin: 20px -10px !important;
+  font-size: 300% !important;
+}
+header .menu2 {
+  margin: 78px auto !important;
+}
+header nav ul li a {
+  font-size: 250% !important;
+  margin-left: -5px;
+}
+/*Buscar*/
+.cajabusqueda #busqueda {
+  width: 80% !important;
+  height: 65px;
+  font-size: 30px  !important;
+}
+.cajabusqueda #busqueda:hover, .cajabusqueda #busqueda:active, .cajabusqueda #busqueda:focus {
+  width: 80% !important;
+  height: 65px;
+  font-size: 30px  !important;
+}
+.cajabusqueda #busq {
+  width: 15% !important;
+  height: 65px;
+  margin-left: 3%;
+  font-size: 30px  !important;
+}
+.cajabusqueda #busq:hover, #busq:active,  #busq:focus,  #busq:visited {
+  width: 15% !important;
+  height: 65px !important;
+  margin-left: 3%;
+  font-size: 30px  !important;
+}
+.cajabusqueda #departamento {
+  width: 100% !important;
+  height: 65px;
+  font-size: 30px  !important;
+}
+input #busqueda {
+  width: 80% !important;
+  height: 65px;
+}
+.dentrode {
+  height: 30%;
+}
+.dentrode:hover {
+  height: 30%;
+}
+.partedos {
+  position: relative;
+  width: 50%;
+  height: 70%;
+  margin-left: 11%;
+  padding-left: 35%;
+}
+.precio{
+font-size:28px !important;
+}
+.cajaccion label {
+  font-size: 33px !important;
+  margin-bottom: 5px;
+}
+.cajaresultado {
+  height: 68%;
+}
+    /*mostrarpublicacion*/
+    .titulopub {
+      width: 100%;
+      font-size:300% !important;
+      padding: 15px;
+    }
+    .botoneradespues input {
+      width: 100%;
+      height: 16% !important;
+      border: none;
+      background: #0f70b7;
+      margin-bottom: 7%;
+      color: #fff;
+      font-size:37px !important;
+    }
+    .contienepublicacion {
+        overflow-y: scroll;
+    }
+    .contieneimagenpublicacion img {
+      margin-left: 5%;
+    }
+/*descripcion*/
+    .descrip {
+      box-sizing: border-box;
+      position: relative;
+      font-size: 33px;
+      margin-bottom: 10px;
+      word-wrap: break-word;
+    }
+    .contienedesc {
+      width: 100%;
+      overflow-y: scroll;
+    }
+    .depart{
+      padding-bottom: 300%;
+    }
+    /*contactarvendedor*/
+
+    .botonera label {
+      margin-bottom: 200px;
+      font-size: 30px !important;
+    }
+    .botonera input {
+      width: 100% !important;
+      height: 90px !important;
+      border: none;
+      background: #0f70b7;
+      margin-bottom: 5%;
+      color: #fff;
+      font-size: 40px !important;
+    }
+    /*comentarios publicacion*/
+    .botonera{
+    }
+    .paddingcomentario{
+      padding-bottom: 400px !important;
+    }
+    .contienerespuestax {
+      margin-bottom: 5%;
+      width: 100%;
+      font-size: 25px;
+    }
+    #todascomentarios{
+      padding-bottom: 80%;
+    }
+    .respuestax {
+      padding: 20px 10px;
+    }
+    /*Comentar*/
+    #comentario {
+  width: 100%;
+  height: 280px !important;
+  font-size: 29px;
+  margin-bottom: 30px;
+  padding: 10px 10px;
+  display: box;
+  box-orient: horizontal;
+  box-sizing: border-box;
+  border: 1px solid black;
+}
+  #botoncomentar{
+    width: 100%;
+    height:90px!important;
+    border: none;
+    background: #0f70b7;
+    margin-bottom: 2%;
+    color: #fff;
+    font-size: 32px !important;
+  }
+  /*Perfil*/
+  .cajaperfil {
+    position: fixed;
+    width: 85%;
+    height: 80%;
+    border-radius: 5px;
+    margin-top: 125px;
+    float: left;
+    border: 2px solid grey;
+    margin-left: 7.5%;
+  }
+  .datoperfil {
+    width: 100%;
+    height: 14%;
+    box-sizing: border-box;
+    padding-left: 2%;
+  }
+  .tituloperfil {
+    margin-top: 2px;
+    font-size: 33px !important;
+    font-weight: 600;
+  }
+  .datop {
+    margin-top: 2px;
+    font-size: 31px !important;
+    color: grey;
+  }
+  .cajaperfil #botonmod {
+    width: 100%;
+    height: 15% !important;
+    border: none;
+    background: #0f70b7;
+    margin-bottom: 2%;
+    color: #fff;
+    font-size: 38px !important;
+  }
+  .cajaformulario #botoncan {
+    width: 100%;
+    height: 80px !important;
+    border: none;
+    background: #e20612;
+    margin-bottom: 2%;
+    color: #fff;
+    font-size: 38px !important;
+}
+  .cajaformulario #botonmod {
+    width: 100%;
+    height: 80px !important;
+    border: none;
+    background: #0f70b7;
+    margin-bottom: 2%;
+    color: #fff;
+    font-size: 38px !important;
+}
+  .fomulaperfil {
+  position: fixed;
+  width: 95%;
+  height: 95%;
+  border-radius: 5px;
+  margin-top: 25%;
+  float: left;
+  overflow: scroll;
+  margin-left: 2%;
+}
+  .fomulaperfil .datoxx {
+  width: 90%;
+  height: 65px!important;
+  font-size: 25px !important;
+}
+/*publicacion*/
+
+.cajapublica{
+    position: fixed;
+    width: 95%;
+    height: 85%;
+    border-radius: 5px;
+    margin-top:120px;
+    float: left;
+    overflow: scroll;
+    margin-left: 2%;
+}
+
+.publicacion{
+    margin-bottom: 90%;
+    width: 100%;
+    height: 50%;
+    box-sizing: border-box;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+.publicacion .imagenpub{
+    width: 50%;
+    height: 50%;
+    display: block;
+    margin-bottom: 20px;
+}
+.imagenpub img{
+    width: 100%;
+    height: 100%;
+    float: left;
+    margin-left: 50.55%;
+}
+.tutulopublicar{
+    margin-bottom: 10px;
+    font-size: 40px !important;
+    font-weight: 600;
+}
+.publicont{
+    text-align: justify;
+    margin-top: 6px;
+    font-size: 38px !important;
+    margin-bottom:60px;
+
+}
+#botonpub{
+    margin-top: 10px;
+    width: 100%;
+    height: 80px;
+    border: none;
+    font-size: 45px;
+    background: #0f70b7;
+    color: #fff;
+}
+#botonpub:hover{
+    background: #0f0f0f;
+    color: #fff;
+}
+#botongo{
+    margin-top: -10px;
+    width: 45%;
+    height: 80px;
+    border: none;
+    font-size: 45px;
+    background: #163F1F;
+    color: #fff;
+}
+#botongo:hover{
+    background: #0f0f0f;
+    color: #fff;
+}
+/*Publicaciones*/
+#formularionuevoproducto label {
+  font-size: 35px !important;
+  height: 90px;
+  margin-top: 30px;
+}
+    #formularionuevoproducto input, #formularionuevoproducto select{
+      font-size: 30px !important;
+      height: 75px !important;
+    }
+    .imagenpublicacion {
+      width: 43%;
+      height: 185px;
+      display: inline-block;
+      position: relative;
+    }
+    .imagenpublicacion2 {
+      width: 60%;
+      height: 300px;
+      display: inline-block;
+      position: relative;
+      left: 20%;
+    }
+    .botonimagen {
+      width: 100% !important;
+      height: 140px !important;
+    }
+    .btn-success {
+      background: #3caa37;
+    }
+    .btn {
+      border: none;
+      margin-top: 50px;
+      width: 40% !important;
+      margin-right: 5%;
+    }
+    .pagina {
+      margin-top:10px;
+    }
+    /* Mis publicaciones */
+    .contenedorpublicacion{
+      position:relative;
+      width:95%!important;
+      height:20% !important;
+      background:#dadada;
+      box-sizing:border-box;
+      margin-bottom:50px;
+    }
+    .contenedorpublicacion img{
+      width:37%!important;
+      height:100% !important;
+      float:left;
+      box-sizing:border-box;
+    }
+    #formulario{
+      width:100%;
+      height: 100%;
+      overflow:scroll;
+    }
+    .infromacion {
+      font-size:32px;
+    }
+    #procesarpagobotonn {
+      padding-top: 5%;
+      padding-bottom: 5%;
+      width: 70% !important;
+      border: none !important;
+      font-size: 30px !important;
+      float: right;
+      margin-right: 5%;
+      background: #163F1F !important;
+      color: #fff !important;
+      overflow: hidden;
+    }
+        /*Reputacion*/
+
+        .botonrep{
+            width:100%;
+            height:15%;
+            font-size: 35px;
+            background: #dadada;
+            margin-top: 20%;
+            padding-top: 5%;
+            padding-bottom: 5%;
+        }
+        #posi, #nega{
+          font-size: 29px !important;
+        }
+        /*Registro*/
+        .formularioreg{
+          margin-top: 95px;
+          height: 100%;
+          font-size: 40px;
+        }
+        .formularioreg input, .formularioreg select{
+          height: 60px;
+          font-size: 35px !important;
+        }
+        #enviarr {
+            font-size: 35px !important;
+            margin-top: 5%;
+            width: 40%;
+            height: 60px !important;
+            border: none;
+            background: #3caa37;
+            margin-right: 10px !important;
+        }
+        #reset {
+            font-size: 35px !important;
+            margin-top: 5%;
+            width: 40%;
+            height: 60px !important;
+            border: none;
+            background: #163F1F;
+            margin-right: 10px !important;
+            margin-top: 30px;
+            margin-bottom: 150px;
+        }
+        /*Contacto*/
+
+        .formulariocontact{
+          overflow: hidden !important;
+          margin-top:85px;
+          height: 100%;
+          padding-bottom: 150px;
+        }
+        .formulariocontact input{
+          height: 50px;
+          width: 90%;
+          font-size: 30px !important;
+        }
+
+        .formulariocontact .texto{
+          margin-bottom: 50px !important;
+        }
+        .formulariocontact #mensaje{
+          height:120px !important;
+          width: 90%;
+          font-size: 30px !important;
+        }
+}
+
+
+@media only screen and (min-height: 1024px)  and (max-height: 1136px) and (min-width: 768px) and (max-width: 800px) {
+.menu_bar {
+  position: fixed;
+  display: block;
+  float: left;
+  background-color: #f59c34;
+  width: 120%;
+  z-index: 1;
+  left: -5px;
+  height: 2%;
+  z-index: 90000;
+}
+.titulo {
+  margin-top: -100px;
+  font-size: 250% !important;
+}
+.menu_bar .bt-menu {
+  display: block;
+  padding: 20px !important;
+  background: #f59c34;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size:55px !important;
+}
+.cajaccion {
+  margin-top: 130px;
+}
+.cajaccion article{
+  padding-top: 26px;
+  font-size: 380% !important;
+}
+#sesionon1 article {
+  height: 105px;
+}
+.cajaccion article:hover {
+  padding-top: 26px;
+  font-size: 380% !important;
+}
+header nav ul li h1 {
+  margin: 20px -10px !important;
+  font-size: 300% !important;
+}
+header .menu2 {
+  margin: 95px auto !important;
+}
+header nav ul li a {
+  font-size: 270% !important;
+  margin-left: -5px;
+}
+/*Buscar*/
+.cajabusqueda #busqueda {
+  width: 80% !important;
+  height: 85px;
+  font-size: 40px  !important;
+}
+.cajabusqueda #busqueda:hover, .cajabusqueda #busqueda:active, .cajabusqueda #busqueda:focus {
+  width: 80% !important;
+  height: 85px;
+  font-size: 40px  !important;
+}
+.cajabusqueda #busq {
+  width: 15% !important;
+  height: 85px;
+  margin-left: 3%;
+  font-size: 40px  !important;
+}
+.cajabusqueda #busq:hover, #busq:active,  #busq:focus,  #busq:visited {
+  width: 15% !important;
+  height: 85px !important;
+  margin-left: 3%;
+  font-size: 40px  !important;
+}
+.cajabusqueda #departamento {
+  width: 100% !important;
+  height: 85px;
+  font-size: 40px  !important;
+}
+input #busqueda {
+  width: 80% !important;
+  height: 85px;
+}
+.dentrode {
+  height: 30%;
+}
+.dentrode:hover {
+  height: 30%;
+}
+.partedos {
+  position: relative;
+  width: 50%;
+  height: 70%;
+  margin-left: 11%;
+  padding-left: 35%;
+}
+.precio{
+font-size:35px !important;
+}
+.cajaccion label {
+  font-size: 40px !important;
+  margin-bottom: 7px;
+}
+.cajaresultado {
+  height: 67%;
+}
+.cajabusqueda {
+  width: 100% !important;
+  display: box;
+  box-orient: horizontal;
+  margin-top: 2%;
+}
+    /*mostrarpublicacion*/
+    .titulopub {
+      width: 100%;
+      margin-top: 5px;
+      font-size:300% !important;
+      padding: 15px;
+    }
+    .botoneradespues input {
+      width: 100%;
+      height: 16% !important;
+      border: none;
+      background: #0f70b7;
+      margin-bottom: 7%;
+      color: #fff;
+      font-size:37px !important;
+    }
+    .contienepublicacion {
+        overflow-y: scroll;
+    }
+    .contieneimagenpublicacion img {
+      margin-left: 5%;
+    }
+/*descripcion*/
+    .descrip {
+      box-sizing: border-box;
+      position: relative;
+      font-size: 30px;
+      margin-bottom: 10px;
+      word-wrap: break-word;
+    }
+    .contienedesc {
+      width: 100%;
+      overflow-y: scroll;
+    }
+    .depart{
+      padding-bottom: 300%;
+    }
+    /*contactarvendedor*/
+
+    .botonera label {
+      margin-bottom: 100px;
+      font-size: 40px !important;
+    }
+    .botonera input {
+      width: 100% !important;
+      height: 90px !important;
+      border: none;
+      background: #0f70b7;
+      margin-bottom: 5%;
+      color: #fff;
+      font-size: 40px !important;
+    }
+    /*comentarios publicacion*/
+    .botonera{
+    }
+    .paddingcomentario{
+      padding-bottom: 400px !important;
+    }
+    .contienerespuestax {
+      margin-bottom: 5%;
+      width: 100%;
+      font-size: 25px;
+    }
+    #todascomentarios{
+      padding-bottom: 80%;
+    }
+    .respuestax {
+      padding: 20px 10px;
+    }
+    /*Comentar*/
+    #comentario {
+  width: 100%;
+  height: 280px !important;
+  font-size: 29px;
+  margin-bottom: 30px;
+  padding: 10px 10px;
+  display: box;
+  box-orient: horizontal;
+  box-sizing: border-box;
+  border: 1px solid black;
+}
+  #botoncomentar{
+    width: 100%;
+    height:90px!important;
+    border: none;
+    background: #0f70b7;
+    margin-bottom: 2%;
+    color: #fff;
+    font-size: 32px !important;
+  }
+  /*Perfil*/
+  .cajaperfil {
+    position: fixed;
+    width: 85%;
+    height: 80%;
+    border-radius: 5px;
+    margin-top: 185px;
+    float: left;
+    border: 2px solid grey;
+    margin-left: 7.5%;
+  }
+  .datoperfil {
+    width: 100%;
+    height: 14%;
+    box-sizing: border-box;
+    padding-left: 2%;
+  }
+  .tituloperfil {
+    margin-top: 2px;
+    font-size: 37px !important;
+    font-weight: 600;
+  }
+  .datop {
+    margin-top: 2px;
+    font-size: 35px !important;
+    color: grey;
+  }
+  .cajaperfil #botonmod {
+    width: 100%;
+    height: 15% !important;
+    border: none;
+    background: #0f70b7;
+    margin-bottom: 2%;
+    color: #fff;
+    font-size: 38px !important;
+  }
+  .cajaformulario #botoncan {
+    width: 100%;
+    height: 80px !important;
+    border: none;
+    background: #e20612;
+    margin-bottom: 2%;
+    color: #fff;
+    font-size: 38px !important;
+}
+  .cajaformulario #botonmod {
+    width: 100%;
+    height: 80px !important;
+    border: none;
+    background: #0f70b7;
+    margin-bottom: 2%;
+    color: #fff;
+    font-size: 38px !important;
+}
+  .fomulaperfil {
+  position: fixed;
+  width: 95%;
+  height: 95%;
+  border-radius: 5px;
+  margin-top: 25%;
+  float: left;
+  overflow: scroll;
+  margin-left: 2%;
+}
+  .fomulaperfil .datoxx {
+  width: 90%;
+  height: 65px!important;
+  font-size: 30px !important;
+}
+/*publicacion*/
+
+.cajapublica{
+    position: fixed;
+    width: 95%;
+    height: 85%;
+    border-radius: 5px;
+    margin-top:150px;
+    float: left;
+    overflow: scroll;
+    margin-left: 2%;
+}
+
+.publicacion{
+    margin-bottom: 70%;
+    width: 100%;
+    height: 50%;
+    box-sizing: border-box;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+.publicacion .imagenpub{
+    width: 50%;
+    height: 50%;
+    display: block;
+    margin-bottom: 20px;
+}
+.imagenpub img{
+    width: 100%;
+    height: 100%;
+    float: left;
+    margin-left: 50.55%;
+}
+.tutulopublicar{
+    margin-bottom: 10px;
+    font-size: 40px !important;
+    font-weight: 600;
+}
+.publicont{
+    text-align: justify;
+    margin-top: 6px;
+    font-size: 40px !important;
+    margin-bottom:60px;
+
+}
+#botonpub{
+    margin-top: 10px;
+    width: 100%;
+    height: 90px;
+    border: none;
+    font-size: 45px;
+    background: #0f70b7;
+    color: #fff;
+}
+#botonpub:hover{
+    background: #0f0f0f;
+    color: #fff;
+}
+#botongo{
+    margin-top: -10px;
+    width: 45%;
+    height: 90px;
+    border: none;
+    font-size: 45px;
+    background: #163F1F;
+    color: #fff;
+}
+#botongo:hover{
+    background: #0f0f0f;
+    color: #fff;
+}
+/*Publicaciones*/
+#formularionuevoproducto label {
+  font-size: 35px !important;
+  height: 90px;
+  margin-top: 30px;
+}
+    #formularionuevoproducto input, #formularionuevoproducto select{
+      font-size: 30px !important;
+      height: 75px !important;
+    }
+    .imagenpublicacion {
+      width: 43%;
+      height: 205px;
+      display: inline-block;
+      position: relative;
+    }
+    .imagenpublicacion2 {
+      width: 60%;
+      height: 300px;
+      display: inline-block;
+      position: relative;
+      left: 20%;
+    }
+     #formularionuevoproducto .botonimagen {
+      width: 100% !important;
+      height: 170px !important;
+    }
+    .btn-success {
+      background: #3caa37;
+    }
+    .btn {
+      border: none;
+      margin-top: 50px;
+      width: 40% !important;
+      margin-right: 5%;
+    }
+    .pagina {
+      margin-top:10px;
+    }
+    /* Mis publicaciones */
+    .contenedorpublicacion{
+      position:relative;
+      width:95%!important;
+      height:23% !important;
+      background:#dadada;
+      box-sizing:border-box;
+      margin-bottom:50px;
+    }
+    .contenedorpublicacion img{
+      width:37%!important;
+      height:100% !important;
+      float:left;
+      box-sizing:border-box;
+    }
+    #formulario{
+      width:100%;
+      height: 100%;
+      overflow:scroll;
+    }
+    .infromacion {
+      font-size:32px;
+    }
+    #procesarpagobotonn {
+      padding-top: 5%;
+      padding-bottom: 5%;
+      width: 70% !important;
+      border: none !important;
+      font-size: 35px !important;
+      float: right;
+      margin-right: 5%;
+      background: #163F1F !important;
+      color: #fff !important;
+      overflow: hidden;
+    }
+        /*Reputacion*/
+
+        .botonrep{
+            width:100%;
+            height:15%;
+            font-size: 35px;
+            background: #dadada;
+            margin-top: 20%;
+            padding-top: 5%;
+            padding-bottom: 2%;
+        }
+        #posi, #nega{
+          font-size: 35px !important;
+        }
+ /*Comentarios*/
+ .contienecomentario{
+   font-size: 28px;
+ }
+ /*Registro*/
+ .formularioreg{
+   margin-top: 125px;
+   height: 100%;
+   font-size: 40px;
+ }
+ .formularioreg input, .formularioreg select{
+   height: 60px;
+   font-size: 35px !important;
+ }
+ #enviarr {
+     font-size: 35px !important;
+     margin-top: 5%;
+     width: 40%;
+     height: 60px !important;
+     border: none;
+     background: #3caa37;
+     margin-right: 10px !important;
+ }
+ #reset {
+     font-size: 35px !important;
+     margin-top: 5%;
+     width: 40%;
+     height: 60px !important;
+     border: none;
+     background: #163F1F;
+     margin-right: 10px !important;
+     margin-top: 30px;
+     margin-bottom: 150px;
+ }
+ /*Contacto*/
+
+ .formulariocontact{
+   overflow: hidden !important;
+   margin-top:100px;
+   height: 100%;
+   padding-bottom: 150px;
+ }
+ .formulariocontact input{
+   height: 50px;
+   width: 90%;
+   font-size: 30px !important;
+ }
+
+ .formulariocontact .texto{
+   margin-bottom: 50px !important;
+ }
+ .formulariocontact #mensaje{
+   height:120px !important;
+   width: 90%;
+   font-size: 30px !important;
+ }
+}
+
+@media only screen and (max-height: 1280px) and (min-width: 720px){
+.menu_bar {
+  position: fixed;
+  display: block;
+  float: left;
+  background-color: #f59c34;
+  width: 120%;
+  z-index: 1;
+  left: -5px;
+  height: 2%;
+  z-index: 90000;
+}
+.titulo {
+  margin-top: -80px;
+  font-size: 280% !important;
+}
+.menu_bar .bt-menu {
+  display: block;
+  padding:20px !important;
+  background: #f59c34;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size:65px !important;
+}
+.cajaccion {
+  margin-top: 180px;
+}
+.cajaccion article{
+  padding-top: 36px;
+  font-size: 300% !important;
+}
+.cajaccion article:hover {
+  padding-top: 36px;
+  font-size: 300% !important;
+}
+#sesionon1 article {
+  height: 125px;
+}
+header nav ul li h1 {
+  margin: 20px -10px !important;
+  font-size: 320% !important;
+}
+header .menu2 {
+  margin: 105px auto !important;
+}
+header nav ul li a {
+  font-size: 380% !important;
+  margin-left: -5px;
+  text-align: center;
+}
+/*Buscar*/
+.cajabusqueda #busqueda {
+  width: 80% !important;
+  height: 85px;
+  font-size: 40px  !important;
+}
+.cajabusqueda #busqueda:hover, .cajabusqueda #busqueda:active, .cajabusqueda #busqueda:focus {
+  width: 80% !important;
+  height: 85px;
+  font-size: 40px  !important;
+}
+.cajabusqueda #busq {
+  width: 15% !important;
+  height: 85px;
+  margin-left: 3%;
+  font-size: 40px  !important;
+}
+.cajabusqueda #busq:hover, #busq:active,  #busq:focus,  #busq:visited {
+  width: 15% !important;
+  height: 85px !important;
+  margin-left: 3%;
+  font-size: 40px  !important;
+}
+.cajabusqueda #departamento {
+  width: 100% !important;
+  height: 85px;
+  font-size: 40px  !important;
+}
+input #busqueda {
+  width: 80% !important;
+  height: 85px;
+}
+.dentrode {
+  height: 30%;
+}
+.dentrode:hover {
+  height: 30%;
+}
+.partedos {
+  position: relative;
+  width: 50%;
+  height: 70%;
+  margin-left: 11%;
+  padding-left: 35%;
+}
+.precio{
+font-size:35px !important;
+}
+.cajaccion label {
+  font-size: 40px !important;
+  margin-bottom: 7px;
+}
+.cajaresultado {
+  height: 67%;
+}
+.cajabusqueda {
+  width: 100% !important;
+  display: box;
+  box-orient: horizontal;
+  margin-top: -1% !important;
+}
+    /*mostrarpublicacion*/
+    .titulopub {
+      width: 100%;
+      margin-top: 9px;
+      font-size:320% !important;
+      padding: 15px;
+    }
+    .botoneradespues input {
+      width: 100%;
+      height: 20% !important;
+      border: none;
+      background: #0f70b7;
+      margin-bottom: 7%;
+      color: #fff;
+      font-size:42px !important;
+    }
+    .contienepublicacion {
+        overflow-y: scroll;
+    }
+    .contieneimagenpublicacion img {
+      margin-left: 5%;
+    }
+/*descripcion*/
+    .descrip {
+      box-sizing: border-box;
+      position: relative;
+      font-size: 40px;
+      margin-bottom: 10px;
+      word-wrap: break-word;
+    }
+    .contienedesc {
+      width: 100%;
+      overflow-y: scroll;
+    }
+    .depart{
+      padding-bottom: 300%;
+    }
+    /*comentarios publicacion*/
+
+    .botonera input {
+      width: 100% !important;
+      height: 90px !important;
+      border: none;
+      background: #0f70b7;
+      margin-bottom: 5%;
+      color: #fff;
+      font-size: 40px !important;
+    }
+    .paddingcomentario{
+      padding-bottom: 400px !important;
+    }
+    .contienerespuestax {
+      margin-bottom: 5%;
+      width: 100%;
+      font-size: 29px !important;
+    }
+    #todascomentarios{
+      padding-bottom: 80%;
+    }
+    .respuestax {
+      padding: 20px 10px;
+    }
+    /*Comentar*/
+    #comentario {
+  width: 100%;
+  height: 280px !important;
+  font-size: 49px;
+  margin-bottom: 30px;
+  padding: 10px 10px;
+  display: box;
+  box-orient: horizontal;
+  box-sizing: border-box;
+  border: 1px solid black;
+}
+  #botoncomentar{
+    width: 100%;
+    height:90px!important;
+    border: none;
+    background: #0f70b7;
+    margin-bottom: 2%;
+    color: #fff;
+    font-size: 52px !important;
+  }
+  /*Perfil*/
+  .cajaperfil {
+    position: fixed;
+    width: 85%;
+    height: 80%;
+    border-radius: 5px;
+    margin-top: 185px;
+    float: left;
+    border: 2px solid grey;
+    margin-left: 7.5%;
+  }
+  .datoperfil {
+    width: 100%;
+    height: 14%;
+    box-sizing: border-box;
+    padding-left: 2%;
+  }
+  .tituloperfil {
+    margin-top: 2px;
+    font-size: 37px !important;
+    font-weight: 600;
+  }
+  .datop {
+    margin-top: 2px;
+    font-size: 35px !important;
+    color: grey;
+  }
+  .cajaperfil #botonmod {
+    width: 100%;
+    height: 15% !important;
+    border: none;
+    background: #0f70b7;
+    margin-bottom: 2%;
+    color: #fff;
+    font-size: 38px !important;
+  }
+  .cajaformulario #botoncan {
+    width: 100%;
+    height: 100px !important;
+    border: none;
+    background: #e20612;
+    margin-bottom: 2%;
+    color: #fff;
+    font-size: 48px !important;
+}
+  .cajaformulario #botonmod {
+    width: 100%;
+    height: 100px !important;
+    border: none;
+    background: #0f70b7;
+    margin-bottom: 2%;
+    color: #fff;
+    font-size: 48px !important;
+}
+  .fomulaperfil {
+  position: fixed;
+  width: 95%;
+  height: 95%;
+  border-radius: 5px;
+  margin-top: 25%;
+  float: left;
+  overflow: scroll;
+  margin-left: 2%;
+}
+  .fomulaperfil .datoxx {
+  width: 90%;
+  height: 75px!important;
+  font-size: 37px !important;
+}
+/*publicacion*/
+
+.cajapublica{
+    position: fixed;
+    width: 95%;
+    height: 85%;
+    border-radius: 5px;
+    margin-top:150px;
+    float: left;
+    overflow: scroll;
+    margin-left: 2%;
+}
+
+.publicacion{
+    margin-bottom: 70%;
+    width: 100%;
+    height: 50%;
+    box-sizing: border-box;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+.publicacion .imagenpub{
+    width: 50%;
+    height: 50%;
+    display: block;
+    margin-bottom: 20px;
+}
+.imagenpub img{
+    width: 100%;
+    height: 100%;
+    float: left;
+    margin-left: 50.55%;
+}
+.tutulopublicar{
+    margin-bottom: 10px;
+    font-size: 40px !important;
+    font-weight: 600;
+}
+.publicont{
+    text-align: justify;
+    margin-top: 6px;
+    font-size: 40px !important;
+    margin-bottom:60px;
+
+}
+#botonpub{
+    margin-top: 10px;
+    width: 100%;
+    height: 90px;
+    border: none;
+    font-size: 45px;
+    background: #0f70b7;
+    color: #fff;
+}
+#botonpub:hover{
+    background: #0f0f0f;
+    color: #fff;
+}
+#botongo{
+    margin-top: -10px;
+    width: 45%;
+    height: 90px;
+    border: none;
+    font-size: 45px;
+    background: #163F1F;
+    color: #fff;
+}
+#botongo:hover{
+    background: #0f0f0f;
+    color: #fff;
+}
+/*Publicaciones*/
+#formularionuevoproducto label {
+  font-size: 45px !important;
+  height: 90px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+    #formularionuevoproducto input, #formularionuevoproducto select{
+      font-size: 40px !important;
+      height: 75px !important;
+    }
+    .imagenpublicacion {
+      width: 43%;
+      height: 205px;
+      display: inline-block;
+      position: relative;
+    }
+    .imagenpublicacion2 {
+      width: 60%;
+      height: 300px;
+      display: inline-block;
+      position: relative;
+      left: 20%;
+    }
+     #formularionuevoproducto .botonimagen {
+      width: 100% !important;
+      height: 170px !important;
+      margin-bottom: 20px;
+    }
+    .btn-success {
+      background: #3caa37;
+    }
+    .btn {
+      border: none;
+      margin-top: 50px;
+      width: 40% !important;
+      margin-right: 5%;
+    }
+    .pagina {
+      margin-top:10px;
+    }
+    /*Calificar Vendedor*/
+  #contienecomprador .btn{
+    border: none !important;
+    margin-top: 0px !important;
+    height: 40% !important;
+    width: 40% !important;
+    margin-right: 5% !important;
+    font-size: 40px !important;
+    color: #fff;
+  }
+  #contienecomprador section{
+      height: 19%;
+      width: 100%;
+  }
+  #contienecomprador label{
+      font-size: 40px !important;
+      margin-bottom: 20px;
+  }
+
+  #contienecomprador #titulo,#comprador,#telefono,#correo{
+      font-size: 35px;
+  }
+  .infromacion {
+    font-size:35px;
+  }
+      /*Reputacion*/
+
+      .botonrep{
+          width:100%;
+          height:15%;
+          font-size: 45px;
+          background: #dadada;
+          margin-top: 20%;
+          padding-top: 5%;
+          padding-bottom: 5%;
+      }
+      #posi, #nega{
+        font-size: 35px !important;
+      }
+      /*Registro*/
+      .formularioreg{
+        margin-top: 125px;
+        height: 100%;
+        font-size: 50px;
+      }
+      .formularioreg input, .formularioreg select{
+        height: 80px;
+        font-size: 45px !important;
+      }
+      #enviarr {
+          font-size: 55px !important;
+          margin-top: 5%;
+          width: 40%;
+          height: 90px !important;
+          border: none;
+          background: #3caa37;
+          margin-right: 10px !important;
+      }
+      #reset {
+          font-size: 55px !important;
+          margin-top: 5%;
+          width: 40%;
+          height: 90px !important;
+          border: none;
+          background: #163F1F;
+          margin-right: 10px !important;
+          margin-top: 30px;
+          margin-bottom: 150px;
+      }
+      /*Contacto*/
+
+      .formulariocontact{
+        overflow: scroll !important;
+        margin-top:120px !important;
+        height: 100% !important;
+        padding-bottom: 300px !important;
+      }
+      .formulariocontact input{
+        height: 80px !important;
+        width: 90% !important;
+        font-size: 50px !important;
+      }
+
+      .formulariocontact .texto{
+        margin-bottom: 10px !important;
+      }
+      .formulariocontact #mensaje{
+        height:220px !important;
+        width: 90% !important;
+        font-size: 50px !important;
+      }
+      .formulariocontact #enviarr{
+        margin-bottom: 100px;
+      }
+}
+
+@media only screen and (min-height: 1136px) and (max-width: 640px) {
+
+  .menu_bar {
+    position: fixed;
+    display: block;
+    float: left;
+    background-color: #f59c34;
+    width: 120%;
+    z-index: 1;
+    left: -5px;
+    height: 2%;
+    z-index: 90000;
+  }
+  .titulo {
+    margin-top: -90px;
+    font-size:60px;
+  }
+  .menu_bar .bt-menu {
+    display: block;
+    padding: 24px !important;
+    background: #f59c34;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size:60px !important;
+  }
+  .cajaccion {
+    margin-top: 130px;
+  }
+  .cajaccion article{
+    padding-top: 26px;
+    font-size: 350% !important;
+  }
+  .cajaccion article:hover {
+    padding-top: 26px;
+    font-size: 350% !important;
+  }
+  #sesionon1 article {
+    height: 125px;
+  }
+  header nav ul li h1 {
+    margin: 20px -10px !important;
+    font-size: 320% !important;
+  }
+  header .menu2 {
+    margin: 115px auto !important;
+  }
+  header nav ul li a {
+    font-size: 300% !important;
+    margin-left: -5px;
+    text-align: center;
+  }
+  /*Buscar*/
+  .cajabusqueda #busqueda {
+    width: 80% !important;
+    height: 85px;
+    font-size: 40px  !important;
+  }
+  .cajabusqueda #busqueda:hover, .cajabusqueda #busqueda:active, .cajabusqueda #busqueda:focus {
+    width: 80% !important;
+    height: 85px;
+    font-size: 40px  !important;
+  }
+  .cajabusqueda #busq {
+    width: 15% !important;
+    height: 85px;
+    margin-left: 3%;
+    font-size: 40px  !important;
+  }
+  .cajabusqueda #busq:hover, #busq:active,  #busq:focus,  #busq:visited {
+    width: 15% !important;
+    height: 85px !important;
+    margin-left: 3%;
+    font-size: 40px  !important;
+  }
+  .cajabusqueda #departamento {
+    width: 100% !important;
+    height: 85px;
+    font-size: 40px  !important;
+  }
+  input #busqueda {
+    width: 80% !important;
+    height: 85px;
+  }
+  .dentrode {
+    height: 30%;
+  }
+  .dentrode:hover {
+    height: 30%;
+  }
+  .partedos {
+    position: relative;
+    width: 50%;
+    height: 70%;
+    margin-left: 11%;
+    padding-left: 35%;
+  }
+  .precio{
+  font-size:35px !important;
+  }
+  .cajaccion label {
+    font-size: 40px !important;
+    margin-bottom: 7px;
+  }
+  .cajaresultado {
+    height: 67%;
+  }
+  .cajabusqueda {
+    width: 100% !important;
+    display: box;
+    box-orient: horizontal;
+    margin-top: 2% !important;
+  }
+      /*mostrarpublicacion*/
+      .titulopub {
+        width: 100%;
+        margin-top: 9px;
+        font-size:320% !important;
+        padding: 15px;
+      }
+      .botoneradespues input {
+        width: 100%;
+        height: 20% !important;
+        border: none;
+        background: #0f70b7;
+        margin-bottom: 7%;
+        color: #fff;
+        font-size:42px !important;
+      }
+      .contienepublicacion {
+          overflow-y: scroll;
+      }
+      .contieneimagenpublicacion img {
+        margin-left: 5%;
+      }
+  /*descripcion*/
+      .descrip {
+        box-sizing: border-box;
+        position: relative;
+        font-size: 35px;
+        margin-bottom: 10px;
+        word-wrap: break-word;
+      }
+      .contienedesc {
+        width: 100%;
+        overflow-y: scroll;
+      }
+      .depart{
+        padding-bottom: 300%;
+      }
+      /*contactarvendedor*/
+
+      .botonera label {
+        margin-bottom: 100px;
+        font-size: 40px !important;
+      }
+      .botonera input {
+        width: 100% !important;
+        height: 90px !important;
+        border: none;
+        background: #0f70b7;
+        margin-bottom: 5%;
+        color: #fff;
+        font-size: 40px !important;
+      }
+      /*comentarios publicacion*/
+
+      /*comentarios publicacion*/
+
+      .botonera input {
+        width: 100% !important;
+        height: 90px !important;
+        border: none;
+        background: #0f70b7;
+        margin-bottom: 5%;
+        color: #fff;
+        font-size: 40px !important;
+      }
+      .paddingcomentario{
+        padding-bottom: 400px !important;
+      }
+      .contienerespuestax {
+        margin-bottom: 5%;
+        width: 100%;
+        font-size: 29px !important;
+      }
+      #todascomentarios{
+        padding-bottom: 80%;
+      }
+      .respuestax {
+        padding: 20px 10px;
+      }
+      /*Comentar*/
+      #comentario {
+    width: 100%;
+    height: 280px !important;
+    font-size: 49px;
+    margin-bottom: 30px;
+    padding: 10px 10px;
+    display: box;
+    box-orient: horizontal;
+    box-sizing: border-box;
+    border: 1px solid black;
+  }
+    #botoncomentar{
+      width: 100%;
+      height:90px!important;
+      border: none;
+      background: #0f70b7;
+      margin-bottom: 2%;
+      color: #fff;
+      font-size: 52px !important;
+    }
+    /*Perfil*/
+    .cajaperfil {
+      position: fixed;
+      width: 85%;
+      height: 80%;
+      border-radius: 5px;
+      margin-top: 185px;
+      float: left;
+      border: 2px solid grey;
+      margin-left: 7.5%;
+    }
+    .datoperfil {
+      width: 100%;
+      height: 14%;
+      box-sizing: border-box;
+      padding-left: 2%;
+    }
+    .tituloperfil {
+      margin-top: 2px;
+      font-size: 37px !important;
+      font-weight: 600;
+    }
+    .datop {
+      margin-top: 2px;
+      font-size: 35px !important;
+      color: grey;
+    }
+    .cajaperfil #botonmod {
+      width: 100%;
+      height: 15% !important;
+      border: none;
+      background: #0f70b7;
+      margin-bottom: 2%;
+      color: #fff;
+      font-size: 38px !important;
+    }
+    .cajaformulario #botoncan {
+      width: 100%;
+      height: 100px !important;
+      border: none;
+      background: #e20612;
+      margin-bottom: 2%;
+      color: #fff;
+      font-size: 48px !important;
+  }
+    .cajaformulario #botonmod {
+      width: 100%;
+      height: 100px !important;
+      border: none;
+      background: #0f70b7;
+      margin-bottom: 2%;
+      color: #fff;
+      font-size: 48px !important;
+  }
+    .fomulaperfil {
+    position: fixed;
+    width: 95%;
+    height: 95%;
+    border-radius: 5px;
+    margin-top: 25%;
+    float: left;
+    overflow: scroll;
+    margin-left: 2%;
+  }
+    .fomulaperfil .datoxx {
+    width: 90%;
+    height: 75px!important;
+    font-size: 37px !important;
+  }
+  /*publicacion*/
+
+  .cajapublica{
+      position: fixed;
+      width: 95%;
+      height: 85%;
+      border-radius: 5px;
+      margin-top:150px;
+      float: left;
+      overflow: scroll;
+      margin-left: 2%;
+  }
+
+  .publicacion{
+      margin-bottom: 80%;
+      width: 100%;
+      height: 50%;
+      box-sizing: border-box;
+      padding-left: 2%;
+      padding-right: 2%;
+  }
+  .publicacion .imagenpub{
+      width: 50%;
+      height: 50%;
+      display: block;
+      margin-bottom: 20px;
+  }
+  .imagenpub img{
+      width: 100%;
+      height: 100%;
+      float: left;
+      margin-left: 50.55%;
+  }
+  .tutulopublicar{
+      margin-bottom: 10px;
+      font-size: 40px !important;
+      font-weight: 600;
+  }
+  .publicont{
+      text-align: justify;
+      margin-top: 6px;
+      font-size: 40px !important;
+      margin-bottom:60px;
+
+  }
+  #botonpub{
+      margin-top: 10px;
+      width: 100%;
+      height: 90px;
+      border: none;
+      font-size: 45px;
+      background: #0f70b7;
+      color: #fff;
+  }
+  #botonpub:hover{
+      background: #0f0f0f;
+      color: #fff;
+  }
+  #botongo{
+      margin-top: -10px;
+      width: 45%;
+      height: 90px;
+      border: none;
+      font-size: 45px;
+      background: #163F1F;
+      color: #fff;
+  }
+  #botongo:hover{
+      background: #0f0f0f;
+      color: #fff;
+  }
+  /*Publicaciones*/
+  #formularionuevoproducto label {
+    font-size: 45px !important;
+    height: 90px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
+      #formularionuevoproducto input, #formularionuevoproducto select{
+        font-size: 40px !important;
+        height: 75px !important;
+      }
+      .imagenpublicacion {
+        width: 43%;
+        height: 205px;
+        display: inline-block;
+        position: relative;
+      }
+      .imagenpublicacion2 {
+        width: 60%;
+        height: 300px;
+        display: inline-block;
+        position: relative;
+        left: 20%;
+      }
+       #formularionuevoproducto .botonimagen {
+        width: 100% !important;
+        height: 170px !important;
+        margin-bottom: 20px;
+      }
+      .btn-success {
+        background: #3caa37;
+      }
+      .btn {
+        border: none;
+        margin-top: 50px;
+        width: 40% !important;
+        margin-right: 5%;
+      }
+      .pagina {
+        margin-top:10px;
+      }
+      #posi, #nega{
+        font-size: 35px !important;
+      }
+    /*Comentarios*/
+    .contienecomentario{
+     font-size: 30px;
+    }
+    /*Iniciar Sesion*/
+    .formularioiniciar{
+      overflow: hidden !important;
+      height: 80%;
+      font-size: 40px !important;
+    }
+    .formularioiniciar input{
+      height: 80px;
+      font-size: 40px !important;
+      width: 90%;
+    }
+    #enviarrr {
+        font-size: 40px !important;
+        margin-top: 5%;
+        width: 40%;
+        height: 80px !important;
+        border: none;
+        background: #0f70b7;
+    }
+    /*Registro*/
+    .formularioreg{
+      margin-top: 125px;
+      height: 100%;
+      font-size: 50px;
+    }
+    .formularioreg input, .formularioreg select{
+      height: 80px;
+      font-size: 45px !important;
+    }
+    #enviarr {
+        font-size: 55px !important;
+        margin-top: 5%;
+        width: 40%;
+        height: 90px !important;
+        border: none;
+        background: #3caa37;
+        margin-right: 10px !important;
+    }
+    #reset {
+        font-size: 55px !important;
+        margin-top: 5%;
+        width: 40%;
+        height: 90px !important;
+        border: none;
+        background: #163F1F;
+        margin-right: 10px !important;
+        margin-top: 30px;
+        margin-bottom: 150px;
+    }
+    /*Contacto*/
+
+    .formulariocontact{
+      overflow: scroll !important;
+      margin-top:120px !important;
+      height: 100% !important;
+      padding-bottom: 300px !important;
+    }
+    .formulariocontact input{
+      height: 80px !important;
+      width: 90% !important;
+      font-size: 40px !important;
+    }
+
+    .formulariocontact .texto{
+      margin-bottom: 80px !important;
+    }
+    .formulariocontact #mensaje{
+      height:220px !important;
+      width: 90% !important;
+      font-size: 40px !important;
+    }
+    .formulariocontact #enviarr{
+      margin-bottom: 100px;
+    }
+}
+
+@media only screen and (min-height: 1280px) and (max-height: 1920px) and (min-width: 800px) and (max-width: 1080px)  {
+    .menu_bar {
+      position: fixed;
+      display: block;
+      float: left;
+      background-color: #f59c34;
+      width: 120%;
+      z-index: 1;
+      left: -5px;
+      height: 2%;
+      z-index: 90000;
+    }
+    .titulo {
+      margin-top: -90px;
+      font-size: 300% !important;
+    }
+    .menu_bar .bt-menu {
+      display: block;
+      padding: 24px !important;
+      background: #f59c34;
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      font-size:60px !important;
+    }
+    .cajaccion {
+      margin-top: 130px;
+    }
+    .cajaccion article{
+      padding-top: 26px;
+      font-size: 360% !important;
+    }
+    .cajaccion article:hover {
+      padding-top: 26px;
+      font-size: 360% !important;
+    }
+    #sesionon1 article {
+      height: 125px;
+    }
+    header nav ul li h1 {
+      margin: 20px -10px !important;
+      font-size: 320% !important;
+    }
+    header .menu2 {
+      margin: 115px auto !important;
+    }
+    header nav ul li a {
+      font-size: 300% !important;
+      margin-left: -5px;
+      text-align: center;
+    }
+    /*Buscar*/
+    .cajabusqueda #busqueda {
+      width: 80% !important;
+      height: 95px;
+      font-size: 40px  !important;
+    }
+    .cajabusqueda #busqueda:hover, .cajabusqueda #busqueda:active, .cajabusqueda #busqueda:focus {
+      width: 80% !important;
+      height: 95px;
+      font-size: 40px  !important;
+    }
+    .cajabusqueda #busq {
+      width: 15% !important;
+      height: 95px;
+      margin-left: 3%;
+      font-size: 40px  !important;
+    }
+    .cajabusqueda #busq:hover, #busq:active,  #busq:focus,  #busq:visited {
+      width: 15% !important;
+      height: 95px !important;
+      margin-left: 3%;
+      font-size: 40px  !important;
+    }
+    .cajabusqueda #departamento {
+      width: 100% !important;
+      height: 95px;
+      font-size: 40px  !important;
+    }
+    input #busqueda {
+      width: 80% !important;
+      height: 95px;
+    }
+    .dentrode {
+      height: 36%;
+    }
+    .dentrode:hover {
+      height: 36%;
+    }
+    .partedos {
+      position: relative;
+      width: 50%;
+      height: 70%;
+      margin-left: 11%;
+      padding-left: 35%;
+    }
+    .precio{
+    font-size:40px !important;
+    }
+    .cajaccion label {
+      font-size: 50px !important;
+      margin-bottom: 7px;
+    }
+    .cajaresultado {
+      height: 66%;
+    }
+    .cajabusqueda {
+      width: 100% !important;
+      display: box;
+      box-orient: horizontal;
+      margin-top: 2% !important;
+    }
+        /*mostrarpublicacion*/
+        .titulopub {
+          width: 100%;
+          margin-top: 9px;
+          font-size:370% !important;
+          padding: 15px;
+        }
+        .botoneradespues input {
+          width: 100%;
+          height: 20% !important;
+          border: none;
+          background: #0f70b7;
+          margin-bottom: 7%;
+          color: #fff;
+          font-size:42px !important;
+        }
+        .contienepublicacion {
+            overflow-y: scroll;
+        }
+        .contieneimagenpublicacion img {
+          margin-left: 5%;
+        }
+    /*descripcion*/
+        .descrip {
+          box-sizing: border-box;
+          position: relative;
+          font-size: 45px;
+          margin-bottom: 10px;
+          word-wrap: break-word;
+        }
+        .contienedesc {
+          width: 100%;
+          overflow-y: scroll;
+        }
+        .depart{
+          padding-bottom: 300%;
+        }
+        /*contactarvendedor*/
+
+        .botonera label {
+          margin-bottom: 100px;
+          font-size: 50px !important;
+        }
+        .botonera input {
+          width: 100% !important;
+          height: 100px !important;
+          border: none;
+          background: #0f70b7;
+          margin-bottom: 5%;
+          color: #fff;
+          font-size: 55px !important;
+        }
+              /*comentarios publicacion*/
+
+              .botonera input {
+                width: 100% !important;
+                height: 90px !important;
+                border: none;
+                background: #0f70b7;
+                margin-bottom: 5%;
+                margin-top: 2%;
+                color: #fff;
+                font-size: 40px !important;
+              }
+              .paddingcomentario{
+                padding-bottom: 400px !important;
+              }
+              .contienerespuestax {
+                margin-bottom: 5%;
+                width: 100%;
+                font-size: 35px !important;
+              }
+              #todascomentarios{
+                padding-bottom: 80%;
+              }
+              .respuestax {
+                padding: 20px 10px;
+              }
+              /*Perfil*/
+              .cajaperfil {
+                position: fixed;
+                width: 85%;
+                height: 80%;
+                border-radius: 5px;
+                margin-top: 185px;
+                float: left;
+                border: 2px solid grey;
+                margin-left: 7.5%;
+              }
+              .datoperfil {
+                width: 100%;
+                height: 14%;
+                box-sizing: border-box;
+                padding-left: 2%;
+              }
+              .tituloperfil {
+                margin-top: 2px;
+                font-size: 37px !important;
+                font-weight: 600;
+              }
+              .datop {
+                margin-top: 2px;
+                font-size: 35px !important;
+                color: grey;
+              }
+              .cajaperfil #botonmod {
+                width: 100%;
+                height: 15% !important;
+                border: none;
+                background: #0f70b7;
+                margin-bottom: 2%;
+                color: #fff;
+                font-size: 38px !important;
+              }
+              .cajaformulario #botoncan {
+                width: 100%;
+                height: 100px !important;
+                border: none;
+                background: #e20612;
+                margin-bottom: 2%;
+                color: #fff;
+                font-size: 48px !important;
+            }
+              .cajaformulario #botonmod {
+                width: 100%;
+                height: 100px !important;
+                border: none;
+                background: #0f70b7;
+                margin-bottom: 2%;
+                color: #fff;
+                font-size: 48px !important;
+            }
+              .fomulaperfil {
+              position: fixed;
+              width: 95%;
+              height: 95%;
+              border-radius: 5px;
+              margin-top: 25%;
+              float: left;
+              overflow: scroll;
+              margin-left: 2%;
+            }
+              .fomulaperfil .datoxx {
+              width: 90%;
+              height: 95px!important;
+              font-size: 37px !important;
+            }
+            /*publicacion*/
+
+            .cajapublica{
+                position: fixed;
+                width: 95%;
+                height: 90%;
+                border-radius: 5px;
+                margin-top:150px;
+                float: left;
+                overflow: scroll;
+                margin-left: 2%;
+            }
+
+            .publicacion{
+                margin-bottom: 80%;
+                width: 100%;
+                height: 50%;
+                box-sizing: border-box;
+                padding-left: 2%;
+                padding-right: 2%;
+            }
+            .publicacion .imagenpub{
+                width: 50%;
+                height: 50%;
+                display: block;
+                margin-bottom: 20px;
+            }
+            .imagenpub img{
+                width: 100%;
+                height: 100%;
+                float: left;
+                margin-left: 50.55%;
+            }
+            .tutulopublicar{
+                margin-bottom: 10px;
+                font-size: 50px !important;
+                font-weight: 600;
+            }
+            .publicont{
+                text-align: justify;
+                margin-top: 6px;
+                font-size: 50px !important;
+                margin-bottom:60px;
+
+            }
+            #botonpub{
+                margin-top: 10px;
+                width: 100%;
+                height: 100px;
+                border: none;
+                font-size: 55px;
+                background: #0f70b7;
+                color: #fff;
+            }
+            #botonpub:hover{
+                background: #0f0f0f;
+                color: #fff;
+            }
+            #botongo{
+                margin-top: -10px;
+                width: 45%;
+                height: 100px;
+                border: none;
+                font-size: 55px;
+                background: #163F1F;
+                color: #fff;
+            }
+            #botongo:hover{
+                background: #0f0f0f;
+                color: #fff;
+            }
+            /*Publicaciones*/
+            #formularionuevoproducto label {
+              font-size: 45px !important;
+              height: 90px;
+              margin-top: 30px;
+              margin-bottom: 20px;
+            }
+                #formularionuevoproducto input, #formularionuevoproducto select{
+                  font-size: 40px !important;
+                  height: 75px !important;
+                }
+                .imagenpublicacion {
+                  width: 43%;
+                  height: 205px;
+                  display: inline-block;
+                  position: relative;
+                }
+                .imagenpublicacion2 {
+                  width: 60%;
+                  height: 350px;
+                  display: inline-block;
+                  position: relative;
+                  left: 20%;
+                }
+                 #formularionuevoproducto .botonimagen {
+                  width: 100% !important;
+                  height: 170px !important;
+                  margin-bottom: 20px;
+                }
+                .btn-success {
+                  background: #3caa37;
+                }
+                .btn {
+                  border: none;
+                  margin-top: 50px;
+                  width: 40% !important;
+                  margin-right: 5%;
+                }
+                .pagina {
+                  margin-top:10px;
+                }
+         /*Comentarios*/
+         .contienecomentario{
+           font-size: 34px;
+         }
+         .botngrande{
+           height: 80px;
+         }
+         /*Iniciar Sesion*/
+         .formularioiniciar{
+           overflow: hidden !important;
+           height: 80%;
+           font-size: 40px !important;
+         }
+         .formularioiniciar input{
+           height: 80px;
+           font-size: 50px !important;
+           width: 90%;
+         }
+         #enviarrr {
+             font-size: 50px !important;
+             margin-top: 5%;
+             width: 40%;
+             height: 80px !important;
+             border: none;
+             background: #0f70b7;
+         }
+}
+
+@media only screen and (min-height: 1920px)  and (max-height: 20480px)  and (min-width: 1200px) and (max-width: 1536px) {
+    .menu_bar .bt-menu:active {
+      font-size: 100px !important;
+    }
+    .menu_bar {
+      position: fixed;
+      display: block;
+      float: left;
+      background-color: #f59c34;
+      width: 120%;
+      z-index: 1;
+      left: -5px;
+      height: 5%;
+      z-index: 90000;
+    }
+    .titulo {
+      margin-top: -100px !important;
+      font-size: 420% !important;
+    }
+    .menu_bar .bt-menu {
+      display: block;
+      padding: 47px !important;
+      background: #f59c34;
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      font-size:100px !important;
+    }
+    .cajaccion {
+      margin-top: 140px;
+    }
+    .cajaccion article{
+      padding-top: 56px;
+      font-size: 300% !important;
+    }
+    .cajaccion article:hover {
+      padding-top:56px;
+      font-size: 300% !important;
+    }
+    #sesionon1 article {
+      height: 225px;
+    }
+    header nav ul li h1 {
+      margin: 20px -10px !important;
+      font-size: 540% !important;
+    }
+    header .menu2 {
+      margin: 187px auto !important;
+    }
+    header nav ul li a {
+      font-size: 450% !important;
+      margin-left: -5px;
+      text-align: center;
+    }
+    /*Buscar*/
+    .cajabusqueda #busqueda {
+      width: 80% !important;
+      height: 195px;
+      font-size: 80px  !important;
+    }
+    .cajabusqueda #busqueda:hover, .cajabusqueda #busqueda:active, .cajabusqueda #busqueda:focus {
+      width: 80% !important;
+      height: 195px;
+      font-size: 80px  !important;
+    }
+    .cajabusqueda #busq {
+      width: 15% !important;
+      height: 195px;
+      margin-left: 3%;
+      font-size: 80px  !important;
+    }
+    .cajabusqueda #busq:hover, #busq:active,  #busq:focus,  #busq:visited {
+      width: 15% !important;
+      height: 195px !important;
+      margin-left: 3%;
+      font-size: 80px  !important;
+    }
+    .cajabusqueda #departamento {
+      width: 100% !important;
+      height: 195px;
+      font-size: 80px  !important;
+    }
+    input #busqueda {
+      width: 80% !important;
+      height: 195px;
+    }
+    .dentrode {
+      height: 34%;
+    }
+    .dentrode:hover {
+      height: 34%;
+    }
+    .partedos {
+      position: relative;
+      width: 50%;
+      height: 70%;
+      margin-left: 11%;
+      padding-left: 35%;
+    }
+    .precio{
+    font-size:65px !important;
+    }
+    .cajaccion label {
+      font-size: 80px !important;
+      margin-bottom: 100px;
+    }
+    .cajaresultado {
+      height: 66%;
+    }
+    .cajabusqueda {
+      width: 100% !important;
+      display: box;
+      box-orient: horizontal;
+      margin-top: 2% !important;
+    }
+        /*mostrarpublicacion*/
+        .titulopub {
+          width: 100%;
+          margin-top: 120px;
+          font-size:470% !important;
+          padding: 35px;
+        }
+        .botoneradespues input {
+          width: 100%;
+          height: 20% !important;
+          border: none;
+          background: #0f70b7;
+          margin-bottom: 7%;
+          color: #fff;
+          font-size:72px !important;
+        }
+        .contienepublicacion {
+            overflow-y: scroll;
+        }
+        .contieneimagenpublicacion img {
+          margin-left: 5%;
+        }
+    /*descripcion*/
+        .descrip {
+          box-sizing: border-box;
+          position: relative;
+          font-size: 65px;
+          margin-bottom: 10px;
+          word-wrap: break-word;
+        }
+        .contienedesc {
+          margin-top: 10%;
+          width: 100%;
+          overflow-y: scroll;
+        }
+        .depart{
+          padding-bottom: 300%;
+        }
+        /*contactarvendedor*/
+        .botonera {
+          padding-top: 150px;
+        }
+        .botonera label {
+          margin-bottom: 180px;
+          font-size: 75px !important;
+        }
+        .botonera input {
+          width: 100% !important;
+          height: 200px !important;
+          border: none;
+          background: #0f70b7;
+          margin-bottom: 5%;
+          color: #fff;
+          font-size: 75px !important;
+        }
+              /*comentarios publicacion*/
+
+              .botonera input {
+                width: 100% !important;
+                height: 150px !important;
+                border: none;
+                background: #0f70b7;
+                margin-bottom: 5%;
+                margin-top: 2%;
+                color: #fff;
+                font-size: 60px !important;
+              }
+              .paddingcomentario{
+                padding-bottom: 400px !important;
+              }
+              .contienerespuestax {
+                margin-bottom: 5%;
+                width: 100%;
+                font-size:50px !important;
+              }
+              #todascomentarios{
+                padding-bottom: 80%;
+              }
+              .respuestax {
+                padding: 20px 10px;
+              }
+              /*Comentar*/
+              #comentario {
+            width: 100%;
+            height: 300px !important;
+            font-size: 59px;
+            margin-bottom: 30px;
+            padding: 10px 10px;
+            display: box;
+            box-orient: horizontal;
+            box-sizing: border-box;
+            border: 1px solid black;
+          }
+            #botoncomentar{
+              width: 100%;
+              height:190px!important;
+              border: none;
+              background: #0f70b7;
+              margin-bottom: 2%;
+              color: #fff;
+              font-size: 62px !important;
+            }
+            /*Perfil*/
+            .cajaperfil {
+              position: fixed;
+              width: 85%;
+              height: 80%;
+              border-radius: 5px;
+              margin-top: 235px;
+              float: left;
+              border: 2px solid grey;
+              margin-left: 7.5%;
+            }
+            .datoperfil {
+              width: 100%;
+              height: 14%;
+              box-sizing: border-box;
+              padding-left: 2%;
+            }
+            .tituloperfil {
+              margin-top: 2px;
+              font-size: 57px !important;
+              font-weight: 600;
+            }
+            .datop {
+              margin-top: 2px;
+              font-size: 55px !important;
+              color: grey;
+            }
+            .cajaperfil #botonmod {
+              width: 100%;
+              height: 15% !important;
+              border: none;
+              background: #0f70b7;
+              margin-bottom: 2%;
+              color: #fff;
+              font-size: 68px !important;
+            }
+            .cajaformulario #botoncan {
+              width: 100%;
+              height: 200px !important;
+              border: none;
+              background: #e20612;
+              margin-bottom: 2%;
+              color: #fff;
+              font-size: 68px !important;
+          }
+            .cajaformulario #botonmod {
+              width: 100%;
+              height: 200px !important;
+              border: none;
+              background: #0f70b7;
+              margin-bottom: 2%;
+              color: #fff;
+              font-size: 68px !important;
+          }
+            .fomulaperfil {
+            position: fixed;
+            width: 95%;
+            height: 95%;
+            border-radius: 5px;
+            margin-top: 25%;
+            float: left;
+            overflow: scroll;
+            margin-left: 2%;
+          }
+            .fomulaperfil .datoxx {
+            width: 90%;
+            height: 135px!important;
+            font-size: 50px !important;
+          }
+          /*publicacion*/
+
+          .cajapublica{
+              position: fixed;
+              width: 95%;
+              height: 90%;
+              border-radius: 5px;
+              margin-top:260px;
+              float: left;
+              overflow: scroll;
+              margin-left: 2%;
+          }
+
+          .publicacion{
+              margin-bottom: 70%;
+              width: 100%;
+              height: 50%;
+              box-sizing: border-box;
+              padding-left: 2%;
+              padding-right: 2%;
+          }
+          .publicacion .imagenpub{
+              width: 50%;
+              height: 50%;
+              display: block;
+              margin-bottom: 20px;
+          }
+          .imagenpub img{
+              width: 100%;
+              height: 100%;
+              float: left;
+              margin-left: 50.55%;
+          }
+          .tutulopublicar{
+              margin-bottom: 10px;
+              font-size: 70px !important;
+              font-weight: 600;
+          }
+          .publicont{
+              text-align: justify;
+              margin-top: 6px;
+              font-size: 65px !important;
+              margin-bottom:60px;
+
+          }
+          #botonpub{
+              margin-top: 10px;
+              width: 100%;
+              height: 200px;
+              border: none;
+              font-size: 75px;
+              background: #0f70b7;
+              color: #fff;
+          }
+          #botonpub:hover{
+              background: #0f0f0f;
+              color: #fff;
+          }
+          #botongo{
+              margin-top: -10px;
+              width: 45%;
+              height: 200px;
+              border: none;
+              font-size: 75px;
+              background: #163F1F;
+              color: #fff;
+          }
+          #botongo:hover{
+              background: #0f0f0f;
+              color: #fff;
+          }
+          /*Publicaciones*/
+          #formularionuevoproducto label {
+            font-size: 65px !important;
+            height: 120px;
+            margin-top: 30px;
+            margin-bottom: 35px;
+          }
+              #formularionuevoproducto input, #formularionuevoproducto select{
+                font-size: 60px !important;
+                height: 100px !important;
+              }
+              .imagenpublicacion {
+                width: 43%;
+                height:435px;
+                display: inline-block;
+                position: relative;
+              }
+              .imagenpublicacion2 {
+                width: 60%;
+                height: 500px;
+                display: inline-block;
+                position: relative;
+                left: 20%;
+              }
+               #formularionuevoproducto .botonimagen {
+                width: 100% !important;
+                height: 170px !important;
+                margin-bottom: 20px;
+              }
+              .btn-success {
+                background: #3caa37;
+              }
+              .btn {
+                height: 160px;
+                border: none;
+                margin-top: 50px;
+                width: 40% !important;
+                margin-right: 5%;
+              }
+              .pagina {
+                margin-top:10px;
+              }
+              /*Calificar Vendedor*/
+            #contienecomprador .btn{
+              border: none !important;
+              margin-top: 0px !important;
+              height: 40% !important;
+              width: 40% !important;
+              margin-right: 5% !important;
+              font-size: 50px !important;
+              color: #fff;
+            }
+            #contienecomprador section{
+                height: 19%;
+                width: 100%;
+            }
+            #contienecomprador label{
+                font-size: 60px !important;
+                margin-bottom: 20px;
+            }
+
+            #contienecomprador #titulo,#comprador,#telefono,#correo{
+                font-size: 50px;
+            }
+            .infromacion {
+              font-size:55px;
+            }
+                /*Reputacion*/
+
+                .botonrep{
+                    width:100%;
+                    height:15%;
+                    font-size: 65px;
+                    background: #dadada;
+                    margin-top: 20%;
+                    padding-top: 7%;
+                    padding-bottom: 5%;
+                }
+                #posi, #nega{
+                  font-size: 65px !important;
+                }
+         /*Comentarios*/
+         .contienecomentario{
+           font-size: 50px;
+         }
+         .botngrande{
+           height: 120px;
+         }
+         /*Iniciar Sesion*/
+         .formularioiniciar{
+           overflow: hidden !important;
+           height: 80%;
+           font-size: 40px !important;
+         }
+         .formularioiniciar input{
+           height: 130px;
+           font-size: 70px !important;
+           width: 90%;
+         }
+         #enviarrr {
+             font-size: 70px !important;
+             margin-top: 5%;
+             width: 40%;
+             height: 130px !important;
+             border: none;
+             background: #0f70b7;
+         }
+         /*Registro*/
+         .formularioreg{
+           margin-top: 225px;
+           height: 100%;
+           font-size: 50px;
+         }
+         .formularioreg input, .formularioreg select{
+           height: 150px !important;
+           font-size: 45px !important;
+         }
+         #enviarr {
+             font-size: 65px !important;
+             margin-top: 5%;
+             width: 40%;
+             height: 120px !important;
+             border: none;
+             background: #3caa37;
+             margin-right: 10px !important;
+         }
+         #reset {
+             font-size: 65px !important;
+             margin-top: 5%;
+             width: 40%;
+             height: 120px !important;
+             border: none;
+             background: #163F1F;
+             margin-right: 10px !important;
+             margin-top: 30px;
+             margin-bottom: 150px;
+         }
+         /*Contacto*/
+
+         .formulariocontact{
+           overflow: hidden !important;
+           margin-top:160px !important;
+           height: 100% !important;
+           padding-bottom: 300px !important;
+         }
+         .formulariocontact input{
+           height: 80px !important;
+           width: 90% !important;
+           font-size: 60px !important;
+         }
+
+         .formulariocontact .texto{
+           margin-bottom: 80px !important;
+         }
+         .formulariocontact #mensaje{
+           height:220px !important;
+           width: 90% !important;
+           font-size: 60px !important;
+         }
+         .formulariocontact #enviarr{
+           margin-bottom: 100px;
+         }
+}
+
+
+
+@media only screen and (min-height: 1920px)  and (max-height: 20480px)  and (min-width: 1080px) and (max-width: 1200px){
+    .menu_bar .bt-menu:active {
+      font-size: 100px !important;
+    }
+    .menu_bar {
+      position: fixed;
+      display: block;
+      float: left;
+      background-color: #f59c34;
+      width: 120%;
+      z-index: 1;
+      left: -5px;
+      height: 5%;
+      z-index: 90000;
+    }
+    .titulo {
+      margin-top: -150px !important;
+      font-size: 420% !important;
+    }
+    .menu_bar .bt-menu {
+      display: block;
+      padding: 47px !important;
+      background: #f59c34;
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      font-size:100px !important;
+    }
+    .cajaccion {
+      margin-top: 240px;
+    }
+    .cajaccion article{
+      padding-top: 56px;
+      font-size: 500% !important;
+    }
+    .cajaccion article:hover {
+      padding-top:56px;
+      font-size: 500% !important;
+    }
+    #sesionon1 article {
+      height: 225px;
+    }
+    header nav ul li h1 {
+      margin: 20px -10px !important;
+      font-size: 550% !important;
+    }
+    header .menu2 {
+      margin: 207px auto !important;
+    }
+    header nav ul li a {
+      font-size: 480% !important;
+      margin-left: -5px;
+      text-align: center;
+    }
+        /*mostrarpublicacion*/
+        .titulopub {
+          width: 100%;
+          margin-top: 120px;
+          font-size:470% !important;
+          padding: 35px;
+        }
+        .botoneradespues input {
+          width: 100%;
+          height: 20% !important;
+          border: none;
+          background: #0f70b7;
+          margin-bottom: 7%;
+          color: #fff;
+          font-size:72px !important;
+        }
+        .contienepublicacion {
+            overflow-y: scroll;
+        }
+        .contieneimagenpublicacion img {
+          margin-left: 5%;
+        }
+        /*Comentar*/
+        #comentario {
+          margin-top: 60px;
+      width: 100%;
+      height: 400px !important;
+      font-size: 59px;
+      margin-bottom: 30px;
+      padding: 10px 10px;
+      display: box;
+      box-orient: horizontal;
+      box-sizing: border-box;
+      border: 1px solid black;
+    }
+      #botoncomentar{
+        width: 100%;
+        height:190px!important;
+        border: none;
+        background: #0f70b7;
+        margin-bottom: 2%;
+        color: #fff;
+        font-size: 62px !important;
+      }
+      /*Perfil*/
+      .cajaperfil {
+        position: fixed;
+        width: 85%;
+        height: 80%;
+        border-radius: 5px;
+        margin-top: 235px;
+        float: left;
+        border: 2px solid grey;
+        margin-left: 7.5%;
+      }
+      .datoperfil {
+        width: 100%;
+        height: 14%;
+        box-sizing: border-box;
+        padding-left: 2%;
+      }
+      .tituloperfil {
+        margin-top: 2px;
+        font-size: 57px !important;
+        font-weight: 600;
+      }
+      .datop {
+        margin-top: 2px;
+        font-size: 55px !important;
+        color: grey;
+      }
+      .cajaperfil #botonmod {
+        width: 100%;
+        height: 15% !important;
+        border: none;
+        background: #0f70b7;
+        margin-bottom: 2%;
+        color: #fff;
+        font-size: 68px !important;
+      }
+      .cajaformulario #botoncan {
+        width: 100%;
+        height: 200px !important;
+        border: none;
+        background: #e20612;
+        margin-bottom: 2%;
+        color: #fff;
+        font-size: 68px !important;
+    }
+      .cajaformulario #botonmod {
+        width: 100%;
+        height: 200px !important;
+        border: none;
+        background: #0f70b7;
+        margin-bottom: 2%;
+        color: #fff;
+        font-size: 68px !important;
+    }
+      .fomulaperfil {
+      position: fixed;
+      width: 95%;
+      height: 95%;
+      border-radius: 5px;
+      margin-top: 25%;
+      float: left;
+      overflow: scroll;
+      margin-left: 2%;
+    }
+      .fomulaperfil .datoxx {
+      width: 90%;
+      height: 135px!important;
+      font-size: 50px !important;
+    }
+    /*publicacion*/
+
+    .cajapublica{
+        position: fixed;
+        width: 95%;
+        height: 90%;
+        border-radius: 5px;
+        margin-top:260px;
+        float: left;
+        overflow: scroll;
+        margin-left: 2%;
+    }
+
+    .publicacion{
+        margin-bottom: 70%;
+        width: 100%;
+        height: 50%;
+        box-sizing: border-box;
+        padding-left: 2%;
+        padding-right: 2%;
+    }
+    .publicacion .imagenpub{
+        width: 50%;
+        height: 50%;
+        display: block;
+        margin-bottom: 20px;
+    }
+    .imagenpub img{
+        width: 100%;
+        height: 100%;
+        float: left;
+        margin-left: 50.55%;
+    }
+    .tutulopublicar{
+        margin-bottom: 10px;
+        font-size: 70px !important;
+        font-weight: 600;
+    }
+    .publicont{
+        text-align: justify;
+        margin-top: 6px;
+        font-size: 65px !important;
+        margin-bottom:60px;
+
+    }
+    #botonpub{
+        margin-top: 10px;
+        width: 100%;
+        height: 200px;
+        border: none;
+        font-size: 75px;
+        background: #0f70b7;
+        color: #fff;
+    }
+    #botonpub:hover{
+        background: #0f0f0f;
+        color: #fff;
+    }
+    #botongo{
+        margin-top: -10px;
+        width: 45%;
+        height: 200px;
+        border: none;
+        font-size: 75px;
+        background: #163F1F;
+        color: #fff;
+    }
+    #botongo:hover{
+        background: #0f0f0f;
+        color: #fff;
+    }
+    /*Publicaciones*/
+    #formularionuevoproducto label {
+      font-size: 65px !important;
+      height: 120px;
+      margin-top: 30px;
+      margin-bottom: 35px;
+    }
+        #formularionuevoproducto input, #formularionuevoproducto select{
+          font-size: 60px !important;
+          height: 100px !important;
+        }
+        .imagenpublicacion {
+          width: 43%;
+          height:435px;
+          display: inline-block;
+          position: relative;
+        }
+        .imagenpublicacion2 {
+          width: 60%;
+          height: 500px;
+          display: inline-block;
+          position: relative;
+          left: 20%;
+        }
+         #formularionuevoproducto .botonimagen {
+          width: 100% !important;
+          height: 190px !important;
+          margin-bottom: 20px;
+        }
+        .btn-success {
+          background: #3caa37;
+        }
+        .btn {
+          height: 160px;
+          border: none;
+          margin-top: 50px;
+          width: 40% !important;
+          margin-right: 5%;
+        }
+        .pagina {
+          margin-top:10px;
+        }
+        /*Calificar Vendedor*/
+      #contienecomprador .btn{
+        border: none !important;
+        margin-top: 0px !important;
+        height: 40% !important;
+        width: 40% !important;
+        margin-right: 5% !important;
+        font-size: 50px !important;
+        color: #fff;
+      }
+      #contienecomprador section{
+          height: 19%;
+          width: 100%;
+      }
+      #contienecomprador label{
+          font-size: 60px !important;
+          margin-bottom: 20px;
+      }
+
+      #contienecomprador #titulo,#comprador,#telefono,#correo{
+          font-size: 50px;
+      }
+      .infromacion {
+        font-size:55px;
+      }
+          /*Reputacion*/
+
+          .botonrep{
+              width:100%;
+              height:15%;
+              font-size: 65px;
+              background: #dadada;
+              margin-top: 20%;
+              padding-top: 7%;
+              padding-bottom: 5%;
+          }
+          #posi, #nega{
+            font-size: 65px !important;
+          }
+   /*Comentarios*/
+   .contienecomentario{
+     font-size: 50px;
+   }
+   .botngrande{
+     height: 120px;
+   }
+   /*Iniciar Sesion*/
+   .formularioiniciar{
+     overflow: hidden !important;
+     height: 80%;
+     font-size: 40px !important;
+   }
+   .formularioiniciar input{
+     height: 130px;
+     font-size: 70px !important;
+     width: 90%;
+   }
+   #enviarrr {
+       font-size: 70px !important;
+       margin-top: 5%;
+       width: 40%;
+       height: 130px !important;
+       border: none;
+       background: #0f70b7;
+   }
+   .formularioiniciar label{
+     height: 130px !important;;
+     font-size: 70px !important;
+     width: 90%;
+   }
+   /*Registro*/
+   .formularioreg{
+     margin-top: 225px;
+     height: 100%;
+     font-size: 50px;
+   }
+   .formularioreg input, .formularioreg select{
+     height: 150px !important;
+     font-size: 75px !important;
+   }
+   .formularioreg label{
+     height: 100px !important;
+     font-size: 75px !important;
+   }
+   #enviarr {
+       font-size: 75px !important;
+       margin-top: 5%;
+       width: 40%;
+       height: 120px !important;
+       border: none;
+       background: #3caa37;
+       margin-right: 10px !important;
+   }
+   #reset {
+       font-size: 75px !important;
+       margin-top: 5%;
+       width: 40%;
+       height: 120px !important;
+       border: none;
+       background: #163F1F;
+       margin-right: 10px !important;
+       margin-top: 30px;
+       margin-bottom: 150px;
+   }
+   /*Contacto*/
+
+   .formulariocontact{
+     overflow: hidden !important;
+     margin-top:160px !important;
+     height: 100% !important;
+     padding-bottom: 300px !important;
+   }
+   .formulariocontact input{
+     margin-top: 15px;
+     height: 120px !important;
+     width: 90% !important;
+     font-size: 70px !important;
+   }
+
+   .formulariocontact .texto{
+     margin-bottom: 80px !important;
+   }
+   .formulariocontact #mensaje{
+     margin-top: 15px;
+     height:220px !important;
+     width: 90% !important;
+     font-size: 70px !important;
+   }
+   .formulariocontact #enviarr{
+     margin-bottom: 100px;
+   }
+}
+
+@media only screen and (min-height: 2048px) and (max-height: 2560px)  and (max-width: 1536px) {
+    .menu_bar .bt-menu:active {
+      font-size: 100px !important;
+    }
+    .menu_bar {
+      position: fixed;
+      display: block;
+      float: left;
+      background-color: #f59c34;
+      width: 120%;
+      z-index: 1;
+      left: -5px;
+      height: 5%;
+      z-index: 90000;
+    }
+    .titulo {
+      margin-top: -170px !important;
+      font-size: 460% !important;
+    }
+    .menu_bar .bt-menu {
+      display: block;
+      padding: 5px;
+      background: #f59c34;
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      font-size:100px !important;
+    }
+    .cajaccion {
+      margin-top: 240px;
+    }
+    .cajaccion article{
+      padding-top: 56px;
+      font-size: 540% !important;
+    }
+    .cajaccion article:hover {
+      padding-top:56px;
+      font-size: 540% !important;
+    }
+    #sesionon1 article {
+      height: 225px;
+    }
+    header nav ul li h1 {
+      margin: 20px -10px !important;
+      font-size: 550% !important;
+    }
+    header .menu2 {
+      margin: 207px auto !important;
+    }
+    header nav ul li a {
+      font-size: 440% !important;
+      margin-left: -5px;
+      padding: 70px 0px !important;
+      text-align: center;
+    }
+    /*Buscar*/
+    .cajabusqueda #busqueda {
+      width: 80% !important;
+      height: 195px;
+      font-size: 80px  !important;
+    }
+    .cajabusqueda #busqueda:hover, .cajabusqueda #busqueda:active, .cajabusqueda #busqueda:focus {
+      width: 80% !important;
+      height: 195px;
+      font-size:80px  !important;
+    }
+    .cajabusqueda #busq {
+      width: 15% !important;
+      height: 195px;
+      margin-left: 3%;
+      font-size: 80px  !important;
+    }
+    .cajabusqueda #busq:hover, #busq:active,  #busq:focus,  #busq:visited {
+      width: 15% !important;
+      height: 195px !important;
+      margin-left: 3%;
+      font-size: 80px  !important;
+    }
+    .cajabusqueda #departamento {
+      width: 100% !important;
+      height: 195px;
+      font-size: 80px  !important;
+    }
+    input #busqueda {
+      width: 80% !important;
+      height: 195px;
+    }
+    .dentrode {
+      height: 34%;
+    }
+    .dentrode:hover {
+      height: 34%;
+    }
+    .partedos {
+      position: relative;
+      width: 50%;
+      height: 70%;
+      margin-left: 11%;
+      padding-left: 35%;
+    }
+    .precio{
+    font-size:75px !important;
+    }
+    .cajaccion label {
+      font-size: 90px !important;
+      margin-bottom: 100px;
+    }
+    .cajaresultado {
+      height: 70%;
+    }
+    .cajabusqueda {
+      width: 100% !important;
+      display: box;
+      box-orient: horizontal;
+      margin-top:1% !important;
+    }
+        /*mostrarpublicacion*/
+        .titulopub {
+          width: 100%;
+          margin-top: 20px;
+          font-size:470% !important;
+          padding: 35px;
+        }
+        .botoneradespues input {
+          width: 100%;
+          height: 20% !important;
+          border: none;
+          background: #0f70b7;
+          margin-bottom: 7%;
+          color: #fff;
+          font-size:82px !important;
+        }
+        .contienepublicacion {
+            overflow-y: scroll;
+        }
+        .contieneimagenpublicacion img {
+          margin-left: 5%;
+        }
+    /*descripcion*/
+        .descrip {
+          box-sizing: border-box;
+          position: relative;
+          font-size: 65px;
+          margin-bottom: 10px;
+          word-wrap: break-word;
+        }
+        .contienedesc {
+          width: 100%;
+          overflow-y: scroll;
+        }
+        .depart{
+          padding-bottom: 300%;
+        }
+        /*contactarvendedor*/
+        .botonera {
+          padding-top: 150px;
+        }
+        .botonera label {
+          margin-bottom: 180px;
+          font-size: 75px !important;
+        }
+        .botonera input {
+          width: 100% !important;
+          height: 200px !important;
+          border: none;
+          background: #0f70b7;
+          margin-bottom: 5%;
+          color: #fff;
+          font-size: 75px !important;
+        }
+        /*Comentar*/
+        #comentario {
+          margin-top: 60px;
+      width: 100%;
+      height: 400px !important;
+      font-size: 59px;
+      margin-bottom: 30px;
+      padding: 10px 10px;
+      display: box;
+      box-orient: horizontal;
+      box-sizing: border-box;
+      border: 1px solid black;
+    }
+      #botoncomentar{
+        width: 100%;
+        height:190px!important;
+        border: none;
+        background: #0f70b7;
+        margin-bottom: 2%;
+        color: #fff;
+        font-size: 62px !important;
+      }
+      /*Perfil*/
+      .cajaperfil {
+        position: fixed;
+        width: 85%;
+        height: 80%;
+        border-radius: 5px;
+        margin-top: 255px;
+        float: left;
+        border: 2px solid grey;
+        margin-left: 7.5%;
+      }
+      .datoperfil {
+        width: 100%;
+        height: 14%;
+        box-sizing: border-box;
+        padding-left: 2%;
+      }
+      .tituloperfil {
+        margin-top: 2px;
+        font-size: 67px !important;
+        font-weight: 600;
+      }
+      .datop {
+        margin-top: 2px;
+        font-size: 65px !important;
+        color: grey;
+      }
+      .cajaperfil #botonmod {
+        width: 100%;
+        height: 15% !important;
+        border: none;
+        background: #0f70b7;
+        margin-bottom: 2%;
+        color: #fff;
+        font-size: 68px !important;
+      }
+      /*publicacion*/
+
+      .cajapublica{
+          position: fixed;
+          width: 95%;
+          height: 90%;
+          border-radius: 5px;
+          margin-top:260px;
+          float: left;
+          overflow: scroll;
+          margin-left: 2%;
+      }
+
+      .publicacion{
+          margin-bottom: 60%;
+          width: 100%;
+          height: 50%;
+          box-sizing: border-box;
+          padding-left: 2%;
+          padding-right: 2%;
+      }
+      .publicacion .imagenpub{
+          width: 50%;
+          height: 50%;
+          display: block;
+          margin-bottom: 20px;
+      }
+      .imagenpub img{
+          width: 100%;
+          height: 100%;
+          float: left;
+          margin-left: 50.55%;
+      }
+      .tutulopublicar{
+          margin-bottom: 15px;
+          font-size: 80px !important;
+          font-weight: 600;
+      }
+      .publicont{
+          text-align: justify;
+          margin-top: 6px;
+          font-size: 75px !important;
+          margin-bottom:60px;
+
+      }
+      #botonpub{
+          margin-top: 10px;
+          width: 100%;
+          height: 200px;
+          border: none;
+          font-size: 85px;
+          background: #0f70b7;
+          color: #fff;
+      }
+      #botonpub:hover{
+          background: #0f0f0f;
+          color: #fff;
+      }
+      #botongo{
+          margin-top: -10px;
+          width: 45%;
+          height: 200px;
+          border: none;
+          font-size: 75px;
+          background: #163F1F;
+          color: #fff;
+      }
+      #botongo:hover{
+          background: #0f0f0f;
+          color: #fff;
+      }
+      /*Publicaciones*/
+      #formularionuevoproducto label {
+        font-size: 65px !important;
+        height: 120px;
+        margin-top: 30px;
+        margin-bottom: 35px;
+      }
+          #formularionuevoproducto input, #formularionuevoproducto select{
+            font-size: 60px !important;
+            height: 100px !important;
+          }
+          .imagenpublicacion {
+            width: 43%;
+            height:435px;
+            display: inline-block;
+            position: relative;
+          }
+          .imagenpublicacion2 {
+            width: 60%;
+            height:550px;
+            display: inline-block;
+            position: relative;
+            left: 20%;
+          }
+           #formularionuevoproducto .botonimagen {
+            width: 100% !important;
+            height: 190px !important;
+            margin-bottom: 20px;
+          }
+          .btn-success {
+            background: #3caa37;
+          }
+           #formularionuevoproducto .btn {
+            height: 160px !important;
+            border: none;
+            margin-top: 50px;
+            width: 40% !important;
+            margin-right: 5%;
+          }
+          .pagina {
+            margin-top:10px;
+          }
+          /*Iniciar Sesion*/
+          .formularioiniciar{
+            overflow: hidden !important;
+            height: 80%;
+            font-size: 40px !important;
+          }
+          .formularioiniciar input{
+            height: 130px;
+            font-size: 70px !important;
+            width: 90%;
+          }
+          #enviarrr {
+              font-size: 70px !important;
+              margin-top: 5%;
+              width: 40%;
+              height: 130px !important;
+              border: none;
+              background: #0f70b7;
+          }
+          .formularioiniciar label{
+            font-size: 70px !important;
+            width: 90%;
+          }
+          /*Contacto*/
+
+          .formulariocontact{
+            overflow: scroll !important;
+            margin-top:160px !important;
+            height: 100% !important;
+            padding-bottom: 300px !important;
+          }
+          .formulariocontact input{
+            margin-top: 15px;
+            height: 120px !important;
+            width: 90% !important;
+            font-size: 70px !important;
+          }
+
+          .formulariocontact .texto{
+            margin-bottom: 80px !important;
+          }
+          .formulariocontact #mensaje{
+            margin-top: 15px;
+            height:220px !important;
+            width: 90% !important;
+            font-size: 70px !important;
+          }
+          .formulariocontact #enviarr{
+            margin-bottom: 200px;
+          }
+}
+
+@media only screen and (min-height: 2560px) and (max-width: 1600px) {
+
+    .menu_bar .bt-menu:active {
+      font-size: 150px !important;
+    }
+    .menu_bar {
+      position: fixed;
+      display: block;
+      float: left;
+      background-color: #f59c34;
+      width: 120%;
+      z-index: 1;
+      left: -5px;
+      height: 5%;
+      z-index: 90000;
+    }
+    .titulo {
+      margin-top: -220px !important;
+      font-size:85px !important;
+    }
+    .menu_bar .bt-menu {
+      display: block;
+      padding: 74px !important;
+      background: #f59c34;
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      font-size:150px !important;
+    }
+    .cajaccion {
+      margin-top: 390px !important;
+    }
+    .cajaccion article{
+      padding-top: 56px;
+      font-size: 640% !important;
+    }
+    .cajaccion article:hover {
+      padding-top:56px;
+      font-size: 640% !important;
+    }
+    #sesionon1 article {
+      height: 265px;
+    }
+    header nav ul li h1 {
+      margin: 20px -10px !important;
+      font-size: 570% !important;
+    }
+    header .menu2 {
+      margin: 317px auto !important;
+    }
+    header nav ul li a {
+      font-size: 570% !important;
+      margin-left: -5px;
+      padding: 70px 0px !important;
+      text-align: center;
+    }
+    /*Buscar*/
+    .cajabusqueda #busqueda {
+      width: 80% !important;
+      height: 195px;
+      font-size: 80px  !important;
+    }
+    .cajabusqueda #busqueda:hover, .cajabusqueda #busqueda:active, .cajabusqueda #busqueda:focus {
+      width: 80% !important;
+      height: 195px;
+      font-size:80px  !important;
+    }
+    .cajabusqueda #busq {
+      width: 15% !important;
+      height: 195px;
+      margin-left: 3%;
+      font-size: 80px  !important;
+    }
+    .cajabusqueda #busq:hover, #busq:active,  #busq:focus,  #busq:visited {
+      width: 15% !important;
+      height: 195px !important;
+      margin-left: 3%;
+      font-size: 80px  !important;
+    }
+    .cajabusqueda #departamento {
+      width: 100% !important;
+      height: 195px;
+      font-size: 80px  !important;
+    }
+    input #busqueda {
+      width: 80% !important;
+      height: 195px;
+    }
+    .dentrode {
+      height: 34%;
+    }
+    .dentrode:hover {
+      height: 34%;
+    }
+    .partedos {
+      position: relative;
+      width: 50%;
+      height: 70%;
+      margin-left: 11%;
+      padding-left: 35%;
+    }
+    .precio{
+    font-size:75px !important;
+    }
+    .cajaccion label {
+      font-size: 90px !important;
+      margin-bottom: 100px;
+    }
+    .cajaresultado {
+      height: 70%;
+    }
+    .cajabusqueda {
+      width: 100% !important;
+      display: box;
+      box-orient: horizontal;
+      margin-top:1% !important;
+    }
+
+    /*mostrarpublicacion*/
+    .titulopub {
+      width: 100%;
+      font-size: 500% !important;
+      padding: 25px;
+    }
+    .botoneradespues input {
+      width: 100%;
+      height: 20% !important;
+      border: none;
+      background: #0f70b7;
+      margin-bottom: 2%;
+      color: #fff;
+      font-size: 90px !important;
+    }
+/*descripcion*/
+    .descrip {
+      box-sizing: border-box;
+      position: relative;
+      font-size: 78px;
+      margin-bottom: 10px;
+      word-wrap: break-word;
+    }
+    .contienedesc {
+      width: 100%;
+      overflow-y: scroll;
+    }
+    .depart{
+      padding-bottom: 300%;
+    }
+    /*contactarvendedor*/
+    .botonera {
+      padding-top: 150px;
+    }
+    .botonera label {
+      margin-bottom: 240px;
+      font-size: 95px !important;
+    }
+    .botonera input {
+      width: 100% !important;
+      height: 250px !important;
+      border: none;
+      background: #0f70b7;
+      margin-bottom: 5%;
+      color: #fff;
+      font-size: 95px !important;
+    }
+          /*comentarios publicacion*/
+
+          .botonera input {
+            width: 100% !important;
+            height: 290px !important;
+            border: none;
+            background: #0f70b7;
+            margin-bottom: 5%;
+            margin-top: 2%;
+            color: #fff;
+            font-size: 90px !important;
+          }
+          .paddingcomentario{
+            padding-bottom: 400px !important;
+          }
+          .contienerespuestax {
+            margin-bottom: 5%;
+            width: 100%;
+            font-size: 65px !important;
+          }
+          #todascomentarios{
+            padding-bottom: 80%;
+          }
+          .respuestax {
+            padding: 20px 10px;
+          }
+          /*Comentar*/
+          #comentario {
+            margin-top: 60px;
+        width: 100%;
+        height: 400px !important;
+        font-size: 69px;
+        margin-bottom: 30px;
+        padding: 10px 10px;
+        display: box;
+        box-orient: horizontal;
+        box-sizing: border-box;
+        border: 1px solid black;
+      }
+        #botoncomentar{
+          width: 100%;
+          height:200px!important;
+          border: none;
+          background: #0f70b7;
+          margin-bottom: 2%;
+          color: #fff;
+          font-size: 72px !important;
+        }
+        /*Perfil*/
+        .cajaperfil {
+          position: fixed;
+          width: 85%;
+          height: 80%;
+          border-radius: 5px;
+          margin-top: 355px;
+          float: left;
+          border: 2px solid grey;
+          margin-left: 7.5%;
+        }
+        .datoperfil {
+          width: 100%;
+          height: 14%;
+          box-sizing: border-box;
+          padding-left: 2%;
+        }
+        .tituloperfil {
+          margin-top: 2px;
+          font-size: 77px !important;
+          font-weight: 600;
+        }
+        .datop {
+          margin-top: 2px;
+          font-size: 75px !important;
+          color: grey;
+        }
+        .cajaperfil #botonmod {
+          width: 100%;
+          height: 15% !important;
+          border: none;
+          background: #0f70b7;
+          margin-bottom: 2%;
+          color: #fff;
+          font-size: 78px !important;
+        }
+        .cajaformulario #botoncan {
+          width: 100%;
+          height: 200px !important;
+          border: none;
+          background: #e20612;
+          margin-bottom: 2%;
+          color: #fff;
+          font-size: 88px !important;
+      }
+        .cajaformulario #botonmod {
+          width: 100%;
+          height: 200px !important;
+          border: none;
+          background: #0f70b7;
+          margin-bottom: 2%;
+          color: #fff;
+          font-size: 88px !important;
+      }
+        .fomulaperfil {
+        position: fixed;
+        width: 95%;
+        height: 95%;
+        border-radius: 5px;
+        margin-top: 25%;
+        float: left;
+        overflow: scroll;
+        margin-left: 2%;
+      }
+        .fomulaperfil .datoxx {
+        width: 90%;
+        height: 165px!important;
+        font-size: 70px !important;
+      }
+      /*publicacion*/
+
+      .cajapublica{
+          position: fixed;
+          width: 95%;
+          height: 90%;
+          border-radius: 5px;
+          margin-top:330px;
+          float: left;
+          overflow: scroll;
+          margin-left: 2%;
+      }
+
+      .publicacion{
+          margin-bottom: 50%;
+          width: 100%;
+          height: 50%;
+          box-sizing: border-box;
+          padding-left: 2%;
+          padding-right: 2%;
+      }
+      .publicacion .imagenpub{
+          width: 50%;
+          height: 50%;
+          display: block;
+          margin-bottom: 20px;
+      }
+      .imagenpub img{
+          width: 100%;
+          height: 100%;
+          float: left;
+          margin-left: 50.55%;
+      }
+      .tutulopublicar{
+          margin-bottom: 15px;
+          font-size: 80px !important;
+          font-weight: 600;
+      }
+      .publicont{
+          text-align: justify;
+          margin-top: 6px;
+          font-size: 75px !important;
+          margin-bottom:60px;
+
+      }
+      #botonpub{
+          margin-top: 10px;
+          width: 100%;
+          height: 200px;
+          border: none;
+          font-size: 85px;
+          background: #0f70b7;
+          color: #fff;
+      }
+      #botonpub:hover{
+          background: #0f0f0f;
+          color: #fff;
+      }
+      #botongo{
+          margin-top: -10px;
+          width: 45%;
+          height: 200px;
+          border: none;
+          font-size: 85px;
+          background: #163F1F;
+          color: #fff;
+      }
+      #botongo:hover{
+          background: #0f0f0f;
+          color: #fff;
+      }
+      /*Publicaciones*/
+      #formularionuevoproducto label {
+        font-size: 85px !important;
+        height: 190px;
+        margin-top: 40px;
+        margin-bottom: 35px;
+      }
+          #formularionuevoproducto input, #formularionuevoproducto select{
+            font-size: 80px !important;
+            height: 190px !important;
+          }
+          .imagenpublicacion {
+            width: 43%;
+            height:435px;
+            display: inline-block;
+            position: relative;
+          }
+          .imagenpublicacion2 {
+            width: 60%;
+            height: 550px;
+            display: inline-block;
+            position: relative;
+            left: 20%;
+          }
+           #formularionuevoproducto .botonimagen {
+            width: 100% !important;
+            height: 190px !important;
+            margin-bottom: 20px;
+          }
+          .btn-success {
+            background: #3caa37;
+          }
+           #formularionuevoproducto .btn {
+            height: 160px !important;
+            border: none;
+            margin-top: 50px;
+            width: 40% !important;
+            margin-right: 5%;
+          }
+          .pagina {
+            margin-top:10px;
+          }
+          /*Calificar Vendedor*/
+        #contienecomprador .btn{
+          border: none !important;
+          margin-top: 0px !important;
+          height: 40% !important;
+          width: 40% !important;
+          margin-right: 5% !important;
+          font-size: 65px !important;
+          color: #fff;
+        }
+        #contienecomprador section{
+            height: 19%;
+            width: 100%;
+        }
+        #contienecomprador label{
+            font-size: 75px !important;
+            margin-bottom: 20px;
+        }
+
+        #contienecomprador #titulo,#comprador,#telefono,#correo{
+            font-size: 70px;
+        }
+        .infromacion {
+          font-size:65px;
+        }
+            /*Reputacion*/
+
+            .botonrep{
+                width:100%;
+                height:15%;
+                font-size: 75px;
+                background: #dadada;
+                margin-top: 20%;
+                padding-top: 7%;
+                padding-bottom: 5%;
+            }
+            #posi, #nega{
+              font-size: 75px !important;
+            }
+     /*Comentarios*/
+     .contienecomentario{
+       font-size: 70px;
+     }
+     .botngrande{
+       height: 160px;
+     }
+     /*Iniciar Sesion*/
+     .formularioiniciar{
+       overflow: hidden !important;
+       height: 80%;
+       font-size: 40px !important;
+     }
+     .formularioiniciar input{
+       height: 130px;
+       font-size: 70px !important;
+       width: 90%;
+     }
+     #enviarrr {
+         font-size: 70px !important;
+         margin-top: 5%;
+         width: 40%;
+         height: 130px !important;
+         border: none;
+         background: #0f70b7;
+     }
+     .formularioiniciar label{
+       font-size: 70px !important;
+       width: 90%;
+     }
+     /*Registro*/
+     .formularioreg{
+       margin-top: 300px;
+       height: 100%;
+       font-size: 50px;
+     }
+     .formularioreg input, .formularioreg select{
+       height: 150px !important;
+       font-size: 75px !important;
+     }
+     .formularioreg label{
+       height: 100px !important;
+       font-size: 75px !important;
+     }
+     #enviarr {
+         font-size: 75px !important;
+         margin-top: 5%;
+         width: 40%;
+         height: 120px !important;
+         border: none;
+         background: #3caa37;
+         margin-right: 10px !important;
+     }
+     #reset {
+         font-size: 75px !important;
+         margin-top: 5%;
+         width: 40%;
+         height: 120px !important;
+         border: none;
+         background: #163F1F;
+         margin-right: 10px !important;
+         margin-top: 30px;
+         margin-bottom: 150px;
+     }
+     /*Contacto*/
+
+     .formulariocontact{
+       overflow: scroll !important;
+       margin-top:250px !important;
+       height: 100% !important;
+       padding-bottom: 300px !important;
+     }
+     .formulariocontact input{
+       margin-top: 15px;
+       height: 120px !important;
+       width: 90% !important;
+       font-size: 75px !important;
+     }
+
+     .formulariocontact .texto{
+       margin-bottom: 80px !important;
+     }
+     .formulariocontact #mensaje{
+       margin-top: 15px;
+       height:290px !important;
+       width: 90% !important;
+       font-size: 75px !important;
+     }
+     .formulariocontact #enviarr{
+       margin-bottom: 200px;
+       height: 200px !important;
+       font-size: 75px !important;
+     }
+}

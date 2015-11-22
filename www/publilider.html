@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<!--
+    Copyright (c) 2012-2014 Adobe Systems Incorporated. All rights reserved.
+
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="msapplication-tap-highlight" content="no" />
+        <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+        <link rel="stylesheet" type="text/css" href="css/index.css" />
+        <title>Hello World</title>
+        <script src="js/velocidadscroll.js"></script>
+        <script src="js/jquery-1.11.3.min.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+        <script src="js/menu.js"></script>
+        <link rel="stylesheet" href="css/menu.css">
+        <script type="text/javascript" src="jquery.js"></script>
+        <script type="text/javascript" src="js/imagen.js"></script>
+        <link rel="stylesheet" href="css/font-awesome.css">
+        <script type="text/javascript">
+      document.addEventListener("deviceready", onDeviceReady, false);
+      // PhoneGap esta listo
+      function onDeviceReady() {
+
+
+        //DIV DEL MENU
+        menuDiv = document.querySelector("#menu");
+        //BOTON MENU ANDROID
+        document.addEventListener("menubutton", onMenuKeyDown, false);
+        //BOTON ATRAS ANDROID
+        document.addEventListener("backbutton", onBackKeyDown, false);
+
+      }
+
+      //BOTON MENU
+      var menuOpen = true;
+      var menuDiv = "";
+
+      function onMenuKeyDown() {
+        if(menuOpen) {
+                    console.log("close the menu");
+                    menuDiv.style.display="block";
+                    menuOpen = false;
+                } else {
+                        console.log("open the menu");
+                        menuDiv.style.display="none";
+                        menuOpen = true;
+                }
+      }
+      //FIN BOTON MENU
+
+      //BOTON ATRAS ANDROID
+      function onBackKeyDown(){
+        //if($.mobile.activePage.attr('id') == 'home'){ // PARA AÑADIR MAS USAR SEPARADORES "||"
+         // navigator.notification.confirm(
+         // '¿Salir de la aplicación?',
+         // function(button) {
+         //   if (button == 2) {
+         //     navigator.app.exitApp();
+        //    }
+        //  },
+        //  'Salir', 'No,Si');return false;
+      //  }
+      //  else {                            //else if ($.mobile.activePage.attr('id') == 'charlas'){
+                                        //$.mobile.changePage('#home');
+                                          //}else
+        history.go(-1);
+       // }
+      }
+      //FIN BOTON ATRAS ANDROID
+        </script>
+        <script type="text/javascript">
+
+          $(document).ready(function(){
+            usuario = window.localStorage.getItem("usuario");
+            clave = window.localStorage.getItem("id");
+            $('#page_effect').fadeIn(800);
+            $('#idusuario').val(clave);
+          });
+        </script>
+        <script type="text/javascript">
+          function inicio () {
+            location.href="publicar.html";
+          }
+        </script>
+        <script type="text/javascript">
+        function calculo() {
+          var dat = $('#formularionuevoproducto').serialize();
+                    $.ajax({
+                            url:'http://ffasil.com/app/calculapago.php',
+                            type:'POST',
+                            data:dat,
+                            dataType:'json',
+                            error:function(jqXHR,text_status,strError){
+                            },
+                            success:function(data){
+                            var pago=data[0];
+                            pagagada= pago +' Bs';
+                            var fechafinal=data[1];
+                            var formattedDate = new
+                            Date(fechafinal);
+                            var d = formattedDate.getDate();
+                            d += 1;
+                            var m = formattedDate.getMonth();
+                            m += 1;
+                            var y = formattedDate.getFullYear();
+                            $('#cierre').empty();
+                            $('#cierre').append(d +"/"+m+"/"+y);
+                            $('#cierreverdad').val(fechafinal);
+                            $('#pago').val(pago);
+                            $('#pagar').empty();
+                            $('#pagar').append(pagagada);
+                            }
+                        });
+        }
+        </script>
+        <script type="text/javascript">
+        function categoria() {
+
+          if ($('#ubicacion').val()=='Categoria') {
+            $('#cat').removeClass('escondido');
+            $('#cat').addClass('visible');
+            $('#cate').removeClass('escondido');
+            $('#cate').addClass('visible');
+          }else{
+
+            $('#cat').removeClass('visible');
+            $('#cate').removeClass('visible');
+            $('#cat').addClass('escondido');
+            $('#cate').addClass('escondido');
+          }
+        }
+        </script>
+        <script type="text/javascript">
+
+        function enviopub() {
+          if ($('#ubicacion').val()!='' && $('#nombre').val()!=''  && $('#fechIni').val()!=''  && $('#duracion').val()!=''  && $('#cuanto').val()!=''  && $('#nombreimagen').val()!=''  && $('#pagina').val()!=''  && $('#nomb').val()!=''  && $('#phone').val()!='' && $('#email').val()!='') {
+            $('#cargando').removeClass('escondido');
+            $('#cargando').addClass('visible');
+            var dat = $('#formularionuevoproducto').serialize();
+                    $.ajax({
+                            url:'http://ffasil.com/app/registrapublicacion.php',
+                            type:'POST',
+                            data:dat,
+                            dataType:'json',
+                            error:function(jqXHR,text_status,strError){
+                            },
+                            success:function(data){
+                            $('#cargando').removeClass('visible');
+                            $('#cargando').addClass('escondido');
+                            alert('Creado satisfactoriamente');
+                            window.localStorage.setItem("publicacion", data[0]);
+                            location.href="pago.html";
+                            }
+                        });
+          }
+          else{
+            alert('Llene los campos.');
+          }
+        }
+
+        </script>
+    </head>
+    <body >
+          <section class="cerrador"></section>
+        <header>
+          <div class="menu_bar">
+              <a href="#" class="bt-menu"><span class="icon-list2"></span> <i class="fa fa-bars fa-1x "></i></a><center class="titulo" id="user">Formulario L&Iacute;der</center>
+          </div>
+
+                              <nav class="menu2">
+                              <script type="text/javascript">
+                              function cerrarsesion() {
+                               localStorage.clear();
+                                                  location.href="index.html";
+                              }
+                              function buscar(busqueda) {
+                                var objeto = $('#buscar'+busqueda).val();
+                                window.localStorage.setItem("ultimabusqueda", objeto);
+                                location.href="buscar.html";
+                              }
+                              </script>
+                                  <ul>
+                                      <li><h1><span class="icon-house"></span>Categor&iacute;as</h1></li>
+                                      <li><a href="#" onclick="buscar(1);"><span class="icon-house"></span>Accesorios para veh&iacute;culos</a></li>
+                                      <li><a href="#" onclick="buscar(2);"><span class="icon-suitcase"></span>Aeron&aacute;utica</a></li>
+                                      <li><a href="#" onclick="buscar(3);"><span class="icon-suitcase"></span>Agropecuaria y Campo</a></li>
+                                      <li><a href="#" onclick="buscar(4);"><span class="icon-suitcase"></span>Alimentos y Bebidas</a></li>
+                                      <li><a href="#" onclick="buscar(5);"><span class="icon-suitcase"></span>Animales y Mascotas</a></li>
+                                      <li><a href="#" onclick="buscar(6);"><span class="icon-suitcase"></span>Arte y Antigüedades</a></li>
+                                      <li><a href="#" onclick="buscar(7);"><span class="icon-suitcase"></span>Art&iacute;culos militares y de seguridad</a></li>
+                                      <li><a href="#" onclick="buscar(8);"><span class="icon-suitcase"></span>C&aacute;maras y accesorios</a></li>
+                                      <li><a href="#" onclick="buscar(9);"><span class="icon-suitcase"></span>Celulares y Accesorios</a></li>
+                                      <li><a href="#" onclick="buscar(10);"><span class="icon-suitcase"></span>Computaci&oacute;n</a></li>
+                                      <li><a href="#" onclick="buscar(11);"><span class="icon-suitcase"></span>Consolas y videojuegos</a></li>
+                                      <li><a href="#" onclick="buscar(12);"><span class="icon-suitcase"></span>Deportes y Fitness</a></li>
+                                      <li><a href="#" onclick="buscar(13);"><span class="icon-suitcase"></span>Electrodom&eacute;sticos</a></li>
+                                      <li><a href="#" onclick="buscar(14);"><span class="icon-suitcase"></span>Electr&oacute;nicos, audio y video</a></li>
+                                      <li><a href="#" onclick="buscar(15);"><span class="icon-suitcase"></span>Entretenimiento y Ocio</a></li>
+                                      <li><a href="#" onclick="buscar(16);"><span class="icon-suitcase"></span>Equipamiento Industrial</a></li>
+                                      <li><a href="#" onclick="buscar(17);"><span class="icon-suitcase"></span>Inmuebles, bienes ra&iacute;ces</a></li>
+                                      <li><a href="#" onclick="buscar(18);"><span class="icon-suitcase"></span>Instrumentos Musicales</a></li>
+                                      <li><a href="#" onclick="buscar(19);"><span class="icon-suitcase"></span>Inversiones y Negocios</a></li>
+                                      <li><a href="#" onclick="buscar(20);"><span class="icon-suitcase"></span>Joyas y Relojes</a></li>
+                                      <li><a href="#" onclick="buscar(21);"><span class="icon-suitcase"></span>Juegos y juguetes</a></li>
+                                      <li><a href="#" onclick="buscar(22);"><span class="icon-suitcase"></span>Materiales de Construcci&oacute;n</a></li>
+                                      <li><a href="#" onclick="buscar(23);"><span class="icon-suitcase"></span>Motocicletas</a></li>
+                                      <li><a href="#" onclick="buscar(24);"><span class="icon-suitcase"></span>Música y Videos</a></li>
+                                      <li><a href="#" onclick="buscar(25);"><span class="icon-suitcase"></span>Ni&ntilde;os</a></li>
+                                      <li><a href="#" onclick="buscar(26);"><span class="icon-suitcase"></span>Restaurantes y Locales</a></li>
+                                      <li><a href="#" onclick="buscar(27);"><span class="icon-suitcase"></span>Salud y Belleza</a></li>
+                                      <li><a href="#" onclick="buscar(28);"><span class="icon-suitcase"></span>Veh&iacute;culos</a></li>
+                                      <li><a href="#" onclick="buscar(29);"><span class="icon-suitcase"></span>Vestimenta y Moda</a></li>
+                                      <li><a href="#" onclick="buscar(30);"><span class="icon-suitcase"></span>Viajes y Turismo</a></li>
+                                      <li><a href="#" onclick="buscar(31);"><span class="icon-suitcase"></span>Otros</a></li>
+                                      <li><h1><span class="icon-house"></span>Servicios</h1></li>
+                                      <li><a href="#" onclick="buscar(32);"><span class="icon-suitcase"></span>Belleza y Cuidado Personal</a></li>
+                                      <li><a href="#" onclick="buscar(33);"><span class="icon-suitcase"></span>Clases y Capacitaciones</a></li>
+                                      <li><a href="#" onclick="buscar(34);"><span class="icon-suitcase"></span>Fiestas y Eventos</a></li>
+                                      <li><a href="#" onclick="buscar(35);"><span class="icon-suitcase"></span>Importaciones</a></li>
+                                      <li><a href="#" onclick="buscar(36);"><span class="icon-suitcase"></span>Imprenta y Letreros</a></li>
+                                      <li><a href="#" onclick="buscar(37);"><span class="icon-suitcase"></span>Mantenimiento del Hogar</a></li>
+                                      <li><a href="#" onclick="buscar(38);"><span class="icon-suitcase"></span>Mantenimiento Veh&iacute;culos</a></li>
+                                      <li><a href="#" onclick="buscar(39);"><span class="icon-suitcase"></span>Servicio T&eacute;cnico</a></li>
+                                      <li><a href="#" onclick="buscar(40);"><span class="icon-suitcase"></span>Transporte y Mudanzas</a></li>
+                                      <li><a href="#" onclick="buscar(41);"><span class="icon-suitcase"></span>Viajes</a></li>
+                                      <li><a href="#" onclick="buscar(42);"><span class="icon-suitcase"></span>Otros</a></li>
+                                      <li><a href="#" onclick="buscar();"><span class="icon-suitcase"></span></a></li>
+                                  </ul>
+                                  <input value="Accesorios&nbsp;para&nbsp;veh&iacute;culos" type="button" id="buscar1" class="escondido">
+                                  <input value="Aeron&aacute;utica" type="button" id="buscar2" class="escondido">
+                                  <input value="Agropecuaria&nbsp;y&nbsp;Campo" type="button" id="buscar3" class="escondido">
+                                  <input value="Alimentos&nbsp;y&nbsp;Bebidas" type="button" id="buscar4" class="escondido">
+                                  <input value="Animales&nbsp;y&nbsp;Mascotas" type="button" id="buscar5" class="escondido">
+                                  <input value="Arte&nbsp;y&nbsp;Antigüedades" type="button" id="buscar6" class="escondido">
+                                  <input value="Art&iacute;culos&nbsp;militares&nbsp;y&nbsp;de&nbsp;seguridad" type="button" id="buscar7" class="escondido">
+                                  <input value="C&aacute;maras&nbsp;y&nbsp;accesorios" type="button" id="buscar8" class="escondido">
+                                  <input value="Celulares&nbsp;y&nbsp;Accesorios" type="button" id="buscar9" class="escondido">
+                                  <input value="Computaci&oacute;n" type="button" id="buscar10" class="escondido">
+                                  <input value="Consolas&nbsp;y&nbsp;videojuegos" type="button" id="buscar11" class="escondido">
+                                  <input value="Deportes&nbsp;y&nbsp;Fitness" type="button" id="buscar12" class="escondido">
+                                  <input value="Electrodom&eacute;sticos" type="button" id="buscar13" class="escondido">
+                                  <input value="Electr&oacute;nicos,&nbsp;audio&nbsp;y&nbsp;video" type="button" id="buscar14" class="escondido">
+                                  <input value="Entretenimiento&nbsp;y&nbsp;Ocio" type="button" id="buscar15" class="escondido">
+                                  <input value="Equipamiento&nbsp;Industrial" type="button" id="buscar16" class="escondido">
+                                  <input value="Inmuebles,&nbsp;bienes&nbsp;ra&iacute;ces" type="button" id="buscar17" class="escondido">
+                                  <input value="Instrumentos&nbsp;Musicales" type="button" id="buscar18" class="escondido">
+                                  <input value="Inversiones&nbsp;y&nbsp;Negocios" type="button" id="buscar19" class="escondido">
+                                  <input value="Joyas&nbsp;y&nbsp;Relojes" type="button" id="buscar20" class="escondido">
+                                  <input value="Juegos&nbsp;y&nbsp;juguetes" type="button" id="buscar21" class="escondido">
+                                  <input value="Materiales&nbsp;de&nbsp;Construcci&oacute;n" type="button" id="buscar22" class="escondido">
+                                  <input value="Motocicletas" type="button" id="buscar23" class="escondido">
+                                  <input value="Música&nbsp;y&nbsp;Videos" type="button" id="buscar24" class="escondido">
+                                  <input value="Ni&ntilde;os" type="button" id="buscar25" class="escondido">
+                                  <input value="Restaurantes&nbsp;y&nbsp;Locales" type="button" id="buscar26" class="escondido">
+                                  <input value="Salud&nbsp;y&nbsp;Belleza" type="button" id="buscar27" class="escondido">
+                                  <input value="Veh&iacute;culos" type="button" id="buscar28" class="escondido">
+                                  <input value="Vestimenta&nbsp;y&nbsp;Moda" type="button" id="buscar29" class="escondido">
+                                  <input value="Viajes&nbsp;y&nbsp;Turismo" type="button" id="buscar30" class="escondido">
+                                  <input value="Otros" type="button" id="buscar31" class="escondido">
+                                  <input value="Belleza&nbsp;y&nbsp;Cuidado Personal" type="button" id="buscar32" class="escondido">
+                                  <input value="Clases&nbsp;y&nbsp;Capacitaciones" type="button" id="buscar33" class="escondido">
+                                  <input value="Fiestas&nbsp;y&nbsp;Eventos" type="button" id="buscar34" class="escondido">
+                                  <input value="Importaciones" type="button" id="buscar35" class="escondido">
+                                  <input value="Imprenta&nbsp;y&nbsp;Letreros" type="button" id="buscar36" class="escondido">
+                                  <input value="Mantenimiento&nbsp;del&nbsp;Hogar" type="button" id="buscar37" class="escondido">
+                                  <input value="Mantenimiento&nbsp;Veh&iacute;culos" type="button" id="buscar38" class="escondido">
+                                  <input value="Servicio&nbsp;T&eacute;cnico" type="button" id="buscar39" class="escondido">
+                                  <input value="Transporte&nbsp;y&nbsp;Mudanzas" type="button" id="buscar40" class="escondido">
+                                  <input value="Viajes" type="button" id="buscar41" class="escondido">
+                                  <input value="Otros" type="button" id="buscar42" class="escondido">
+                              </nav>
+        </header>
+        <div style="clear:booth"></div>
+        <div id="cargando" class="escondido">
+            <img src="load.gif">
+        </div>
+          <section class="cajaformulario" id="page_effect" style="display:none; overflow:scroll;">
+            <article class="publicacion">
+              <article class="publicont" id="casual">
+                <form id="formularionuevoproducto" method="POST" action="guardar-producto.php" enctype="multipart/form-data" required="required">
+                  <input name="idusuario" id="idusuario" style="display:none;">
+                  <label>Ubicaci&oacute;n</label>
+                    <select id="ubicacion" name="ubicacion" onchange="categoria();" required="required">
+                      <option value="">Seleccione la ubicación a publicar</option>
+                      <option value="Principal">Menú principal</option>
+                      <option value="Categoria">Menú por categorías</option>
+                    </select>
+
+                  <label id="cat" class="escondido"> Categor&iacute;a</label>
+                    <select name="cat" id="cate" class="form-control escondido" required="required">
+                      <option value="">Seleccione la categor&#237;a</option>
+                      <optgroup label="Categor&#237;a">
+                                    <option value="1">Accesorios para veh&#237;culos</option>
+                                    <option value="2">Aeron&#225;utica</option>
+                                    <option value="3">Agropecuaria y Campo</option>
+                                    <option value="4">Alimentos y Bebidas</option>
+                                    <option value="5">Animales y Mascotas</option>
+                                    <option value="6">Arte y Antig&#252;edades</option>
+                                    <option value="7">Art&#237;culos militares y de seguridad</option>
+                                    <option value="8">Art&#237;culos para beb&#233;</option>
+                                    <option value="9">Bolsa de Trabajo</option>
+                                    <option value="10">C&#225;maras y accesorios</option>
+                                    <option value="11">Celulares y Accesorios</option>
+                                    <option value="12">Computaci&#243;n</option>
+                                    <option value="13">Consolas y videojuegos </option>
+                                    <option value="14">Deportes y Fitness</option>
+                                    <option value="15">Electrodom&#233;sticos  </option>
+                                    <option value="16">Electr&#243;nicos, audio y video</option>
+                                    <option value="17">Entretenimiento y Ocio</option>
+                                    <option value="18">Equipamiento Industrial</option>
+                                    <option value="19">Hogar y equipamiento</option>
+                                    <option value="20">Inmuebles, bienes ra&#237;ces</option>
+                                    <option value="21">Instrumentos Musicales</option>
+                                    <option value="22">Inversiones y Negocios</option>
+                                    <option value="23">Joyas y Relojes</option>
+                                    <option value="24">Juegos y juguetes</option>
+                                    <option value="25">Libros y Revistas</option>
+                                    <option value="26">Maquinaria Pesada</option>
+                                    <option value="27">Materiales de Construcci&#243;n</option>
+                                    <option value="28">Motocicletas</option>
+                                    <option value="29">M&#250;sica y Videos</option>
+                                    <option value="30">Ni&#241;os </option>
+                                    <option value="31">Publicidad y Marketing</option>
+                                    <option value="32">Restaurantes y Locales</option>
+                                    <option value="33">Salud y Belleza</option>
+                                    <option value="34">Veh&#237;culos</option>
+                                    <option value="35">Vestimenta y Moda</option>
+                                    <option value="36">Viajes y Turismo</option>
+                                    <option value="38">Otros</option>
+                                  </optgroup>
+                      <optgroup label="Servicios">
+                                    <option value="39">Belleza y Cuidado Personal</option>
+                                    <option value="40">Clases y Capacitaciones</option>
+                                    <option value="41">Fiestas y Eventos</option>
+                                    <option value="42">Importaciones</option>
+                                    <option value="43">Imprenta y Letreros</option>
+                                    <option value="44">Mantenimiento del Hogar</option>
+                                    <option value="45">Mantenimiento Veh&#237;culos</option>
+                                    <option value="46">Servicio T&#233;cnico</option>
+                                    <option value="47">Transporte y Mudanzas</option>
+                                    <option value="48">Viajes </option>
+                                    <option value="49">Otros</option>
+                                  </optgroup>
+                    </select>
+
+                  <label for="namePub" class="textoPromedio">T&#237;tulo de la publicaci&#243;n</label>
+                    <input id="nombre" placeholder="Titulo" name="nombre" type="text" required="required">
+                  <label >Fecha de inicio</label>
+                    <input class="form-control" id="fechIni" placeholder="DD-MM-AAAA" style="margin-top:1em;" name="fechIni" type="date" value="" onchange="calculo();" required="required">
+
+                  <input value="1" placeholder="Lider" name="tipo" id="tipo" style="display:none;">
+                  <label for="duration" class="textoPromedio">Duraci&oacute;n</label>
+                    <input id="duracion" name="duracion" type="number" onchange="calculo();" required="required">
+
+                    <select class="form-control fech" id="cuanto" requied="required" name="time" onchange="calculo();"><option value="" selected="selected">Seleccione el per&iacute;odo</option><option value="1">D&iacute;a(s)</option><option value="7">Semana(s)</option><option value="30">Mes(es)</option></select>
+
+                  <label for="fechaFin" class="textoPromedio">Fecha de Cierre</label>
+                  <label id="cierre"></label>
+                  <input type="text" readonly="readonly" value="" name="cierreverdad" id="cierreverdad" style="display:none;" required="required">
+                  <label id="pagar"></label>
+                  <input type="text" readonly="readonly" value="" name="pago" id="pago" style="display:none;" required="required">
+                  <input name="button" type="button" onclick="getPhoto();" value="Imagen de Publicaci&oacute;n"  class="botonimagen"/>
+                  <input name="button" type="button" onclick="getPhoto2();" value="Imagen Secundaria" class="botonimagen"/>
+                  <div class="imagenpublicacion">
+                  <div id="cargando2" class="escondido">
+                      <img src="load2.gif">
+                  </div>
+                    <img src="" width="200px" id="largeImage">
+                    <input type="text" name="nombreimagen" id="nombreimagen" class="escondido">
+                  </div>
+                  <div  class="imagenpublicacion">
+                  <div id="cargando22" class="escondido">
+                      <img src="load2.gif">
+                  </div>
+                    <img src="" width="200px" id="largeImagen">
+                    <input type="text" name="nombreimagen2" id="nombreimagen2" class="escondido">
+                  </div>
+
+                <label for="pagina" class="textoPromedio">Url de su p&aacute;gina web (debe comenzar con http:// o https://)</label>
+                  <input class="form-control" placeholder="http://example.com" name="pagina" id="pagina"  type="text">
+
+                <label for="" class="textoPromedio">Nombre de contacto</label>
+                  <input class="form-control" placeholder="Nombre de contacto" name="nomb" id="nomb" type="text" required="required">
+                <label for="" class="textoPromedio">Teléfono de contacto</label>
+                  <input class="form-control" placeholder="Telefono de contacto" name="phone" id="phone" type="number" required="required">
+                <label for="" class="textoPromedio">Correo electrónico</label>
+                  <input class="form-control" placeholder="Correo electronico" name="email" id="email" type="email" required="required">
+
+                <input type="button" value="Enviar" name="enviarPub" class="btn btn-success enviarPub" onclick="enviopub();">
+                <input type="reset" value="Borrar" name="borrar" class="btn btn-warning">
+                <input type="reset" value="Cancelar" name="cancelar" class="btn btn-danger" onclick="inicio();">
+                </form>
+              </article>
+            </article>
+          </section>
+            <div id="deviceready" class="blink">
+                <p class="event listening">Connecting to Device</p>
+                <p class="event received">Device is Ready</p>
+            </div>
+
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript">
+            app.initialize();
+        </script>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+    </body>
+</html>
