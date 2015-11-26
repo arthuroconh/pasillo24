@@ -99,117 +99,64 @@
             location.href="publicasual.html";
           }
         </script>
+                  <script type="text/javascript">
+              $(document).ready(function(){
+                localStorage.removeItem("ultimabusqueda");
+                usuario = window.localStorage.getItem("usuario");
+                if (usuario<=0) {
+                  $('#sesionoff').fadeIn(800);
+                  $("#sesionoff").removeClass("escondido");
+                  $("#sesionoff").addClass("visible");
+                }else{
+                  $('#sesionon1').fadeIn(800);
+                  $("#sesionon1").removeClass("escondido");
+                  $("#sesionon1").addClass("visible");
+                }
+              });
+            </script>
     </head>
     <body >
           <section class="cerrador"></section>
-        <header>
-          <div class="menu_bar">
-              <a href="#" class="bt-menu"><span class="icon-list2"></span> <i class="fa fa-bars fa-1x "></i></a><center class="titulo" id="user">Anuncio Casual</center>
-          </div>
+          <header>
+          <script type="text/javascript">
+          function cerrarsesion() {
+           localStorage.clear();
+                              location.href="index.html";
+          }
+          function buscar(busqueda) {
+            var objeto = $('#buscar'+busqueda).val();
+            window.localStorage.setItem("ultimabusqueda", objeto);
+            location.href="buscar.html";
+          }
+          </script>
+            <div class="menu_bar">
+                <div class="icon-list2"></div>
+                <a href="#" class="bt-menu"><i class="fa fa-bars fa-1x "></i></a><center class="titulo" id="user"></center>
+            </div>
 
-                              <nav class="menu2">
-                              <script type="text/javascript">
-                              function cerrarsesion() {
-                               localStorage.clear();
-                                                  location.href="index.html";
-                              }
-                              function buscar(busqueda) {
-                                var objeto = $('#buscar'+busqueda).val();
-                                window.localStorage.setItem("ultimabusqueda", objeto);
-                                location.href="buscar.html";
-                              }
-                              </script>
-                                  <ul>
-                                      <li><h1><span class="icon-house"></span>Categor&iacute;as</h1></li>
-                                      <li><a href="#" onclick="buscar(1);"><span class="icon-house"></span>Accesorios para veh&iacute;culos</a></li>
-                                      <li><a href="#" onclick="buscar(2);"><span class="icon-suitcase"></span>Aeron&aacute;utica</a></li>
-                                      <li><a href="#" onclick="buscar(3);"><span class="icon-suitcase"></span>Agropecuaria y Campo</a></li>
-                                      <li><a href="#" onclick="buscar(4);"><span class="icon-suitcase"></span>Alimentos y Bebidas</a></li>
-                                      <li><a href="#" onclick="buscar(5);"><span class="icon-suitcase"></span>Animales y Mascotas</a></li>
-                                      <li><a href="#" onclick="buscar(6);"><span class="icon-suitcase"></span>Arte y Antigüedades</a></li>
-                                      <li><a href="#" onclick="buscar(7);"><span class="icon-suitcase"></span>Art&iacute;culos militares y de seguridad</a></li>
-                                      <li><a href="#" onclick="buscar(8);"><span class="icon-suitcase"></span>C&aacute;maras y accesorios</a></li>
-                                      <li><a href="#" onclick="buscar(9);"><span class="icon-suitcase"></span>Celulares y Accesorios</a></li>
-                                      <li><a href="#" onclick="buscar(10);"><span class="icon-suitcase"></span>Computaci&oacute;n</a></li>
-                                      <li><a href="#" onclick="buscar(11);"><span class="icon-suitcase"></span>Consolas y videojuegos</a></li>
-                                      <li><a href="#" onclick="buscar(12);"><span class="icon-suitcase"></span>Deportes y Fitness</a></li>
-                                      <li><a href="#" onclick="buscar(13);"><span class="icon-suitcase"></span>Electrodom&eacute;sticos</a></li>
-                                      <li><a href="#" onclick="buscar(14);"><span class="icon-suitcase"></span>Electr&oacute;nicos, audio y video</a></li>
-                                      <li><a href="#" onclick="buscar(15);"><span class="icon-suitcase"></span>Entretenimiento y Ocio</a></li>
-                                      <li><a href="#" onclick="buscar(16);"><span class="icon-suitcase"></span>Equipamiento Industrial</a></li>
-                                      <li><a href="#" onclick="buscar(17);"><span class="icon-suitcase"></span>Inmuebles, bienes ra&iacute;ces</a></li>
-                                      <li><a href="#" onclick="buscar(18);"><span class="icon-suitcase"></span>Instrumentos Musicales</a></li>
-                                      <li><a href="#" onclick="buscar(19);"><span class="icon-suitcase"></span>Inversiones y Negocios</a></li>
-                                      <li><a href="#" onclick="buscar(20);"><span class="icon-suitcase"></span>Joyas y Relojes</a></li>
-                                      <li><a href="#" onclick="buscar(21);"><span class="icon-suitcase"></span>Juegos y juguetes</a></li>
-                                      <li><a href="#" onclick="buscar(22);"><span class="icon-suitcase"></span>Materiales de Construcci&oacute;n</a></li>
-                                      <li><a href="#" onclick="buscar(23);"><span class="icon-suitcase"></span>Motocicletas</a></li>
-                                      <li><a href="#" onclick="buscar(24);"><span class="icon-suitcase"></span>Música y Videos</a></li>
-                                      <li><a href="#" onclick="buscar(25);"><span class="icon-suitcase"></span>Ni&ntilde;os</a></li>
-                                      <li><a href="#" onclick="buscar(26);"><span class="icon-suitcase"></span>Restaurantes y Locales</a></li>
-                                      <li><a href="#" onclick="buscar(27);"><span class="icon-suitcase"></span>Salud y Belleza</a></li>
-                                      <li><a href="#" onclick="buscar(28);"><span class="icon-suitcase"></span>Veh&iacute;culos</a></li>
-                                      <li><a href="#" onclick="buscar(29);"><span class="icon-suitcase"></span>Vestimenta y Moda</a></li>
-                                      <li><a href="#" onclick="buscar(30);"><span class="icon-suitcase"></span>Viajes y Turismo</a></li>
-                                      <li><a href="#" onclick="buscar(31);"><span class="icon-suitcase"></span>Otros</a></li>
-                                      <li><h1><span class="icon-house"></span>Servicios</h1></li>
-                                      <li><a href="#" onclick="buscar(32);"><span class="icon-suitcase"></span>Belleza y Cuidado Personal</a></li>
-                                      <li><a href="#" onclick="buscar(33);"><span class="icon-suitcase"></span>Clases y Capacitaciones</a></li>
-                                      <li><a href="#" onclick="buscar(34);"><span class="icon-suitcase"></span>Fiestas y Eventos</a></li>
-                                      <li><a href="#" onclick="buscar(35);"><span class="icon-suitcase"></span>Importaciones</a></li>
-                                      <li><a href="#" onclick="buscar(36);"><span class="icon-suitcase"></span>Imprenta y Letreros</a></li>
-                                      <li><a href="#" onclick="buscar(37);"><span class="icon-suitcase"></span>Mantenimiento del Hogar</a></li>
-                                      <li><a href="#" onclick="buscar(38);"><span class="icon-suitcase"></span>Mantenimiento Veh&iacute;culos</a></li>
-                                      <li><a href="#" onclick="buscar(39);"><span class="icon-suitcase"></span>Servicio T&eacute;cnico</a></li>
-                                      <li><a href="#" onclick="buscar(40);"><span class="icon-suitcase"></span>Transporte y Mudanzas</a></li>
-                                      <li><a href="#" onclick="buscar(41);"><span class="icon-suitcase"></span>Viajes</a></li>
-                                      <li><a href="#" onclick="buscar(42);"><span class="icon-suitcase"></span>Otros</a></li>
-                                      <li><a href="#" onclick="buscar();"><span class="icon-suitcase"></span></a></li>
-                                  </ul>
-                                  <input value="Accesorios&nbsp;para&nbsp;veh&iacute;culos" type="button" id="buscar1" class="escondido">
-                                  <input value="Aeron&aacute;utica" type="button" id="buscar2" class="escondido">
-                                  <input value="Agropecuaria&nbsp;y&nbsp;Campo" type="button" id="buscar3" class="escondido">
-                                  <input value="Alimentos&nbsp;y&nbsp;Bebidas" type="button" id="buscar4" class="escondido">
-                                  <input value="Animales&nbsp;y&nbsp;Mascotas" type="button" id="buscar5" class="escondido">
-                                  <input value="Arte&nbsp;y&nbsp;Antigüedades" type="button" id="buscar6" class="escondido">
-                                  <input value="Art&iacute;culos&nbsp;militares&nbsp;y&nbsp;de&nbsp;seguridad" type="button" id="buscar7" class="escondido">
-                                  <input value="C&aacute;maras&nbsp;y&nbsp;accesorios" type="button" id="buscar8" class="escondido">
-                                  <input value="Celulares&nbsp;y&nbsp;Accesorios" type="button" id="buscar9" class="escondido">
-                                  <input value="Computaci&oacute;n" type="button" id="buscar10" class="escondido">
-                                  <input value="Consolas&nbsp;y&nbsp;videojuegos" type="button" id="buscar11" class="escondido">
-                                  <input value="Deportes&nbsp;y&nbsp;Fitness" type="button" id="buscar12" class="escondido">
-                                  <input value="Electrodom&eacute;sticos" type="button" id="buscar13" class="escondido">
-                                  <input value="Electr&oacute;nicos,&nbsp;audio&nbsp;y&nbsp;video" type="button" id="buscar14" class="escondido">
-                                  <input value="Entretenimiento&nbsp;y&nbsp;Ocio" type="button" id="buscar15" class="escondido">
-                                  <input value="Equipamiento&nbsp;Industrial" type="button" id="buscar16" class="escondido">
-                                  <input value="Inmuebles,&nbsp;bienes&nbsp;ra&iacute;ces" type="button" id="buscar17" class="escondido">
-                                  <input value="Instrumentos&nbsp;Musicales" type="button" id="buscar18" class="escondido">
-                                  <input value="Inversiones&nbsp;y&nbsp;Negocios" type="button" id="buscar19" class="escondido">
-                                  <input value="Joyas&nbsp;y&nbsp;Relojes" type="button" id="buscar20" class="escondido">
-                                  <input value="Juegos&nbsp;y&nbsp;juguetes" type="button" id="buscar21" class="escondido">
-                                  <input value="Materiales&nbsp;de&nbsp;Construcci&oacute;n" type="button" id="buscar22" class="escondido">
-                                  <input value="Motocicletas" type="button" id="buscar23" class="escondido">
-                                  <input value="Música&nbsp;y&nbsp;Videos" type="button" id="buscar24" class="escondido">
-                                  <input value="Ni&ntilde;os" type="button" id="buscar25" class="escondido">
-                                  <input value="Restaurantes&nbsp;y&nbsp;Locales" type="button" id="buscar26" class="escondido">
-                                  <input value="Salud&nbsp;y&nbsp;Belleza" type="button" id="buscar27" class="escondido">
-                                  <input value="Veh&iacute;culos" type="button" id="buscar28" class="escondido">
-                                  <input value="Vestimenta&nbsp;y&nbsp;Moda" type="button" id="buscar29" class="escondido">
-                                  <input value="Viajes&nbsp;y&nbsp;Turismo" type="button" id="buscar30" class="escondido">
-                                  <input value="Otros" type="button" id="buscar31" class="escondido">
-                                  <input value="Belleza&nbsp;y&nbsp;Cuidado Personal" type="button" id="buscar32" class="escondido">
-                                  <input value="Clases&nbsp;y&nbsp;Capacitaciones" type="button" id="buscar33" class="escondido">
-                                  <input value="Fiestas&nbsp;y&nbsp;Eventos" type="button" id="buscar34" class="escondido">
-                                  <input value="Importaciones" type="button" id="buscar35" class="escondido">
-                                  <input value="Imprenta&nbsp;y&nbsp;Letreros" type="button" id="buscar36" class="escondido">
-                                  <input value="Mantenimiento&nbsp;del&nbsp;Hogar" type="button" id="buscar37" class="escondido">
-                                  <input value="Mantenimiento&nbsp;Veh&iacute;culos" type="button" id="buscar38" class="escondido">
-                                  <input value="Servicio&nbsp;T&eacute;cnico" type="button" id="buscar39" class="escondido">
-                                  <input value="Transporte&nbsp;y&nbsp;Mudanzas" type="button" id="buscar40" class="escondido">
-                                  <input value="Viajes" type="button" id="buscar41" class="escondido">
-                                  <input value="Otros" type="button" id="buscar42" class="escondido">
-                              </nav>
-        </header>
+            <nav class="menu2">
+                <ul class="escondido" id="sesionoff">
+                    <li><a href="buscar.html"><span class="icon-house"></span>Buscar</a></li>
+                    <li><a href="contacto.html"><span class="icon-suitcase"></span>Cont&aacute;ctenos</a></li>
+                    <li><a href="terminos.html"><span class="icon-suitcase">T&eacute;rminos y Condiciones</span></a></li>
+                    <li><a href="iniciar.html"><span class="icon-suitcase">Iniciar Sesi&oacute;n</span></a></li>
+                    <li><a href="registro.html"><span class="icon-suitcase">Registrarse</span></a></li>
+                </ul>
+                    <ul class="escondido" id="sesionon1">
+                        <li><a href="buscar.html"><span class="icon-house"></span>Buscar</a></li>
+                            <li><a href="perfil.html"><span class="icon-house"></span>Perfil</a></li>
+                                <li><a href="publicar.html"><span class="icon-house"></span>Publicar</a></li>
+                                    <li><a href="mispublicaciones.html"><span class="icon-house"></span>Mis Publicaciones</a></li>
+                                        <li><a href="miscompras.html"><span class="icon-house"></span>Mis Compras</a></li>
+                                            <li><a href="misventas.html"><span class="icon-house"></span>Mis Ventas</a></li>
+                                                <li><a href="reputacion.html"><span class="icon-house"></span>Reputaci&oacute;n</a></li>
+                                                    <li><a href="comentarios.html"><span class="icon-house"></span>Comentarios</a></li>
+                        <li><a  href="#" onclick="cerrarsesion();"><span class="icon-suitcase"></span>Cerrar Sesi&oacute;n</a></li>
+  <li><a href="contacto.html"><span class="icon-suitcase"></span>Cont&aacute;ctenos</a></li>
+                    <li><a href="terminos.html"><span class="icon-suitcase">T&eacute;rminos y Condiciones</span></a></li>
+                    </ul>
+            </nav>
+          </header>
         <div style="clear:booth"></div>
         <div id="cargando" class="escondido">
             <img src="load.gif">
