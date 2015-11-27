@@ -93,6 +93,7 @@ header nav ul li a: {
 	}
 
 	.menu_bar{
+    padding-top: 2%;
 		position:fixed;
 		display:block;
 		float: left;
