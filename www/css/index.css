@@ -715,7 +715,11 @@ float: right;
     font-size: 40px !important;
     box-sizing: border-box;
 }
-
+.letraindex{
+  font-size: 200%;
+  padding: 5% 0;
+  font-weight: normal;
+}
 .cajaccion label{
     width: 90%;
     height: 40px;
@@ -2613,7 +2617,7 @@ font-size:12px !important;
 }
 .menu_bar .bt-menu {
   display: block;
-  padding: 10px !important;
+  padding: 1px !important;
   background: #f59c34;
   color: #fff;
   text-decoration: none;
@@ -3018,7 +3022,7 @@ header nav ul li a {
 }
 .menu_bar .bt-menu {
   display: block;
-  padding: 5px;
+  padding: 1px;
   background: #f59c34;
   color: #fff;
   text-decoration: none;
@@ -3566,7 +3570,7 @@ font-size:27px !important;
 }
 .menu_bar .bt-menu {
   display: block;
-  padding: 20px  !important;
+  padding: 5px  !important;
   background: #f59c34;
   color: #fff;
   text-decoration: none;
@@ -3987,7 +3991,7 @@ font-size:23px !important;
 }
 .menu_bar .bt-menu {
   display: block;
-  padding: 20px !important;
+  padding: 10px !important;
   background: #f59c34;
   color: #fff;
   text-decoration: none;
@@ -5002,7 +5006,7 @@ font-size:28px !important;
 }
 .menu_bar .bt-menu {
   display: block;
-  padding: 20px !important;
+  padding: 5px !important;
   background: #f59c34;
   color: #fff;
   text-decoration: none;
@@ -5489,7 +5493,7 @@ font-size:35px !important;
 }
 .menu_bar .bt-menu {
   display: block;
-  padding:20px !important;
+  padding:10px !important;
   background: #f59c34;
   color: #fff;
   text-decoration: none;
@@ -5962,7 +5966,7 @@ font-size:35px !important;
   }
   .menu_bar .bt-menu {
     display: block;
-    padding: 24px !important;
+    padding: 2px !important;
     background: #f59c34;
     color: #fff;
     text-decoration: none;
@@ -6438,7 +6442,7 @@ font-size:35px !important;
     }
     .menu_bar .bt-menu {
       display: block;
-      padding: 24px !important;
+      padding: 8px !important;
       background: #f59c34;
       color: #fff;
       text-decoration: none;
