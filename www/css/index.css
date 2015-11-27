@@ -2617,7 +2617,7 @@ font-size:12px !important;
 }
 .menu_bar .bt-menu {
   display: block;
-  padding: 1px !important;
+  padding: 5px !important;
   background: #f59c34;
   color: #fff;
   text-decoration: none;

@@ -155,55 +155,57 @@
             </section>
             <script type="text/javascript">
               function buscar() {
-                alert('Hola');
+                var objeto = $('#buscarlo').val();
+              window.localStorage.setItem("ultimabusqueda", objeto);
+              location.href="buscar.html";
               }
             </script>
             <section class="cajafiltro">
               <center><h1>Filtro de b&uacute;squeda</h1></center><br><center>
               <form method="post">
-              <select class="" name="" onchange="buscar();">
+              <select class="" name="" onchange="buscar();" id="buscarlo">
 <option value="option">Categor&iacute;as/Servicios</option>
-<option value="option">Accesorios para veh&iacute;culos</option>
-<option value="option">Aeron&aacute;utica</option>
-<option value="option">Agropecuaria y Campo</option>
-<option value="option">Alimentos y Bebidas</option>
-<option value="option">Animales y Mascotas</option>
-<option value="option">Arte y Antigüedades</option>
-<option value="option">Art&iacute;culos militares y de seguridad</option>
-<option value="option">C&aacute;maras y accesorios</option>
-<option value="option">Celulares y Accesorios</option>
-<option value="option">Computaci&oacute;n</option>
-<option value="option">Consolas y videojuegos</option>
-<option value="option">Deportes y Fitness</option>
-<option value="option">Electrodom&eacute;sticos</option>
-<option value="option">Electr&oacute;nicos, audio y video</option>
-<option value="option">Entretenimiento y Ocio</option>
-<option value="option">Equipamiento Industrial</option>
-<option value="option">Inmuebles, bienes ra&iacute;ces</option>
-<option value="option">Instrumentos Musicales</option>
-<option value="option">Inversiones y Negocios</option>
-<option value="option">Joyas y Relojes</option>
-<option value="option">Juegos y juguetes</option>
-<option value="option">Materiales de Construcci&oacute;n</option>
-<option value="option">Motocicletas</option>
-<option value="option">M&uacute;sica y Videos</option>
-<option value="option">Ni&ntilde;os</option>
-<option value="option">Restaurantes y Locales</option>
-<option value="option">Salud y Belleza</option>
-<option value="option">Veh&iacute;culos</option>
-<option value="option">Vestimenta y Moda</option>
-<option value="option">Viajes y Turismo</option>
-<option value="option">Belleza y Cuidado Personal</option>
-<option value="option">Clases y Capacitaciones</option>
-<option value="option">Fiestas y Eventos</option>
-<option value="option">Importaciones</option>
-<option value="option">Imprenta y Letreros</option>
-<option value="option">Mantenimiento del Hogar</option>
-<option value="option">Mantenimiento Veh&iacute;culos</option>
-<option value="option">Servicio T&eacute;cnico</option>
-<option value="option">Transporte y Mudanzas</option>
-<option value="option">Viajes</option>
-<option value="option">Otros</option>
+<option value="Accesorios para veh&iacute;culos">Accesorios para veh&iacute;culos</option>
+<option value="Aeron&aacute;utica">Aeron&aacute;utica</option>
+<option value="Agropecuaria y Campo">Agropecuaria y Campo</option>
+<option value="Alimentos y Bebidas">Alimentos y Bebidas</option>
+<option value="Animales y Mascotas">Animales y Mascotas</option>
+<option value="Arte y Antigüedades">Arte y Antigüedades</option>
+<option value="Art&iacute;culos militares y de seguridad">Art&iacute;culos militares y de seguridad</option>
+<option value="C&aacute;maras y accesorios">C&aacute;maras y accesorios</option>
+<option value="Celulares y Accesorios">Celulares y Accesorios</option>
+<option value="Computaci&oacute;n">Computaci&oacute;n</option>
+<option value="Consolas y videojuegos">Consolas y videojuegos</option>
+<option value="Deportes y Fitness">Deportes y Fitness</option>
+<option value="Electrodom&eacute;sticos">Electrodom&eacute;sticos</option>
+<option value="Electr&oacute;nicos, audio y video">Electr&oacute;nicos, audio y video</option>
+<option value="Entretenimiento y Ocio">Entretenimiento y Ocio</option>
+<option value="Equipamiento Industrial">Equipamiento Industrial</option>
+<option value="Inmuebles, bienes ra&iacute;ces">Inmuebles, bienes ra&iacute;ces</option>
+<option value="Instrumentos Musicales">Instrumentos Musicales</option>
+<option value="Inversiones y Negocios">Inversiones y Negocios</option>
+<option value="Joyas y Relojes">Joyas y Relojes</option>
+<option value="Juegos y juguetes">Juegos y juguetes</option>
+<option value="Materiales de Construcci&oacute;n">Materiales de Construcci&oacute;n</option>
+<option value="Motocicletas">Motocicletas</option>
+<option value="M&uacute;sica y Videos">M&uacute;sica y Videos</option>
+<option value="Ni&ntilde;os">Ni&ntilde;os</option>
+<option value="Restaurantes y Locales">Restaurantes y Locales</option>
+<option value="Salud y Belleza">Salud y Belleza</option>
+<option value="Veh&iacute;culos">Veh&iacute;culos</option>
+<option value="Vestimenta y Moda">Vestimenta y Moda</option>
+<option value="Viajes y Turismo">Viajes y Turismo</option>
+<option value="Belleza y Cuidado Personal">Belleza y Cuidado Personal</option>
+<option value="Clases y Capacitaciones">Clases y Capacitaciones</option>
+<option value="Fiestas y Eventos">Fiestas y Eventos</option>
+<option value="Importaciones">Importaciones</option>
+<option value="Imprenta y Letreros">Imprenta y Letreros</option>
+<option value="Mantenimiento del Hogar">Mantenimiento del Hogar</option>
+<option value="Mantenimiento Veh&iacute;culos">Mantenimiento Veh&iacute;culos</option>
+<option value="Servicio T&eacute;cnico">Servicio T&eacute;cnico</option>
+<option value="Transporte y Mudanzas">Transporte y Mudanzas</option>
+<option value="Viajes">Viajes</option>
+<option value="Otros">Otros</option>
               </select></center>
 
               </form>
