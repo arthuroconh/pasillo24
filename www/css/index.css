@@ -103,6 +103,7 @@ body {
   height: 20%;
 }
 .fondopublicidad{
+  margin-top: 15%;
     width: 100%;
     height: 15%;
     background: url(../img/gif.gif);
@@ -722,6 +723,10 @@ float: right;
   font-size: 200%;
   padding: 5% 0;
   font-weight: normal;
+}
+#buscarlo{
+  width: 97%;
+  height: 100px;
 }
 .cajaccion label{
     width: 90%;
@@ -2140,6 +2145,27 @@ label{
 }
 }
 @media only screen and (min-height: 320px) and (max-height: 480px) and (min-width: 240px) and (max-width: 320px) {
+
+  .letraindex{
+    font-size: 200%;
+    padding: 5% 0;
+    font-weight: normal;
+  }
+.letraindextop{
+    font-size: 200%;
+    padding: 5% 0;
+    font-weight: normal;
+    margin-top: 50px;
+  }
+  .cajafiltro{
+    width: 100%;
+    height: 20%;
+    margin-bottom: 20px;
+  }
+  #buscarlo{
+    width: 97%;
+    height: 50px;
+  }
 .menu_bar {
   position: fixed;
   display: block;
@@ -2603,6 +2629,28 @@ font-size:12px !important;
 }
 
 @media only screen and (min-height: 480px) and (max-height: 800px) and (min-width: 320px) and (max-width: 640px) {
+
+    .letraindex{
+    font-size: 25px !important;
+      padding: 5% 0;
+      font-weight: normal;
+    }
+  .letraindextop{
+  font-size: 25px !important;
+      padding: 5% 0;
+      font-weight: normal;
+      margin-top: 20px;
+    }
+    .cajafiltro{
+      width: 100%;
+      height: 20%;
+      margin-bottom: 20px;
+    }
+    #buscarlo{
+      width: 97%;
+      height: 70px;
+      font-size: 25px !important;
+    }
 .menu_bar {
   position: fixed;
   display: block;
@@ -3008,6 +3056,27 @@ header nav ul li a {
         }
 }
 @media only screen and (min-height: 960px) and (min-width: 640px) and (max-width: 768px) {
+    .letraindex{
+    font-size: 35px !important;
+      padding: 5% 0;
+      font-weight: normal;
+    }
+  .letraindextop{
+  font-size: 35px !important;
+      padding: 5% 0;
+      font-weight: normal;
+      margin-top: 20px;
+    }
+    .cajafiltro{
+      width: 100%;
+      height: 20%;
+      margin-bottom: 20px;
+    }
+    #buscarlo{
+      width: 97%;
+      height: 80px;
+      font-size: 35px !important;
+    }
 .menu_bar {
   position: fixed;
   display: block;
@@ -3556,6 +3625,27 @@ font-size:27px !important;
 }
 
 @media only screen and (min-height: 800px) and (max-height: 960px)  and (max-width: 480px) {
+    .letraindex{
+    font-size: 30px !important;
+      padding: 5% 0;
+      font-weight: normal;
+    }
+  .letraindextop{
+  font-size: 30px !important;
+      padding: 5% 0;
+      font-weight: normal;
+      margin-top: 20px;
+    }
+    .cajafiltro{
+      width: 100%;
+      height: 20%;
+      margin-bottom: 20px;
+    }
+    #buscarlo{
+      width: 97%;
+      height: 90px;
+      font-size: 30px !important;
+    }
 .menu_bar {
   position: fixed;
   display: block;
@@ -3977,6 +4067,27 @@ font-size:23px !important;
 }
 
 @media only screen and (min-height: 960px) and (max-height: 1024px)  and (min-width: 540px) and (max-width: 641px) {
+    .letraindex{
+    font-size: 40px !important;
+      padding: 5% 0;
+      font-weight: normal;
+    }
+  .letraindextop{
+  font-size: 40px !important;
+      padding: 5% 0;
+      font-weight: normal;
+      margin-top: 20px;
+    }
+    .cajafiltro{
+      width: 100%;
+      height: 20%;
+      margin-bottom: 20px;
+    }
+    #buscarlo{
+      width: 97%;
+      height: 90px;
+      font-size: 40px !important;
+    }
 .menu_bar {
   position: fixed;
   display: block;
@@ -4515,6 +4626,27 @@ font-size:28px !important;
     }
 }
 @media only screen and (min-height: 1024px) and (max-height: 1136px) and (min-width: 600px) and (max-width: 768px) {
+    .letraindex{
+    font-size: 40px !important;
+      padding: 5% 0;
+      font-weight: normal;
+    }
+  .letraindextop{
+  font-size: 40px !important;
+      padding: 5% 0;
+      font-weight: normal;
+      margin-top: 20px;
+    }
+    .cajafiltro{
+      width: 100%;
+      height: 20%;
+      margin-bottom: 20px;
+    }
+    #buscarlo{
+      width: 97%;
+      height: 90px;
+      font-size: 40px !important;
+    }
 .menu_bar {
   position: fixed;
   display: block;
@@ -4992,6 +5124,27 @@ font-size:28px !important;
 
 
 @media only screen and (min-height: 1024px)  and (max-height: 1136px) and (min-width: 768px) and (max-width: 800px) {
+    .letraindex{
+    font-size: 40px !important;
+      padding: 5% 0;
+      font-weight: normal;
+    }
+  .letraindextop{
+  font-size: 40px !important;
+      padding: 5% 0;
+      font-weight: normal;
+      margin-top: 20px;
+    }
+    .cajafiltro{
+      width: 100%;
+      height: 20%;
+      margin-bottom: 20px;
+    }
+    #buscarlo{
+      width: 97%;
+      height: 90px;
+      font-size: 40px !important;
+    }
 .menu_bar {
   position: fixed;
   display: block;
@@ -5479,6 +5632,27 @@ font-size:35px !important;
 }
 
 @media only screen and (max-height: 1280px) and (min-width: 720px){
+    .letraindex{
+    font-size: 40px !important;
+      padding: 5% 0;
+      font-weight: normal;
+    }
+  .letraindextop{
+  font-size: 40px !important;
+      padding: 5% 0;
+      font-weight: normal;
+      margin-top: 20px;
+    }
+    .cajafiltro{
+      width: 100%;
+      height: 20%;
+      margin-bottom: 20px;
+    }
+    #buscarlo{
+      width: 97%;
+      height: 90px;
+      font-size: 40px !important;
+    }
 .menu_bar {
   position: fixed;
   display: block;
@@ -5951,6 +6125,27 @@ font-size:35px !important;
 }
 
 @media only screen and (min-height: 1136px) and (max-width: 640px) {
+    .letraindex{
+    font-size: 40px !important;
+      padding: 5% 0;
+      font-weight: normal;
+    }
+  .letraindextop{
+  font-size: 40px !important;
+      padding: 5% 0;
+      font-weight: normal;
+      margin-top: 20px;
+    }
+    .cajafiltro{
+      width: 100%;
+      height: 20%;
+      margin-bottom: 20px;
+    }
+    #buscarlo{
+      width: 97%;
+      height: 90px;
+      font-size: 40px !important;
+    }
 
   .menu_bar {
     position: fixed;
@@ -6428,6 +6623,27 @@ font-size:35px !important;
 }
 
 @media only screen and (min-height: 1280px) and (max-height: 1920px) and (min-width: 800px) and (max-width: 1080px)  {
+    .letraindex{
+    font-size: 40px !important;
+      padding: 5% 0;
+      font-weight: normal;
+    }
+  .letraindextop{
+  font-size: 40px !important;
+      padding: 5% 0;
+      font-weight: normal;
+      margin-top: 20px;
+    }
+    .cajafiltro{
+      width: 100%;
+      height: 20%;
+      margin-bottom: 20px;
+    }
+    #buscarlo{
+      width: 97%;
+      height: 90px;
+      font-size: 40px !important;
+    }
     .menu_bar {
       position: fixed;
       display: block;
@@ -6827,6 +7043,28 @@ font-size:35px !important;
 }
 
 @media only screen and (min-height: 1920px)  and (max-height: 20480px)  and (min-width: 1200px) and (max-width: 1536px) {
+
+      .letraindex{
+      font-size: 70px !important;
+        padding: 5% 0;
+        font-weight: normal;
+      }
+    .letraindextop{
+    font-size: 70px !important;
+        padding: 5% 0;
+        font-weight: normal;
+        margin-top: 20px;
+      }
+      .cajafiltro{
+        width: 100%;
+        height: 15%;
+        margin-bottom: 20px;
+      }
+      #buscarlo{
+        width: 97%;
+        height: 140px;
+        font-size:70px !important;
+      }
     .menu_bar .bt-menu:active {
     font-size:800% !important;
     }
@@ -7350,6 +7588,27 @@ font-size:35px !important;
 
 
 @media only screen and (min-height: 1920px)  and (max-height: 20480px)  and (min-width: 1080px) and (max-width: 1200px){
+      .letraindex{
+      font-size: 70px !important;
+        padding: 5% 0;
+        font-weight: normal;
+      }
+    .letraindextop{
+    font-size: 70px !important;
+        padding: 5% 0;
+        font-weight: normal;
+        margin-top: 20px;
+      }
+      .cajafiltro{
+        width: 100%;
+        height: 15%;
+        margin-bottom: 20px;
+      }
+      #buscarlo{
+        width: 97%;
+        height: 140px;
+        font-size:70px !important;
+      }
     .menu_bar .bt-menu:active {
     font-size:800% !important;
     }
@@ -7763,6 +8022,27 @@ font-size:35px !important;
 }
 
 @media only screen and (min-height: 2048px) and (max-height: 2560px)  and (max-width: 1536px) {
+      .letraindex{
+      font-size: 70px !important;
+        padding: 5% 0;
+        font-weight: normal;
+      }
+    .letraindextop{
+    font-size: 70px !important;
+        padding: 5% 0;
+        font-weight: normal;
+        margin-top: 20px;
+      }
+      .cajafiltro{
+        width: 100%;
+        height: 15%;
+        margin-bottom: 20px;
+      }
+      #buscarlo{
+        width: 97%;
+        height: 140px;
+        font-size:70px !important;
+      }
     .menu_bar .bt-menu:active {
     font-size:800% !important;
     }
@@ -8156,6 +8436,27 @@ font-size:35px !important;
 }
 
 @media only screen and (min-height: 2560px) and (max-width: 1600px) {
+      .letraindex{
+      font-size: 100px !important;
+        padding: 5% 0;
+        font-weight: normal;
+      }
+    .letraindextop{
+    font-size: 100px !important;
+        padding: 5% 0;
+        font-weight: normal;
+        margin-top: 20px;
+      }
+      .cajafiltro{
+        width: 100%;
+        height: 15%;
+        margin-bottom: 20px;
+      }
+      #buscarlo{
+        width: 97%;
+        height: 140px;
+        font-size:100px !important;
+      }
 
     .menu_bar .bt-menu:active {
     font-size:950% !important;
