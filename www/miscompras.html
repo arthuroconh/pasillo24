@@ -92,7 +92,7 @@
             clave = window.localStorage.getItem("id");
               $("#idusuario").val(clave);
             if (usuario<=0) {
-              $("#user").append("ffasil.com");
+              $("#user").append("pasillo24.com");
               $('#sesionoff').fadeIn(800);
               $("#sesionoff").removeClass("escondido");
               $("#sesionoff").addClass("visible");
@@ -106,7 +106,7 @@
                   var contador = 0;
                   var dat =$('#fo').serialize();
                                       $.ajax({
-                                        url:'http://ffasil.com/app/miscompras.php',
+                                        url:'http://pasillo24.com/app/miscompras.php',
                                         type:'POST',
                                         data:dat,
                                         dataType:'json',
@@ -118,7 +118,7 @@
                                                                 $("#publicacionid").val(data[i]);
                                                                 var dat =$('#fo').serialize();
                                                                 $.ajax({
-                                                                  url:'http://ffasil.com/app/cargacompras.php',
+                                                                  url:'http://pasillo24.com/app/cargacompras.php',
                                                                   type:'POST',
                                                                   data:dat,
                                                                   dataType:'json',

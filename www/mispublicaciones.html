@@ -106,7 +106,7 @@
                   var contador = 0;
                   var dat =$('#fo').serialize();
                                       $.ajax({
-                                        url:'http://ffasil.com/app/cargapub.php',
+                                        url:'http://pasillo24.com/app/cargapub.php',
                                         type:'POST',
                                         data:dat,
                                         dataType:'json',
@@ -118,7 +118,7 @@
                                                                 $("#publicacionid").val(data[i]);
                                                                 var dat =$('#fo').serialize();
                                                                 $.ajax({
-                                                                  url:'http://ffasil.com/app/cargapublicacion.php',
+                                                                  url:'http://pasillo24.com/app/cargapublicacion.php',
                                                                   type:'POST',
                                                                   data:dat,
                                                                   dataType:'json',
@@ -131,7 +131,7 @@
                                                                     var a ="<p>";
                                                                     var b ="<section class='contenedorpublicacion'>";
                                                                     var bb ="<section class='contenedorpublicacion' style='margin-bottom:70% !important;'>";
-                                                                    var c = "<img src='http://preview.ffasil.com/public/images/pubImages/"+data[3]+"' >";
+                                                                    var c = "<img src='http://preview.pasillo24.com/public/images/pubImages/"+data[3]+"' >";
                                                                     var d = "<section style='width:60%!important; height:95% !important; float:right; box-sizing:border-box; position:relative;'>";
                                                                     var e = "<section id='infromacion"+data[0]+"' style='padding-top:20px;' class='infromacion'>";
                                                                     var cerrarsec="</section>";

@@ -105,7 +105,7 @@
 
 
                     $.ajax({
-                            url:'http://ffasil.com/app/busquedaid.php',
+                            url:'http://pasillo24.com/app/busquedaid.php',
                             type:'POST',
                             data:dato,
                             dataType:'json',
@@ -120,7 +120,7 @@
                                               $("#idpublicacion").val(data[i]);
                                                 var datd =$('#formulario').serialize();
                                                     $.ajax({
-                                                      url:'http://ffasil.com/app/busqueda.php',
+                                                      url:'http://pasillo24.com/app/busqueda.php',
                                                       type:'POST',
                                                       data:datd,
                                                       dataType:'json',
@@ -129,7 +129,7 @@
                                                       success:function(datos){
                                                                       var mensaje = datos[2];
                                                                       var porcion = mensaje.substring(0,20);
-                                                          var a = "<section class='dentrode' onclick='mostrarpublicacion("+datos[0]+")'><img src='http://preview.ffasil.com/public/images/pubImages/"+datos[1]+"'><section class='partedos'><section class='precio'>"+porcion+"...<br><br><b>"+datos[3]+"&nbsp;&nbsp;"+datos[4]+"</b></section></section></section>"
+                                                          var a = "<section class='dentrode' onclick='mostrarpublicacion("+datos[0]+")'><img src='http://preview.pasillo24.com/public/images/pubImages/"+datos[1]+"'><section class='partedos'><section class='precio'>"+porcion+"...<br><br><b>"+datos[3]+"&nbsp;&nbsp;"+datos[4]+"</b></section></section></section>"
                                                           $("#resultados").append(a);
                                                         }
                                                     });
@@ -155,7 +155,7 @@
                                                           $("#cargando").addClass('visible');
                 var dato = $('#formulario').serialize();
                     $.ajax({
-                            url:'http://ffasil.com/app/busquedaid.php',
+                            url:'http://pasillo24.com/app/busquedaid.php',
                             type:'POST',
                             data:dato,
                             dataType:'json',
@@ -170,7 +170,7 @@
                                               $("#idpublicacion").val(data[i]);
                                                 var datd =$('#formulario').serialize();
                                                     $.ajax({
-                                                      url:'http://ffasil.com/app/busqueda.php',
+                                                      url:'http://pasillo24.com/app/busqueda.php',
                                                       type:'POST',
                                                       data:datd,
                                                       dataType:'json',
@@ -179,7 +179,7 @@
                                                       success:function(datos){
                                                                       var mensaje = datos[2];
                                                                       var porcion = mensaje.substring(0,20);
-                                                          var a = "<section class='dentrode' onclick='mostrarpublicacion("+datos[0]+")'><img src='http://preview.ffasil.com/public/images/pubImages/"+datos[1]+"'><section class='partedos'><section class='precio'>"+porcion+"...<br><br><b>"+datos[3]+"&nbsp;&nbsp;"+datos[4]+"</b></section></section></section>"
+                                                          var a = "<section class='dentrode' onclick='mostrarpublicacion("+datos[0]+")'><img src='http://preview.pasillo24.com/public/images/pubImages/"+datos[1]+"'><section class='partedos'><section class='precio'>"+porcion+"...<br><br><b>"+datos[3]+"&nbsp;&nbsp;"+datos[4]+"</b></section></section></section>"
                                                           $("#resultados").append(a);
                                                         }
                                                     });

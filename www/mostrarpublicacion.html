@@ -104,13 +104,13 @@
               $("#publicacionid").val(publicacionaver);
                 var dato = $('#formulario').serialize();
                     $.ajax({
-                            url:'http://ffasil.com/app/publicacion.php',
+                            url:'http://pasillo24.com/app/publicacion.php',
                             type:'POST',
                             data:dato,
                             dataType:'json',
                             error:function(jqXHR,text_status,strError){},
                             success:function(data){
-                              var a = "<section class='contienepublicacion'><section class='titulopub'>"+data[1]+"</section><section class='contieneimagenpublicacion'><img src='http://preview.ffasil.com/public/images/pubImages/"+data[2]+"'></section><section class='botoneradespues'><input type='button' value='Descripci&oacute;n' onclick='descripcion("+data[0]+");'><input type='button' value='Contactar' onclick='contactar("+data[0]+");'><input type='button' value='Comentarios' onclick='comentarios("+data[0]+");'></section></section>";
+                              var a = "<section class='contienepublicacion'><section class='titulopub'>"+data[1]+"</section><section class='contieneimagenpublicacion'><img src='http://preview.pasillo24.com/public/images/pubImages/"+data[2]+"'></section><section class='botoneradespues'><input type='button' value='Descripci&oacute;n' onclick='descripcion("+data[0]+");'><input type='button' value='Contactar' onclick='contactar("+data[0]+");'><input type='button' value='Comentarios' onclick='comentarios("+data[0]+");'></section></section>";
                                   $("#page_effect").append(a);
 
                                                           $("#cargando").addClass('escondido');
