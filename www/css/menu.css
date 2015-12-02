@@ -117,6 +117,7 @@ header nav ul li a: {
 		padding-right: 2.5%;
 		float: left;
 		margin-left: 5%;
+    margin-top: 1%;
 	}
 	.menu_bar .bt-menu:active {
 		color:#000;
