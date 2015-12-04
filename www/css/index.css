@@ -2170,11 +2170,11 @@ label{
   position: fixed;
   display: block;
   float: left;
-  background-color: #f59c34;
+  background-color: #163F1F;
   width: 120%;
   z-index: 1;
   left: -5px;
-  height: 2%;
+  height: 20px;
   z-index: 90000;
 }
 #sesionon1{
@@ -2183,11 +2183,11 @@ label{
 .menu_bar .bt-menu {
   display: block;
   padding: 5px;
-  background: #f59c34;
+  background: #163F1F;
   color: #fff;
   text-decoration: none;
   font-weight: bold;
-  font-size:300% !important;
+  font-size:10px !important;
 }
 .cajaccion {
   width: 90% !important;
@@ -2655,11 +2655,11 @@ font-size:12px !important;
   position: fixed;
   display: block;
   float: left;
-  background-color: #f59c34;
+  background-color: #163F1F;
   width: 120%;
   z-index: 1;
   left: -5px;
-  height: 2%;
+  height: 90px !important;
   z-index: 90000;
 }
 .titulo {
@@ -2669,11 +2669,11 @@ font-size:12px !important;
 .menu_bar .bt-menu {
   display: block;
   padding: 5px !important;
-  background: #f59c34;
+  background: #163F1F;
   color: #fff;
   text-decoration: none;
   font-weight: bold;
-  font-size:400% !important;
+  font-size:40px !important;
 }
 .cajaccion article{
   font-size: 140% !important;
@@ -3082,21 +3082,21 @@ header nav ul li a {
   position: fixed;
   display: block;
   float: left;
-  background-color: #f59c34;
+  background-color: #163F1F;
   width: 120%;
   z-index: 1;
   left: -5px;
-  height: 2%;
+  height: 100px !important;
   z-index: 90000;
 }
 .titulo {
   margin-top: -50px;
-  font-size: 250%;
+  font-size: 40px;
 }
 .menu_bar .bt-menu {
   display: block;
   padding: 10px;
-  background: #f59c34;
+  background: #163F1F;
   color: #fff;
   text-decoration: none;
   font-weight: bold;
@@ -3651,21 +3651,21 @@ font-size:27px !important;
   position: fixed;
   display: block;
   float: left;
-  background-color: #f59c34;
+  background-color: #163F1F;
   width: 120%;
   z-index: 1;
   left: -5px;
-  height: 2%;
+  height: 100px !important;
   z-index: 90000;
 }
 .titulo {
   margin-top: -55px;
-  font-size: 160% !important;
+  font-size: 40px !important;
 }
 .menu_bar .bt-menu {
   display: block;
   padding: 5px  !important;
-  background: #f59c34;
+  background: #163F1F;
   color: #fff;
   text-decoration: none;
   font-weight: bold;
@@ -4093,11 +4093,11 @@ font-size:23px !important;
   position: fixed;
   display: block;
   float: left;
-  background-color: #f59c34;
+  background-color: #163F1F;
   width: 120%;
   z-index: 1;
   left: -5px;
-  height: 2%;
+  height: 100px !important;
   z-index: 90000;
 }
 .titulo {
@@ -4107,11 +4107,11 @@ font-size:23px !important;
 .menu_bar .bt-menu {
   display: block;
   padding: 10px !important;
-  background: #f59c34;
+  background: #163F1F;
   color: #fff;
   text-decoration: none;
   font-weight: bold;
-  font-size:450% !important;
+  font-size:50px !important;
 }
 .cajaccion {
   margin-top: 130px;
@@ -4652,21 +4652,21 @@ font-size:28px !important;
   position: fixed;
   display: block;
   float: left;
-  background-color: #f59c34;
+  background-color: #163F1F;
   width: 120%;
   z-index: 1;
   left: -5px;
-  height: 2%;
+  height: 140px !important;
   z-index: 90000;
 }
 .titulo {
   margin-top: -80px;
-  font-size: 300% !important;
+  font-size: 50px !important;
 }
 .menu_bar .bt-menu {
   display: block;
   padding: 5px;
-  background: #f59c34;
+  background: #163F1F;
   color: #fff;
   text-decoration: none;
   font-weight: bold;
@@ -5150,11 +5150,11 @@ font-size:28px !important;
   position: fixed;
   display: block;
   float: left;
-  background-color: #f59c34;
+  background-color: #163F1F;
   width: 120%;
   z-index: 1;
   left: -5px;
-  height: 2%;
+  height:  120px !important;
   z-index: 90000;
 }
 .titulo {
@@ -5164,11 +5164,11 @@ font-size:28px !important;
 .menu_bar .bt-menu {
   display: block;
   padding: 5px !important;
-  background: #f59c34;
+  background: #163F1F;
   color: #fff;
   text-decoration: none;
   font-weight: bold;
-  font-size:500% !important;
+  font-size:50px !important;
 }
 .cajaccion {
   margin-top: 130px;
@@ -5658,21 +5658,21 @@ font-size:35px !important;
   position: fixed;
   display: block;
   float: left;
-  background-color: #f59c34;
+  background-color: #163F1F;
   width: 120%;
   z-index: 1;
   left: -5px;
-  height: 2%;
+  height: 140px !important;
   z-index: 90000;
 }
 .titulo {
   margin-top: -80px;
-  font-size: 280% !important;
+  font-size: 60px !important;
 }
 .menu_bar .bt-menu {
   display: block;
   padding:10px !important;
-  background: #f59c34;
+  background: #163F1F;
   color: #fff;
   text-decoration: none;
   font-weight: bold;
@@ -6152,11 +6152,11 @@ font-size:35px !important;
     position: fixed;
     display: block;
     float: left;
-    background-color: #f59c34;
+    background-color: #163F1F;
     width: 120%;
     z-index: 1;
     left: -5px;
-    height: 2%;
+    height: 135px !important;
     z-index: 90000;
   }
   .titulo {
@@ -6166,11 +6166,11 @@ font-size:35px !important;
   .menu_bar .bt-menu {
     display: block;
     padding: 2px !important;
-    background: #f59c34;
+    background: #163F1F;
     color: #fff;
     text-decoration: none;
     font-weight: bold;
-    font-size:600% !important;
+    font-size:70px !important;
   }
   .cajaccion {
     margin-top: 130px;
@@ -6649,11 +6649,11 @@ font-size:35px !important;
       position: fixed;
       display: block;
       float: left;
-      background-color: #f59c34;
+      background-color: #163F1F;
       width: 120%;
       z-index: 1;
       left: -5px;
-      height: 2%;
+      height: 150px !important;
       z-index: 90000;
     }
     .titulo {
@@ -6663,7 +6663,7 @@ font-size:35px !important;
     .menu_bar .bt-menu {
       display: block;
       padding: 9px !important;
-      background: #f59c34;
+      background: #163F1F;
       color: #fff;
       text-decoration: none;
       font-weight: bold;
@@ -7115,17 +7115,17 @@ font-size:35px !important;
         font-size:70px !important;
       }
     .menu_bar .bt-menu:active {
-    font-size:800% !important;
+    font-size:100px !important;
     }
     .menu_bar {
       position: fixed;
       display: block;
       float: left;
-      background-color: #f59c34;
+      background-color: #163F1F;
       width: 120%;
       z-index: 1;
       left: -5px;
-      height: 5%;
+      height: 180px !important;
       z-index: 90000;
     }
     .titulo {
@@ -7134,12 +7134,12 @@ font-size:35px !important;
     }
     .menu_bar .bt-menu {
       display: block;
-      padding: 47px !important;
-      background: #f59c34;
+      padding: 5px !important;
+      background: #163F1F;
       color: #fff;
       text-decoration: none;
       font-weight: bold;
-      font-size:800% !important;
+      font-size:100px !important;
     }
     .cajaccion {
       margin-top: 140px;
@@ -7681,11 +7681,11 @@ font-size:35px !important;
       position: fixed;
       display: block;
       float: left;
-      background-color: #f59c34;
+      background-color: #163F1F;
       width: 120%;
       z-index: 1;
       left: -5px;
-      height: 5%;
+      height: 190px !important;
       z-index: 90000;
     }
     .titulo {
@@ -7694,12 +7694,12 @@ font-size:35px !important;
     }
     .menu_bar .bt-menu {
       display: block;
-      padding: 2% !important;
-      background: #f59c34;
+      padding: 1% !important;
+      background: #163F1F;
       color: #fff;
       text-decoration: none;
       font-weight: bold;
-      font-size:800% !important;
+      font-size:100px !important;
     }
     .cajaccion {
       margin-top: 240px;
@@ -8115,11 +8115,11 @@ font-size:35px !important;
       position: fixed;
       display: block;
       float: left;
-      background-color: #f59c34;
+      background-color: #163F1F;
       width: 120%;
       z-index: 1;
       left: -5px;
-      height: 5%;
+      height: 240px !important;
       z-index: 90000;
     }
     .titulo {
@@ -8129,11 +8129,11 @@ font-size:35px !important;
     .menu_bar .bt-menu {
       display: block;
       padding: 5px;
-      background: #f59c34;
+      background: #163F1F;
       color: #fff;
       text-decoration: none;
       font-weight: bold;
-      font-size:800% !important;
+      font-size:100px !important;
     }
     .cajaccion {
       margin-top: 240px;
@@ -8530,11 +8530,11 @@ font-size:35px !important;
       position: fixed;
       display: block;
       float: left;
-      background-color: #f59c34;
+      background-color: #163F1F;
       width: 120%;
       z-index: 1;
       left: -5px;
-      height: 5%;
+      height: 290px !important;
       z-index: 90000;
     }
     .titulo {
@@ -8543,12 +8543,12 @@ font-size:35px !important;
     }
     .menu_bar .bt-menu {
       display: block;
-      padding: 74px !important;
-      background: #f59c34;
+      padding: 24px !important;
+      background: #163F1F;
       color: #fff;
       text-decoration: none;
       font-weight: bold;
-      font-size:950% !important;
+      font-size:130px !important;
     }
     .cajaccion {
       margin-top: 390px !important;

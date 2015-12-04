@@ -116,10 +116,50 @@
           location.href="buscar.html";
         }
         </script>
+        <script type="text/javascript">
+
+        $(document).ready(function(){
+                                                                  $("#cargando").addClass('escondido');
+                                                                  $("#cargando").removeClass('visible');
+          var datd ='';
+          var imagen = '';
+            var id = '';
+              var titulo = '';
+              $.ajax({
+                url:'http://preview.pasillo24.com/inicio-app',
+                type:'GET',
+                data:datd,
+                dataType:'json',
+                error:function(jqXHR,text_status,strError){
+                },
+                success:function(pubLider){
+                  for (var i = 0; i <= 3; i++) {
+                    var imagen = pubLider[i].img_1;
+                      var id = pubLider[i].id;
+                        var titulo = pubLider[i].titulo;
+                        var a = "<div><img u='image' src='img/"+imagen+"' /></div>"
+                          $("#sliderlider").append(a);
+                          a = '';
+                          imagen= '';
+                          id= '';
+                          titulo= '';
+                  }
+                  }
+
+                            $("#cargando").addClass('escondido');
+                            $("#cargando").removeClass('visible');
+              });
+
+            });
+      </script>
     </head>
     <body>
           <section class="cerrador"></section>
         <header>
+      <div style="clear:booth"></div>
+      <div id="cargando" class="escondido">
+          <img src="load.gif">
+      </div>
           <div class="menu_bar">
               <div class="icon-list2"></div>
               <a href="#" class="bt-menu"><i class="fa fa-bars fa-1x "></i></a><center class="titulo" id="user"></center>
@@ -319,16 +359,7 @@
   </div>
   <!-- Slides Container -->
   <div u="slides" style="cursor: move; position: absolute; left: 0px; top: 0px; width: 1500px;
-      height: 650px; overflow: hidden;" class="slide">
-      <div>
-          <img u="image" src="img/anuncios-02.png" />
-      </div>
-      <div>
-          <img u="image" src="img/anuncios-03.png" />
-          </div>
-      <div>
-          <img u="image" src="img/anuncios-02.png" />
-      </div>
+      height: 650px; overflow: hidden;" class="slide" id="sliderlider">
   </div>
 
   <!-- Bullet Navigator Skin Begin -->

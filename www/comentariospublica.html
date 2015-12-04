@@ -105,7 +105,7 @@
               $("#publicacionid").val(publicacionaver);
                 var dato = $('#formulario').serialize();
                     $.ajax({
-                            url:'http://pasillo24.com/app/cargacomentarios.php',
+                            url:'http:/preview.pasillo24.com/app/cargacomentarios.php',
                             type:'POST',
                             data:dato,
                             dataType:'json',
@@ -115,7 +115,7 @@
                                                                 $("#comentarioid").val(data[i]);
                                                                 var dat =$('#formulario').serialize();
                                                                 $.ajax({
-                                                                  url:'http://pasillo24.com/app/respuestasdecomentario.php',
+                                                                  url:'http:/preview.pasillo24.com/app/respuestasdecomentario.php',
                                                                   type:'POST',
                                                                   data:dat,
                                                                   dataType:'json',

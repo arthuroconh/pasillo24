@@ -106,7 +106,7 @@
                   var contador = 0;
                   var dat =$('#fo').serialize();
                                       $.ajax({
-                                        url:'http://pasillo24.com/app/miscompras.php',
+                                        url:'http:/preview.pasillo24.com/app/miscompras.php',
                                         type:'POST',
                                         data:dat,
                                         dataType:'json',
@@ -118,7 +118,7 @@
                                                                 $("#publicacionid").val(data[i]);
                                                                 var dat =$('#fo').serialize();
                                                                 $.ajax({
-                                                                  url:'http://pasillo24.com/app/cargacompras.php',
+                                                                  url:'http:/preview.pasillo24.com/app/cargacompras.php',
                                                                   type:'POST',
                                                                   data:dat,
                                                                   dataType:'json',
